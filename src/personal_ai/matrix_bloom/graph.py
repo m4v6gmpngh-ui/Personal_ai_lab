@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from typing import Any
 
 
 class MemoryGraph:
@@ -84,6 +85,32 @@ class MemoryGraph:
                 seen.add(pair)
                 unique.append((pair[0], pair[1], self._edges[left][right]))
         return unique
+
+    def to_dict(self) -> dict[str, Any]:
+        """Serialize learned graph relationships for local persistence."""
+
+        return {
+            "edges": [
+                {"left": left, "right": right, "weight": weight}
+                for left, right, weight in self.edges()
+            ]
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any] | None) -> "MemoryGraph":
+        graph = cls()
+        if not data:
+            return graph
+
+        for item in data.get("edges", []):
+            if not isinstance(item, dict):
+                continue
+            left = str(item.get("left", "")).strip()
+            right = str(item.get("right", "")).strip()
+            if not left or not right or left == right:
+                continue
+            graph.connect(left, right, float(item.get("weight", 0.0)))
+        return graph
 
     @staticmethod
     def _clamp(value: float) -> float:
