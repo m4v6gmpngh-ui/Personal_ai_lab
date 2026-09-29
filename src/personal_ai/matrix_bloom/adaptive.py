@@ -17,11 +17,11 @@ class LearningUpdate:
 
 
 class AdaptiveBloom:
-    """Small, explicit learning layer for Matrix Bloom relationships.
+    """Explicit feedback learning for the primary relationship graph.
 
-    v0.1 intentionally learns only from explicit signals. Merely recalling a
-    memory does not automatically strengthen it; that avoids runaway feedback
-    loops where frequently recalled mistakes become increasingly dominant.
+    Automatic recall rehearsal belongs to SecondaryMatrices. This class changes
+    primary graph relationships only when there is an explicit useful/unhelpful
+    signal or an explicit co-activation event.
     """
 
     def __init__(self, graph: MemoryGraph) -> None:
@@ -34,7 +34,7 @@ class AdaptiveBloom:
         reward: float = 1.0,
         learning_rate: float = 0.08,
     ) -> list[LearningUpdate]:
-        """Strengthen the links that produced a useful recall."""
+        """Strengthen the primary links that produced a useful recall."""
 
         reward = self._clamp(reward)
         learning_rate = self._clamp(learning_rate)
@@ -58,7 +58,7 @@ class AdaptiveBloom:
         learning_rate: float = 0.06,
         minimum_weight: float = 0.01,
     ) -> list[LearningUpdate]:
-        """Weaken links that contributed to an explicitly unhelpful recall."""
+        """Weaken primary links that contributed to an unhelpful recall."""
 
         penalty = self._clamp(penalty)
         learning_rate = self._clamp(learning_rate)
@@ -85,7 +85,7 @@ class AdaptiveBloom:
         *,
         strength: float = 0.03,
     ) -> list[LearningUpdate]:
-        """Associate memories that are explicitly judged relevant together."""
+        """Associate memories explicitly judged relevant together."""
 
         strength = self._clamp(strength)
         updates: list[LearningUpdate] = []
