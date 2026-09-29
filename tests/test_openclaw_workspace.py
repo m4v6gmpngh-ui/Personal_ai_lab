@@ -34,6 +34,7 @@ class OpenClawWorkspaceTests(unittest.TestCase):
 
             self.assertTrue(adapter.context_markdown_path.exists())
             self.assertTrue(adapter.context_json_path.exists())
+            self.assertTrue(adapter.trace_markdown_path.exists())
             self.assertTrue(adapter.instructions_path.exists())
 
             payload = json.loads(
@@ -44,6 +45,11 @@ class OpenClawWorkspaceTests(unittest.TestCase):
                 "What does Thanksgiving at my mom's house remind me of?",
             )
             self.assertGreaterEqual(len(payload["memories"]), 1)
+            self.assertIn("matched_facets", payload["memories"][0])
+
+            trace_text = adapter.trace_markdown_path.read_text(encoding="utf-8")
+            self.assertIn("RECALL TRACE:", trace_text)
+            self.assertIn("thanksgiving", trace_text.lower())
 
     def test_local_extractor_captures_salient_cues(self) -> None:
         adapter = OpenClawWorkspaceAdapter(workspace_path="unused")
