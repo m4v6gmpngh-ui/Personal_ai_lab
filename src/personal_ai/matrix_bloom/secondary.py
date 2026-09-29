@@ -3,6 +3,7 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from typing import Any
 
 from personal_ai.core.event import Event
 from personal_ai.memory.node import MemoryNode
@@ -126,6 +127,66 @@ class SecondaryMatrices:
 
     def weight(self, family: str, key: str, memory_id: str) -> float:
         return self._weights.get(family, {}).get(key.lower(), {}).get(memory_id, 0.0)
+
+    def to_dict(self) -> dict[str, Any]:
+        """Serialize learned routing/accessibility state without changing confidence."""
+
+        weights: dict[str, dict[str, dict[str, float]]] = {}
+        for family in MATRIX_FAMILIES:
+            weights[family] = {
+                key: dict(bucket)
+                for key, bucket in self._weights[family].items()
+            }
+
+        recall = {
+            memory_id: {
+                "count": state.count,
+                "accessibility": state.accessibility,
+                "last_recalled_at": state.last_recalled_at,
+            }
+            for memory_id, state in self._recall.items()
+        }
+
+        return {
+            "seed_weight": self.seed_weight,
+            "weights": weights,
+            "recall": recall,
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any] | None) -> "SecondaryMatrices":
+        if not data:
+            return cls()
+
+        secondary = cls(seed_weight=float(data.get("seed_weight", 0.35)))
+
+        raw_weights = data.get("weights", {})
+        if isinstance(raw_weights, dict):
+            for family, buckets in raw_weights.items():
+                if family not in MATRIX_FAMILIES or not isinstance(buckets, dict):
+                    continue
+                for key, memory_weights in buckets.items():
+                    if not isinstance(memory_weights, dict):
+                        continue
+                    secondary._weights[family][str(key)] = {
+                        str(memory_id): secondary._clamp(float(weight))
+                        for memory_id, weight in memory_weights.items()
+                    }
+
+        raw_recall = data.get("recall", {})
+        if isinstance(raw_recall, dict):
+            for memory_id, item in raw_recall.items():
+                if not isinstance(item, dict):
+                    continue
+                secondary._recall[str(memory_id)] = RecallState(
+                    count=max(0, int(item.get("count", 0))),
+                    accessibility=secondary._clamp(
+                        float(item.get("accessibility", 0.0))
+                    ),
+                    last_recalled_at=item.get("last_recalled_at"),
+                )
+
+        return secondary
 
     @staticmethod
     def event_facets(event: Event) -> dict[str, set[str]]:
