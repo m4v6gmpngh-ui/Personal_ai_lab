@@ -72,3 +72,42 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 ## Status
 
 The v0.1 memory spine now includes structured event facets, weighted relationship tracing, adaptive primary links, recall-sensitive secondary matrices, suppression, and compact context-packet generation.
+
+
+## Live AI test
+
+Matrix Bloom can now sit directly in front of an OpenAI model through the Responses API.
+
+1. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Set an API key:
+
+```bash
+export OPENAI_API_KEY="your-key"
+```
+
+On Windows PowerShell:
+
+```powershell
+$env:OPENAI_API_KEY="your-key"
+```
+
+3. Optional: choose a model. The default is `gpt-5`.
+
+```bash
+export OPENAI_MODEL="gpt-5"
+```
+
+4. Run the live loop:
+
+```bash
+PYTHONPATH=src python scripts/live_ai_test.py
+```
+
+Set `MATRIX_BLOOM_DEBUG=1` to print the exact compact context packet before each model answer.
+
+The live path uses one model call to extract routing facets and another to answer with the retrieved context packet. User messages are persisted locally to `data/live_memories.json`. Only the current message and selected context packet are sent to the model API during a turn.
