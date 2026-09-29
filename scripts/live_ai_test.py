@@ -52,7 +52,7 @@ def main() -> None:
 
         if debug:
             print("\n[Matrix Bloom context]")
-            print(turn.packet.to_prompt_context())
+            print(turn.packet.to_debug_context())
             print()
 
         print(f"AI: {turn.answer}\n")
