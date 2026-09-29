@@ -9,13 +9,16 @@ from personal_ai.core.event import Event
 
 @dataclass(slots=True)
 class MemoryNode:
-    """A stored memory with explicit salience and semantic labels."""
+    """A stored memory with explicit salience and contextual facets."""
 
     id: str
     text: str
     timestamp: str
     entities: set[str] = field(default_factory=set)
     topics: set[str] = field(default_factory=set)
+    people: set[str] = field(default_factory=set)
+    emotions: set[str] = field(default_factory=set)
+    goals: set[str] = field(default_factory=set)
     importance: float = 0.5
     emotional_weight: float = 0.0
     confidence: float = 1.0
@@ -30,6 +33,9 @@ class MemoryNode:
             timestamp=event.timestamp,
             entities=set(event.entities),
             topics=set(event.topics),
+            people=set(event.people),
+            emotions=set(event.emotions),
+            goals=set(event.goals),
             importance=event.importance,
             emotional_weight=event.emotional_weight,
             confidence=event.confidence,
@@ -39,13 +45,13 @@ class MemoryNode:
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)
-        data["entities"] = sorted(self.entities)
-        data["topics"] = sorted(self.topics)
+        for field_name in ("entities", "topics", "people", "emotions", "goals"):
+            data[field_name] = sorted(getattr(self, field_name))
         return data
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "MemoryNode":
         copy = dict(data)
-        copy["entities"] = set(copy.get("entities", []))
-        copy["topics"] = set(copy.get("topics", []))
+        for field_name in ("entities", "topics", "people", "emotions", "goals"):
+            copy[field_name] = set(copy.get(field_name, []))
         return cls(**copy)
