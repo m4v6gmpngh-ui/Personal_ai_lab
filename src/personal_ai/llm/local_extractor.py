@@ -71,7 +71,7 @@ class LocalEventExtractor:
 
     def extract_event(self, text: str) -> Event:
         raw_tokens = _TOKEN_RE.findall(text)
-        tokens = [token.lower() for token in raw_tokens]
+        tokens = [self._normalize_token(token) for token in raw_tokens]
         content_tokens = [
             token for token in tokens
             if len(token) > 2 and token not in _STOPWORDS
@@ -81,9 +81,10 @@ class LocalEventExtractor:
         topics.update(self._bigrams(content_tokens, limit=16))
 
         entities = {
-            token.lower()
+            self._normalize_token(token)
             for token in raw_tokens
-            if token[:1].isupper() and token.lower() not in _STOPWORDS
+            if token[:1].isupper()
+            and self._normalize_token(token) not in _STOPWORDS
         }
 
         people = {token for token in tokens if token in _KINSHIP}
@@ -121,6 +122,13 @@ class LocalEventExtractor:
             source="local_chat",
             metadata={"extractor": "local_keywords_v1"},
         )
+
+    @staticmethod
+    def _normalize_token(token: str) -> str:
+        lowered = token.lower()
+        if lowered.endswith("'s"):
+            lowered = lowered[:-2]
+        return lowered
 
     @staticmethod
     def _bigrams(tokens: list[str], *, limit: int) -> set[str]:
