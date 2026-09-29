@@ -24,7 +24,7 @@ This repository will grow in layers. Audio, vision, wearable data, larger-model 
 2. Explainable recall.
 3. Small testable components.
 4. No opaque "magic" state.
-5. Memory importance and relationships can change over time.
+5. Memory importance and relationships can change over time.\n7. Adaptive learning only strengthens or weakens links from explicit signals; recall alone does not self-reinforce.
 6. Build the trunk before sensors and interface layers.
 
 ## Run the demo
@@ -41,4 +41,4 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Status
 
-v0.1 foundation in progress.
+v0.1 foundation in progress. Adaptive Matrix Bloom learning is now implemented with reinforcement, penalty, co-activation, decay, and tests.
