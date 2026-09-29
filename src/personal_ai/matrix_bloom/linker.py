@@ -5,20 +5,49 @@ from personal_ai.memory.node import MemoryNode
 from personal_ai.memory.store import MemoryStore
 
 
+def _overlap(left: set[str], right: set[str]) -> float:
+    space = left | right
+    return len(left & right) / len(space) if space else 0.0
+
+
 def shared_context_weight(left: MemoryNode, right: MemoryNode) -> float:
-    """Create a simple explainable link weight from shared topics/entities."""
+    """Explainable initial relationship weight from shared memory facets."""
 
-    shared_topics = left.topics & right.topics
-    shared_entities = left.entities & right.entities
+    scores = {
+        "topics": _overlap(left.topics, right.topics),
+        "entities": _overlap(left.entities, right.entities),
+        "people": _overlap(left.people, right.people),
+        "emotions": _overlap(left.emotions, right.emotions),
+        "goals": _overlap(left.goals, right.goals),
+    }
 
-    topic_space = left.topics | right.topics
-    entity_space = left.entities | right.entities
-
-    topic_score = len(shared_topics) / len(topic_space) if topic_space else 0.0
-    entity_score = len(shared_entities) / len(entity_space) if entity_space else 0.0
-
-    weight = 0.65 * topic_score + 0.35 * entity_score
+    weight = (
+        0.30 * scores["topics"]
+        + 0.15 * scores["entities"]
+        + 0.20 * scores["people"]
+        + 0.10 * scores["emotions"]
+        + 0.25 * scores["goals"]
+    )
     return max(0.0, min(1.0, weight))
+
+
+def link_new_memory(
+    node: MemoryNode,
+    existing_nodes: list[MemoryNode],
+    graph: MemoryGraph,
+    *,
+    minimum_weight: float = 0.15,
+) -> None:
+    """Link one newly stored memory without resetting learned graph weights."""
+
+    for other in existing_nodes:
+        weight = shared_context_weight(node, other)
+        if weight < minimum_weight:
+            continue
+
+        existing = graph.edge_weight(node.id, other.id)
+        if existing == 0.0:
+            graph.connect(node.id, other.id, weight)
 
 
 def auto_link(store: MemoryStore, graph: MemoryGraph, *, minimum_weight: float = 0.15) -> None:
