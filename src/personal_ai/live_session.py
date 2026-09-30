@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from personal_ai.context_engine import ContextEngine, ContextPacket
+from personal_ai.core.working_state import WorkingState
 from personal_ai.matrix_bloom.graph import MemoryGraph
 from personal_ai.matrix_bloom.linker import auto_link, link_new_memory
 from personal_ai.matrix_bloom.secondary import SecondaryMatrices
@@ -36,6 +37,7 @@ class LiveSession:
         state_path: str | Path | None = None,
         secondary: SecondaryMatrices | None = None,
         capture_policy: MemoryCapturePolicy | None = None,
+        working_state: WorkingState | None = None,
     ) -> None:
         self.store = store
         self.graph = graph
@@ -44,6 +46,7 @@ class LiveSession:
         self.state_path = Path(state_path) if state_path else None
         self.secondary = secondary or SecondaryMatrices()
         self.capture_policy = capture_policy or MemoryCapturePolicy(mode="training")
+        self.working_state = working_state or WorkingState()
         self.context_engine = ContextEngine(
             store,
             graph,
@@ -92,13 +95,17 @@ class LiveSession:
 
     def handle(self, text: str, *, context_limit: int = 5) -> LiveTurn:
         event = self.llm.extract_event(text)
+        recall_event, carried_state = self.working_state.enrich(event)
         packet = self.context_engine.build_packet(
-            event,
+            recall_event,
             limit=context_limit,
             rehearse=True,
+            working_state=carried_state,
         )
         answer = self.llm.answer(text, packet)
 
+        # Capture/storage uses only the current turn. Carried working state shapes
+        # recall but must not leak into durable autobiographical memory.
         capture = self.capture_policy.decide(event)
         stored_memory_id: str | None = None
 
@@ -114,8 +121,12 @@ class LiveSession:
             self.context_engine.secondary.index_memory(node)
             stored_memory_id = node.id
 
+        # Update short-lived state only after this turn's recall/storage decisions.
+        self.working_state.advance(event)
+
         # Persist even when the current turn stays ephemeral because recall itself
-        # may have strengthened secondary accessibility during this turn.
+        # may have strengthened secondary accessibility during this turn. Working
+        # state is intentionally not persisted across process restarts.
         self._persist()
 
         return LiveTurn(
