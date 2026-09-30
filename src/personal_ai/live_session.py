@@ -7,7 +7,8 @@ from pathlib import Path
 from personal_ai.context_engine import ContextEngine, ContextPacket
 from personal_ai.core.working_state import WorkingState
 from personal_ai.matrix_bloom.graph import MemoryGraph
-from personal_ai.matrix_bloom.linker import auto_link, link_new_memory
+from personal_ai.matrix_bloom.layers import LayeredMemoryEncoder, PathwayLedger
+from personal_ai.matrix_bloom.linker import auto_link
 from personal_ai.matrix_bloom.secondary import SecondaryMatrices
 from personal_ai.memory.capture import CaptureDecision, MemoryCapturePolicy
 from personal_ai.memory.node import MemoryNode
@@ -25,7 +26,7 @@ class LiveTurn:
 class LiveSession:
     """One live Matrix Bloom -> model/agent conversation session."""
 
-    STATE_VERSION = 1
+    STATE_VERSION = 2
 
     def __init__(
         self,
@@ -36,6 +37,7 @@ class LiveSession:
         memory_path: str | Path | None = None,
         state_path: str | Path | None = None,
         secondary: SecondaryMatrices | None = None,
+        pathway_ledger: PathwayLedger | None = None,
         capture_policy: MemoryCapturePolicy | None = None,
         working_state: WorkingState | None = None,
     ) -> None:
@@ -45,6 +47,14 @@ class LiveSession:
         self.memory_path = Path(memory_path) if memory_path else None
         self.state_path = Path(state_path) if state_path else None
         self.secondary = secondary or SecondaryMatrices()
+        self.pathway_ledger = (
+            pathway_ledger if pathway_ledger is not None else PathwayLedger()
+        )
+        self.layered_encoder = LayeredMemoryEncoder(
+            self.graph,
+            self.secondary,
+            ledger=self.pathway_ledger,
+        )
         self.capture_policy = capture_policy or MemoryCapturePolicy(mode="training")
         self.working_state = working_state or WorkingState()
         self.context_engine = ContextEngine(
@@ -72,11 +82,13 @@ class LiveSession:
         store = MemoryStore.load_json(path)
         graph = MemoryGraph()
         secondary = SecondaryMatrices()
+        pathway_ledger = PathwayLedger()
 
         if resolved_state_path.exists():
             payload = json.loads(resolved_state_path.read_text(encoding="utf-8"))
             graph = MemoryGraph.from_dict(payload.get("graph"))
             secondary = SecondaryMatrices.from_dict(payload.get("secondary"))
+            pathway_ledger = PathwayLedger.from_dict(payload.get("pathways"))
         else:
             auto_link(store, graph)
 
@@ -90,6 +102,7 @@ class LiveSession:
             memory_path=path,
             state_path=resolved_state_path,
             secondary=secondary,
+            pathway_ledger=pathway_ledger,
             capture_policy=MemoryCapturePolicy(mode=capture_mode),
         )
 
@@ -117,8 +130,16 @@ class LiveSession:
 
             existing_nodes = self.store.all()
             self.store.add(node)
-            link_new_memory(node, existing_nodes, self.graph)
-            self.context_engine.secondary.index_memory(node)
+            encoding = self.layered_encoder.encode(
+                node,
+                event=event,
+                existing_nodes=existing_nodes,
+                recall_signals=[
+                    (memory.memory_id, memory.score)
+                    for memory in packet.memories
+                ],
+            )
+            node.metadata["pathway_event_ids"] = list(encoding.pathway_event_ids)
             stored_memory_id = node.id
 
         # Update short-lived state only after this turn's recall/storage decisions.
@@ -146,6 +167,7 @@ class LiveSession:
                 "version": self.STATE_VERSION,
                 "graph": self.graph.to_dict(),
                 "secondary": self.secondary.to_dict(),
+                "pathways": self.pathway_ledger.to_dict(),
             }
             self.state_path.write_text(
                 json.dumps(payload, indent=2),
