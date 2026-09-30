@@ -25,6 +25,7 @@ class ContextMemory:
     recall_count: int
     accessibility: float
     matched_facets: dict[str, list[str]]
+    reinforced_facets: dict[str, list[str]]
     path: list[str]
     reason: str
 
@@ -119,6 +120,17 @@ class ContextPacket:
                             else "none (graph propagation may have activated it)"
                         )
                     ),
+                    (
+                        "   reinforced route: "
+                        + (
+                            "; ".join(
+                                f"{family}=[{', '.join(values)}]"
+                                for family, values in memory.reinforced_facets.items()
+                            )
+                            if memory.reinforced_facets
+                            else "none"
+                        )
+                    ),
                     f"   graph path: {' -> '.join(memory.path)}",
                     f"   why: {memory.reason}",
                     "",
@@ -191,6 +203,7 @@ class ContextEngine:
                     recall_count=recall_state.count,
                     accessibility=round(recall_state.accessibility, 4),
                     matched_facets=matched_facets,
+                    reinforced_facets=dict(trace.reinforced_facets),
                     path=list(trace.path),
                     reason=trace.reason,
                 )
