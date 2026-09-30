@@ -15,6 +15,7 @@ from personal_ai.memory.store import MemoryStore
 class RecallTrace:
     memory_id: str
     score: float
+    base_score: float
     direct_score: float
     matrix_score: float = 0.0
     path: list[str] = field(default_factory=list)
@@ -106,25 +107,29 @@ class MemoryTracer:
 
             origin = origins[memory_id]
             path = best_paths[memory_id]
+            base_score = base.get(memory_id, 0.0)
             direct_score = direct.get(memory_id, 0.0)
             matrix_score = matrix.get(memory_id, 0.0)
 
             if len(path) == 1:
                 reason = (
-                    f"direct relevance={direct_score:.3f}; "
-                    f"secondary matrices={matrix_score:.3f}"
+                    f"content relevance={base_score:.3f}; "
+                    f"secondary matrices={matrix_score:.3f}; "
+                    f"blended seed={direct_score:.3f}"
                 )
             else:
                 reason = (
                     f"activated from {origin} through {len(path) - 1} weighted link(s); "
-                    f"direct relevance={direct_score:.3f}; "
-                    f"secondary matrices={matrix_score:.3f}"
+                    f"content relevance={base_score:.3f}; "
+                    f"secondary matrices={matrix_score:.3f}; "
+                    f"blended seed={direct_score:.3f}"
                 )
 
             traces.append(
                 RecallTrace(
                     memory_id=memory_id,
                     score=score,
+                    base_score=base_score,
                     direct_score=direct_score,
                     matrix_score=matrix_score,
                     path=path,
@@ -150,6 +155,7 @@ class MemoryTracer:
         return {
             "memory": memory.text,
             "score": round(trace.score, 4),
+            "base_score": round(trace.base_score, 4),
             "direct_score": round(trace.direct_score, 4),
             "matrix_score": round(trace.matrix_score, 4),
             "path": trace.path,
