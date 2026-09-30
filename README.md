@@ -35,6 +35,21 @@ A recalled memory is rehearsed in these secondary matrices. Repeated recall make
 
 Secondary reinforcement is bounded and saturating, and it can decay slowly over time.
 
+## Layered memory formation
+
+Matrix Bloom now begins separating memory into explicit behavioral layers:
+
+1. **Episode layer** — durable raw memories. Newly captured MemoryNodes are tagged as episode records and retain their original confidence/provenance.
+2. **Feature layer** — SecondaryMatrices index concepts, people, emotions, and goals. Rehearsal changes accessibility along the facets actually used.
+3. **Pathway layer** — MemoryGraph stores learned relationships. When a new durable episode forms, admitted recalled memories can strengthen the new episode's pathway only when they share an active facet.
+4. **Working layer** — transient WorkingState and the active ContextPacket shape the current Bloom without becoming durable history.
+5. **Semantic/consolidation layer** — planned, but not auto-promoted yet. Repeated episodes may eventually produce abstraction candidates; those abstractions must remain derived from their episode provenance.
+6. **Context-admission layer** — planned as a separate gate from candidate retrieval, following the decoy-memory result from the continuity benchmark.
+
+Pathway changes are also written to an append-only **PathwayLedger**. Every learning operation carries a logical id so replaying the same encoding operation cannot silently strengthen a relationship twice. The ledger records why a path changed, the active matched facets, the recall strength, and the before/after weight.
+
+The core rule remains: **accessibility can learn quickly; factual confidence cannot rise merely because something was recalled or repeated.**
+
 ## Transient working state
 
 Matrix Bloom now has a short-lived working-state layer separate from durable memory. The first implementation carries **emotional state** across a few following turns so recall can remain context-sensitive even when the next sentence does not repeat the emotion.
