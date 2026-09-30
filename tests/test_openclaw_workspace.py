@@ -111,6 +111,83 @@ class OpenClawWorkspaceTests(unittest.TestCase):
             )
 
 
+
+    def test_emotion_carries_into_next_turn_and_shapes_recall(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            workspace = root / "openclaw" / "workspace"
+            memory_path = root / "matrix" / "memories.json"
+
+            adapter = OpenClawWorkspaceAdapter(workspace_path=workspace)
+            session = LiveSession.from_disk(
+                memory_path,
+                adapter,
+                capture_mode="normal",
+            )
+
+            calm = session.handle(
+                "Remember that the blue lake cabin smells like pine "
+                "and makes me feel calm."
+            )
+            fear = session.handle(
+                "Remember that the blue lake cabin reminds me of a bad "
+                "storm and makes me afraid."
+            )
+
+            state_turn = session.handle("I am feeling afraid right now.")
+            query = session.handle(
+                "What does the blue lake cabin remind me of?"
+            )
+
+            self.assertFalse(state_turn.capture.durable)
+            self.assertEqual(query.packet.working_state, {"emotion": ["fear"]})
+            self.assertEqual(
+                query.packet.memories[0].memory_id,
+                fear.stored_memory_id,
+            )
+            self.assertNotEqual(
+                query.packet.memories[0].memory_id,
+                calm.stored_memory_id,
+            )
+            self.assertIn(
+                "fear",
+                query.packet.memories[0].reinforced_facets["emotion"],
+            )
+
+    def test_explicit_new_emotion_replaces_prior_working_state(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            workspace = root / "openclaw" / "workspace"
+            memory_path = root / "matrix" / "memories.json"
+
+            adapter = OpenClawWorkspaceAdapter(workspace_path=workspace)
+            session = LiveSession.from_disk(
+                memory_path,
+                adapter,
+                capture_mode="normal",
+            )
+
+            calm = session.handle(
+                "Remember that the blue lake cabin smells like pine "
+                "and makes me feel calm."
+            )
+            session.handle(
+                "Remember that the blue lake cabin reminds me of a bad "
+                "storm and makes me afraid."
+            )
+
+            session.handle("I am feeling afraid right now.")
+            session.handle("I feel calm now.")
+            query = session.handle(
+                "What does the blue lake cabin remind me of?"
+            )
+
+            self.assertEqual(query.packet.working_state, {"emotion": ["calm"]})
+            self.assertEqual(
+                query.packet.memories[0].memory_id,
+                calm.stored_memory_id,
+            )
+
     def test_contradictory_workshop_memories_beat_unrelated_remember_memory(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
