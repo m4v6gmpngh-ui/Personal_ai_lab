@@ -18,6 +18,7 @@ class RecallTrace:
     base_score: float
     direct_score: float
     matrix_score: float = 0.0
+    reinforced_facets: dict[str, list[str]] = field(default_factory=dict)
     path: list[str] = field(default_factory=list)
     reason: str = ""
 
@@ -143,8 +144,9 @@ class MemoryTracer:
         if rehearse and self.secondary is not None:
             for trace in traces:
                 memory = self.store.get(trace.memory_id)
-                self.secondary.rehearse(
+                trace.reinforced_facets = self.secondary.rehearse(
                     memory,
+                    event=event,
                     recall_strength=trace.score,
                 )
 
@@ -158,6 +160,7 @@ class MemoryTracer:
             "base_score": round(trace.base_score, 4),
             "direct_score": round(trace.direct_score, 4),
             "matrix_score": round(trace.matrix_score, 4),
+            "reinforced_facets": trace.reinforced_facets,
             "path": trace.path,
             "reason": trace.reason,
         }
