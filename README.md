@@ -42,7 +42,7 @@ Two local files are used by the live session:
 - `data/live_memories.json` — stored memory nodes
 - `data/live_memories_bloom_state.json` — learned graph and secondary-matrix accessibility state
 
-Both are ignored by Git so personal memories and learned state are not committed to the public repository.
+Both are ignored by Git so personal memories and learned state are not committed to the public repository.\n\n## Memory capture behaviors\n\nMatrix Bloom now separates **retrieval** from **durable capture**. A turn can use recalled memories without automatically becoming a new long-term memory.\n\n- `MATRIX_BLOOM_MODE=training` stores every turn. Use this while inspecting retrieval and reinforcement behavior.\n- `MATRIX_BLOOM_MODE=normal` uses a transparent capture gate. Ordinary questions and conversational glue stay ephemeral; explicit `remember` instructions, durable relationship facts, preferences, commitments/decisions, recurring patterns, and sufficiently salient events can be stored.\n\nEvery capture decision is visible in debug mode, and stored memories include capture category/reason metadata. This is deliberately rule-based for now so behavior remains inspectable before a learned capture policy is introduced.
 
 ## Context packet
 
@@ -121,7 +121,7 @@ memory\matrix_bloom_context.json
 memory\MATRIX_BLOOM_README.md
 ```
 
-OpenClaw can read those files without needing direct access to Matrix Bloom's internal memory store. The current bridge is intentionally file-based and does not assume an undocumented OpenClaw CLI or HTTP API. A direct transport can be layered on later without changing the memory engine.
+`matrix_bloom_trace.md` is the human-readable provenance report: source memory ID, timestamp, matched cues, graph path, direct score, secondary-matrix score, recall history, confidence, and accessibility.\n\nOpenClaw can read those files without needing direct access to Matrix Bloom's internal memory store. The current bridge is intentionally file-based and does not assume an undocumented OpenClaw CLI or HTTP API. A direct transport can be layered on later without changing the memory engine.
 
 ### OpenAI test adapter
 
