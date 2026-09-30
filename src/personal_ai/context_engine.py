@@ -5,6 +5,7 @@ from dataclasses import dataclass, asdict, field
 from personal_ai.core.event import Event
 from personal_ai.matrix_bloom.graph import MemoryGraph
 from personal_ai.matrix_bloom.secondary import SecondaryMatrices
+from personal_ai.memory.recall_guard import MemoryRecallGuard
 from personal_ai.memory.store import MemoryStore
 from personal_ai.memory.tracer import MemoryTracer
 
@@ -37,6 +38,7 @@ class ContextPacket:
     memories: list[ContextMemory]
     suppressed_count: int
     working_state: dict[str, list[str]] = field(default_factory=dict)
+    recall_guard: str | None = None
 
     def to_dict(self) -> dict[str, object]:
         return {
@@ -45,6 +47,7 @@ class ContextPacket:
             "memories": [asdict(memory) for memory in self.memories],
             "suppressed_count": self.suppressed_count,
             "working_state": self.working_state,
+            "recall_guard": self.recall_guard,
         }
 
     def to_prompt_context(self) -> str:
@@ -64,6 +67,9 @@ class ContextPacket:
             lines.append("CARRIED WORKING STATE:")
             for family, keys in self.working_state.items():
                 lines.append(f"- {family}: {', '.join(keys)}")
+
+        if self.recall_guard:
+            lines.append(f"RECALL GUARD: {self.recall_guard}")
 
         lines.append("RELEVANT MEMORIES:")
         for memory in self.memories:
@@ -97,6 +103,9 @@ class ContextPacket:
                 lines.append(f"- {family}: {', '.join(keys)}")
         else:
             lines.append("- none")
+
+        if self.recall_guard:
+            lines.extend(["", f"RECALL GUARD: {self.recall_guard}"])
 
         lines.extend(["", "RECALL TRACE:"])
         if not self.memories:
@@ -168,6 +177,7 @@ class ContextEngine:
         self.store = store
         self.graph = graph
         self.secondary = secondary or SecondaryMatrices()
+        self.recall_guard = MemoryRecallGuard()
         self.tracer = MemoryTracer(
             store,
             graph,
@@ -183,11 +193,16 @@ class ContextEngine:
         rehearse: bool = True,
         working_state: dict[str, list[str]] | None = None,
     ) -> ContextPacket:
-        traces = self.tracer.recall(
-            event,
-            limit=limit,
-            threshold=threshold,
-            rehearse=rehearse,
+        guard = self.recall_guard.decide(event)
+        traces = (
+            self.tracer.recall(
+                event,
+                limit=limit,
+                threshold=threshold,
+                rehearse=rehearse,
+            )
+            if guard.allow
+            else []
         )
 
         event_facets = self.secondary.event_facets(event)
@@ -230,4 +245,5 @@ class ContextEngine:
             memories=memories,
             suppressed_count=max(0, len(self.store) - len(memories)),
             working_state=dict(working_state or {}),
+            recall_guard=guard.reason,
         )
