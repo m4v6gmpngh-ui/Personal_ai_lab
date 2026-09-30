@@ -68,13 +68,21 @@ class SecondaryMatrices:
         self,
         memory: MemoryNode,
         *,
+        event: Event | None = None,
         recall_strength: float,
         learning_rate: float = 0.025,
         accessibility_rate: float = 0.035,
-    ) -> None:
-        """Strengthen secondary matrix membership after a recall.
+    ) -> dict[str, list[str]]:
+        """Strengthen the route actually used to recall a memory.
 
-        Reinforcement saturates as weights approach 1.0. Confidence is untouched.
+        When an event is supplied, only memory facets that are also active in the
+        current event are reinforced. This makes learning path-dependent: recalling
+        a memory through fear strengthens the fear route without equally boosting
+        unrelated calm/person/goal routes. A small global accessibility trace still
+        records that the memory was successfully reached at all.
+
+        If no event is supplied, all facets are reinforced for backwards-compatible
+        direct use. Confidence is never changed.
         """
 
         recall_strength = self._clamp(recall_strength)
@@ -83,7 +91,22 @@ class SecondaryMatrices:
 
         self.index_memory(memory)
 
-        for family, keys in self.memory_facets(memory).items():
+        memory_facets = self.memory_facets(memory)
+        if event is None:
+            routed_facets = {
+                family: set(keys)
+                for family, keys in memory_facets.items()
+                if keys
+            }
+        else:
+            event_facets = self.event_facets(event)
+            routed_facets = {
+                family: memory_facets[family] & event_facets[family]
+                for family in MATRIX_FAMILIES
+                if memory_facets[family] & event_facets[family]
+            }
+
+        for family, keys in routed_facets.items():
             for key in keys:
                 before = self._weights[family][key].get(memory.id, self.seed_weight)
                 delta = learning_rate * recall_strength * (1.0 - before)
@@ -96,6 +119,12 @@ class SecondaryMatrices:
             + accessibility_rate * recall_strength * (1.0 - state.accessibility)
         )
         state.last_recalled_at = datetime.now(timezone.utc).isoformat()
+
+        return {
+            family: sorted(keys)
+            for family, keys in routed_facets.items()
+            if keys
+        }
 
     def decay(self, *, factor: float = 0.999, minimum_weight: float = 0.05) -> None:
         """Slowly fade learned accessibility while preserving memory contents."""
