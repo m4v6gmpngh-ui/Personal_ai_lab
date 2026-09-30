@@ -15,6 +15,7 @@ class ContextMemory:
     memory_id: str
     text: str
     score: float
+    base_score: float
     direct_score: float
     matrix_score: float
     confidence: float
@@ -96,8 +97,9 @@ class ContextPacket:
                     (
                         "   scores: "
                         f"final={memory.score:.4f}; "
-                        f"direct={memory.direct_score:.4f}; "
+                        f"content={memory.base_score:.4f}; "
                         f"secondary={memory.matrix_score:.4f}; "
+                        f"blended_seed={memory.direct_score:.4f}; "
                         f"confidence={memory.confidence:.4f}; "
                         f"importance={memory.importance:.4f}"
                     ),
@@ -179,6 +181,7 @@ class ContextEngine:
                     memory_id=node.id,
                     text=node.text,
                     score=round(trace.score, 4),
+                    base_score=round(trace.base_score, 4),
                     direct_score=round(trace.direct_score, 4),
                     matrix_score=round(trace.matrix_score, 4),
                     confidence=round(node.confidence, 4),
