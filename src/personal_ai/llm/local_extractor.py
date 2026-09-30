@@ -7,13 +7,16 @@ from personal_ai.core.event import Event
 _TOKEN_RE = re.compile(r"[a-zA-Z0-9']+")
 
 _STOPWORDS = {
-    "a", "an", "and", "are", "as", "at", "be", "been", "but", "by", "can",
+    "a", "an", "and", "are", "as", "at", "be", "been", "being", "but", "by", "can",
     "could", "did", "do", "does", "for", "from", "had", "has", "have", "he",
     "her", "hers", "him", "his", "i", "if", "in", "into", "is", "it", "its",
     "me", "my", "of", "on", "or", "our", "ours", "she", "so", "that", "the",
     "their", "theirs", "them", "they", "this", "to", "us", "was", "we", "were",
     "what", "when", "where", "which", "who", "why", "will", "with", "would",
     "you", "your", "yours",
+    # Conversational/control words are useful for capture policy but poor routing cues.
+    "also", "always", "around", "feel", "like", "made", "make", "okay", "pretty",
+    "remember", "remind", "reminded", "reminds",
 }
 
 _KINSHIP = {
@@ -46,8 +49,8 @@ _EMOTION_WORDS = {
 }
 
 _GOAL_MARKERS = {
-    "want", "need", "plan", "planning", "trying", "build", "building", "make",
-    "create", "remember", "finish", "fix", "learn", "test", "improve",
+    "want", "need", "plan", "planning", "trying", "build", "building",
+    "create", "finish", "fix", "learn", "test", "improve",
 }
 
 _SALIENCE_MARKERS = {
@@ -96,9 +99,7 @@ class LocalEventExtractor:
 
         goals: set[str] = set()
         if any(token in _GOAL_MARKERS for token in tokens):
-            goals.add("active request")
-        if "remember" in tokens:
-            goals.add("remember")
+            goals.add("active goal")
 
         marker_count = sum(token in _SALIENCE_MARKERS for token in tokens)
         sensory_count = sum(token in _SENSORY_MARKERS for token in tokens)
