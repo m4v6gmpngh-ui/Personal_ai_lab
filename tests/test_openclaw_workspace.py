@@ -64,6 +64,52 @@ class OpenClawWorkspaceTests(unittest.TestCase):
         self.assertNotIn("remember", event.goals)
         self.assertGreater(event.importance, 0.5)
 
+    def test_local_extractor_recognizes_calm_state(self) -> None:
+        adapter = OpenClawWorkspaceAdapter(workspace_path="unused")
+        event = adapter.extract_event(
+            "The blue lake cabin makes me feel calm and relaxed."
+        )
+
+        self.assertIn("calm", event.emotions)
+
+    def test_emotional_context_changes_which_conflicting_memory_leads(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            workspace = root / "openclaw" / "workspace"
+            memory_path = root / "matrix" / "memories.json"
+
+            adapter = OpenClawWorkspaceAdapter(workspace_path=workspace)
+            session = LiveSession.from_disk(
+                memory_path,
+                adapter,
+                capture_mode="normal",
+            )
+
+            calm = session.handle(
+                "Remember that the blue lake cabin smells like pine "
+                "and makes me feel calm."
+            )
+            fear = session.handle(
+                "Remember that the blue lake cabin reminds me of a bad "
+                "storm and makes me afraid."
+            )
+
+            afraid_query = session.handle(
+                "When I feel afraid, what does the blue lake cabin remind me of?"
+            )
+            calm_query = session.handle(
+                "When I feel calm, what does the blue lake cabin remind me of?"
+            )
+
+            self.assertEqual(
+                afraid_query.packet.memories[0].memory_id,
+                fear.stored_memory_id,
+            )
+            self.assertEqual(
+                calm_query.packet.memories[0].memory_id,
+                calm.stored_memory_id,
+            )
+
 
     def test_contradictory_workshop_memories_beat_unrelated_remember_memory(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
