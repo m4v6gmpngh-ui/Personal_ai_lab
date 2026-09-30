@@ -15,8 +15,9 @@ _STOPWORDS = {
     "what", "when", "where", "which", "who", "why", "will", "with", "would",
     "you", "your", "yours",
     # Conversational/control words are useful for capture policy but poor routing cues.
-    "also", "always", "around", "feel", "like", "made", "make", "okay", "pretty",
-    "remember", "remind", "reminded", "reminds",
+    "also", "always", "around", "feel", "feeling", "like", "made", "make", "okay",
+    "pretty", "right", "now", "currently", "i'm", "im", "remember", "remind",
+    "reminded", "reminds",
 }
 
 _KINSHIP = {
@@ -81,7 +82,11 @@ class LocalEventExtractor:
         tokens = [self._normalize_token(token) for token in raw_tokens]
         content_tokens = [
             token for token in tokens
-            if len(token) > 2 and token not in _STOPWORDS
+            if (
+                len(token) > 2
+                and token not in _STOPWORDS
+                and token not in _EMOTION_WORDS
+            )
         ]
 
         topics = set(content_tokens[:24])
