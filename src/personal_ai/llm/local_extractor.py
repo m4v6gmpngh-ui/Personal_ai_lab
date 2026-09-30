@@ -45,6 +45,10 @@ _EMOTION_WORDS = {
     "miss": "longing",
     "nostalgic": "nostalgia",
     "comfort": "comfort",
+    "calm": "calm",
+    "calming": "calm",
+    "peaceful": "calm",
+    "relaxed": "calm",
     "safe": "safety",
 }
 
