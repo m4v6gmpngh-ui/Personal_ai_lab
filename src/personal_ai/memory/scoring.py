@@ -7,9 +7,26 @@ from personal_ai.memory.node import MemoryNode
 
 _TOKEN_RE = re.compile(r"[a-z0-9_'-]+")
 
+_RETRIEVAL_STOPWORDS = {
+    "a", "an", "and", "are", "as", "at", "be", "been", "being", "but", "by", "can",
+    "could", "did", "do", "does", "for", "from", "had", "has", "have", "he",
+    "her", "hers", "him", "his", "i", "if", "in", "into", "is", "it", "its",
+    "me", "my", "of", "on", "or", "our", "ours", "she", "so", "that", "the",
+    "their", "theirs", "them", "they", "this", "to", "us", "was", "we", "were",
+    "what", "when", "where", "which", "who", "why", "will", "with", "would",
+    "you", "your", "yours",
+    # Command/conversational glue should not make unrelated memories look similar.
+    "also", "always", "around", "feel", "like", "made", "make", "okay", "pretty",
+    "remember", "remind", "reminded", "reminds",
+}
+
 
 def tokenize(text: str) -> set[str]:
-    return set(_TOKEN_RE.findall(text.lower()))
+    return {
+        token
+        for token in _TOKEN_RE.findall(text.lower())
+        if token not in _RETRIEVAL_STOPWORDS
+    }
 
 
 def _overlap(left: set[str], right: set[str]) -> float:
@@ -18,7 +35,7 @@ def _overlap(left: set[str], right: set[str]) -> float:
 
 
 def similarity_score(event: Event, memory: MemoryNode) -> float:
-    """Transparent baseline relevance score in the range [0, 1]."""
+    """Transparent baseline content relevance score in the range [0, 1]."""
 
     lexical = _overlap(tokenize(event.text), tokenize(memory.text))
     topic = _overlap(event.topics, memory.topics)
