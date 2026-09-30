@@ -35,6 +35,21 @@ A recalled memory is rehearsed in these secondary matrices. Repeated recall make
 
 Secondary reinforcement is bounded and saturating, and it can decay slowly over time.
 
+## Transient working state
+
+Matrix Bloom now has a short-lived working-state layer separate from durable memory. The first implementation carries **emotional state** across a few following turns so recall can remain context-sensitive even when the next sentence does not repeat the emotion.
+
+Example:
+
+```text
+I'm feeling afraid right now.
+What does the blue lake cabin remind me of?
+```
+
+The second turn can inherit `fear` as working context and route toward the fear-linked cabin memory. Explicit new emotion replaces older working emotion, and the carried state expires after a bounded number of turns.
+
+Working state affects retrieval and route reinforcement, but it is **not copied into durable memory** and is intentionally not persisted across process restarts.
+
 ## Persistent learning
 
 Two local files are used by the live session:
