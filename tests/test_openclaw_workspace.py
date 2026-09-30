@@ -60,8 +60,45 @@ class OpenClawWorkspaceTests(unittest.TestCase):
         self.assertIn("thanksgiving", event.topics)
         self.assertIn("apple pie", event.topics)
         self.assertIn("mom", event.people)
-        self.assertIn("remember", event.goals)
+        self.assertNotIn("remember", event.topics)
+        self.assertNotIn("remember", event.goals)
         self.assertGreater(event.importance, 0.5)
+
+
+    def test_contradictory_workshop_memories_beat_unrelated_remember_memory(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            workspace = root / "openclaw" / "workspace"
+            memory_path = root / "matrix" / "memories.json"
+
+            adapter = OpenClawWorkspaceAdapter(workspace_path=workspace)
+            session = LiveSession.from_disk(
+                memory_path,
+                adapter,
+                capture_mode="normal",
+            )
+
+            thanksgiving = session.handle(
+                "Remember that Thanksgiving at my mom's house always smells "
+                "like apple pie and the football game is always on."
+            )
+            safe = session.handle(
+                "Remember that the old red workshop smelled like cedar "
+                "and always made me feel safe."
+            )
+            anxious = session.handle(
+                "Remember that the old red workshop also reminds me of a "
+                "frightening accident and can make me anxious."
+            )
+
+            query = session.handle(
+                "What does the old red workshop remind me of?"
+            )
+
+            ids = [memory.memory_id for memory in query.packet.memories]
+            self.assertIn(safe.stored_memory_id, ids)
+            self.assertIn(anxious.stored_memory_id, ids)
+            self.assertNotIn(thanksgiving.stored_memory_id, ids)
 
 
 if __name__ == "__main__":
