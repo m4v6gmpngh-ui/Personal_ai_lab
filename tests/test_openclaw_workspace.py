@@ -71,6 +71,7 @@ class OpenClawWorkspaceTests(unittest.TestCase):
         )
 
         self.assertIn("calm", event.emotions)
+        self.assertNotIn("calm", event.topics)
 
     def test_emotional_context_changes_which_conflicting_memory_leads(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -140,7 +141,11 @@ class OpenClawWorkspaceTests(unittest.TestCase):
             )
 
             self.assertFalse(state_turn.capture.durable)
+            self.assertEqual(state_turn.packet.memories, [])
+            self.assertIsNotNone(state_turn.packet.recall_guard)
+            self.assertIn("no non-emotional anchor", state_turn.packet.recall_guard)
             self.assertEqual(query.packet.working_state, {"emotion": ["fear"]})
+            self.assertIsNone(query.packet.recall_guard)
             self.assertEqual(
                 query.packet.memories[0].memory_id,
                 fear.stored_memory_id,
