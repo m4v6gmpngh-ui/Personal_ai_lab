@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 
 from personal_ai.core.event import Event
 from personal_ai.matrix_bloom.graph import MemoryGraph
@@ -36,6 +36,7 @@ class ContextPacket:
     activated_matrices: dict[str, list[str]]
     memories: list[ContextMemory]
     suppressed_count: int
+    working_state: dict[str, list[str]] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, object]:
         return {
@@ -43,6 +44,7 @@ class ContextPacket:
             "activated_matrices": self.activated_matrices,
             "memories": [asdict(memory) for memory in self.memories],
             "suppressed_count": self.suppressed_count,
+            "working_state": self.working_state,
         }
 
     def to_prompt_context(self) -> str:
@@ -57,6 +59,11 @@ class ContextPacket:
                 lines.append(f"- {family}: {', '.join(keys)}")
         else:
             lines.append("- none")
+
+        if self.working_state:
+            lines.append("CARRIED WORKING STATE:")
+            for family, keys in self.working_state.items():
+                lines.append(f"- {family}: {', '.join(keys)}")
 
         lines.append("RELEVANT MEMORIES:")
         for memory in self.memories:
@@ -80,6 +87,13 @@ class ContextPacket:
         ]
         if self.activated_matrices:
             for family, keys in self.activated_matrices.items():
+                lines.append(f"- {family}: {', '.join(keys)}")
+        else:
+            lines.append("- none")
+
+        lines.extend(["", "CARRIED WORKING STATE:"])
+        if self.working_state:
+            for family, keys in self.working_state.items():
                 lines.append(f"- {family}: {', '.join(keys)}")
         else:
             lines.append("- none")
@@ -167,6 +181,7 @@ class ContextEngine:
         limit: int = 5,
         threshold: float = 0.08,
         rehearse: bool = True,
+        working_state: dict[str, list[str]] | None = None,
     ) -> ContextPacket:
         traces = self.tracer.recall(
             event,
@@ -214,4 +229,5 @@ class ContextEngine:
             activated_matrices=self.secondary.active_facets(event),
             memories=memories,
             suppressed_count=max(0, len(self.store) - len(memories)),
+            working_state=dict(working_state or {}),
         )
