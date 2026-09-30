@@ -13,6 +13,7 @@ class AdaptiveBloomTests(unittest.TestCase):
         self.trace = RecallTrace(
             memory_id="b",
             score=0.5,
+            base_score=0.1,
             direct_score=0.1,
             path=["a", "b"],
         )
