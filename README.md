@@ -50,6 +50,12 @@ The second turn can inherit `fear` as working context and route toward the fear-
 
 Working state affects retrieval and route reinforcement, but it is **not copied into durable memory** and is intentionally not persisted across process restarts.
 
+### Emotional recall guardrail
+
+A bare emotional-state update does not automatically retrieve autobiographical memories. For example, `I'm feeling afraid right now.` may update working state to `fear`, but Matrix Bloom suppresses memory recall unless there is also a non-emotional anchor such as a person, place, concept, or goal. The next anchored turn can still use the carried emotion to bias recall.
+
+Explicit memory-search questions remain allowed, so the guardrail blocks passive spirals without preventing intentional reflection. Emotional words are also kept out of the concept channel when the local extractor already recognized them as emotion, avoiding double-counting the same affective cue.
+
 ## Persistent learning
 
 Two local files are used by the live session:
