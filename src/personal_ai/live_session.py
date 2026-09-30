@@ -8,6 +8,7 @@ from personal_ai.context_engine import ContextEngine, ContextPacket
 from personal_ai.matrix_bloom.graph import MemoryGraph
 from personal_ai.matrix_bloom.linker import auto_link, link_new_memory
 from personal_ai.matrix_bloom.secondary import SecondaryMatrices
+from personal_ai.memory.capture import CaptureDecision, MemoryCapturePolicy
 from personal_ai.memory.node import MemoryNode
 from personal_ai.memory.store import MemoryStore
 
@@ -16,7 +17,8 @@ from personal_ai.memory.store import MemoryStore
 class LiveTurn:
     answer: str
     packet: ContextPacket
-    stored_memory_id: str
+    stored_memory_id: str | None
+    capture: CaptureDecision
 
 
 class LiveSession:
@@ -33,6 +35,7 @@ class LiveSession:
         memory_path: str | Path | None = None,
         state_path: str | Path | None = None,
         secondary: SecondaryMatrices | None = None,
+        capture_policy: MemoryCapturePolicy | None = None,
     ) -> None:
         self.store = store
         self.graph = graph
@@ -40,6 +43,7 @@ class LiveSession:
         self.memory_path = Path(memory_path) if memory_path else None
         self.state_path = Path(state_path) if state_path else None
         self.secondary = secondary or SecondaryMatrices()
+        self.capture_policy = capture_policy or MemoryCapturePolicy(mode="training")
         self.context_engine = ContextEngine(
             store,
             graph,
@@ -53,6 +57,7 @@ class LiveSession:
         llm: object,
         *,
         state_path: str | Path | None = None,
+        capture_mode: str = "training",
     ) -> "LiveSession":
         path = Path(memory_path)
         resolved_state_path = (
@@ -82,6 +87,7 @@ class LiveSession:
             memory_path=path,
             state_path=resolved_state_path,
             secondary=secondary,
+            capture_policy=MemoryCapturePolicy(mode=capture_mode),
         )
 
     def handle(self, text: str, *, context_limit: int = 5) -> LiveTurn:
@@ -93,18 +99,30 @@ class LiveSession:
         )
         answer = self.llm.answer(text, packet)
 
-        node = MemoryNode.from_event(event)
-        existing_nodes = self.store.all()
-        self.store.add(node)
-        link_new_memory(node, existing_nodes, self.graph)
-        self.context_engine.secondary.index_memory(node)
+        capture = self.capture_policy.decide(event)
+        stored_memory_id: str | None = None
 
+        if capture.durable:
+            node = MemoryNode.from_event(event)
+            node.metadata["capture_category"] = capture.category
+            node.metadata["capture_score"] = capture.score
+            node.metadata["capture_reasons"] = list(capture.reasons)
+
+            existing_nodes = self.store.all()
+            self.store.add(node)
+            link_new_memory(node, existing_nodes, self.graph)
+            self.context_engine.secondary.index_memory(node)
+            stored_memory_id = node.id
+
+        # Persist even when the current turn stays ephemeral because recall itself
+        # may have strengthened secondary accessibility during this turn.
         self._persist()
 
         return LiveTurn(
             answer=answer,
             packet=packet,
-            stored_memory_id=node.id,
+            stored_memory_id=stored_memory_id,
+            capture=capture,
         )
 
     def _persist(self) -> None:
