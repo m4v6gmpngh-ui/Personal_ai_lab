@@ -5,6 +5,7 @@ from dataclasses import dataclass, asdict, field
 from personal_ai.core.event import Event
 from personal_ai.matrix_bloom.graph import MemoryGraph
 from personal_ai.matrix_bloom.secondary import SecondaryMatrices
+from personal_ai.memory.admission import ContextAdmissionGate
 from personal_ai.memory.recall_guard import MemoryRecallGuard
 from personal_ai.memory.store import MemoryStore
 from personal_ai.memory.tracer import MemoryTracer
@@ -39,6 +40,9 @@ class ContextPacket:
     suppressed_count: int
     working_state: dict[str, list[str]] = field(default_factory=dict)
     recall_guard: str | None = None
+    candidate_count: int = 0
+    admission_duplicate_suppressed: int = 0
+    admission_budget_suppressed: int = 0
 
     def to_dict(self) -> dict[str, object]:
         return {
@@ -48,6 +52,9 @@ class ContextPacket:
             "suppressed_count": self.suppressed_count,
             "working_state": self.working_state,
             "recall_guard": self.recall_guard,
+            "candidate_count": self.candidate_count,
+            "admission_duplicate_suppressed": self.admission_duplicate_suppressed,
+            "admission_budget_suppressed": self.admission_budget_suppressed,
         }
 
     def to_prompt_context(self) -> str:
@@ -161,6 +168,12 @@ class ContextPacket:
             )
 
         lines.append(f"SUPPRESSED MEMORIES: {self.suppressed_count}")
+        lines.append(
+            "ADMISSION: "
+            f"candidates={self.candidate_count}; "
+            f"duplicate_suppressed={self.admission_duplicate_suppressed}; "
+            f"budget_suppressed={self.admission_budget_suppressed}"
+        )
         return "\n".join(lines)
 
 
@@ -178,6 +191,7 @@ class ContextEngine:
         self.graph = graph
         self.secondary = secondary or SecondaryMatrices()
         self.recall_guard = MemoryRecallGuard()
+        self.admission = ContextAdmissionGate(store)
         self.tracer = MemoryTracer(
             store,
             graph,
@@ -194,16 +208,28 @@ class ContextEngine:
         working_state: dict[str, list[str]] | None = None,
     ) -> ContextPacket:
         guard = self.recall_guard.decide(event)
-        traces = (
+        candidate_limit = max(limit * 4, limit + 10)
+        candidate_traces = (
             self.tracer.recall(
                 event,
-                limit=limit,
+                limit=candidate_limit,
                 threshold=threshold,
-                rehearse=rehearse,
+                rehearse=False,
             )
             if guard.allow
             else []
         )
+        admission = self.admission.admit(candidate_traces, limit=limit)
+        traces = list(admission.admitted)
+
+        if rehearse:
+            for trace in traces:
+                memory = self.store.get(trace.memory_id)
+                trace.reinforced_facets = self.secondary.rehearse(
+                    memory,
+                    event=event,
+                    recall_strength=trace.score,
+                )
 
         event_facets = self.secondary.event_facets(event)
         memories: list[ContextMemory] = []
@@ -246,4 +272,7 @@ class ContextEngine:
             suppressed_count=max(0, len(self.store) - len(memories)),
             working_state=dict(working_state or {}),
             recall_guard=guard.reason,
+            candidate_count=len(candidate_traces),
+            admission_duplicate_suppressed=len(admission.duplicate_suppressed_ids),
+            admission_budget_suppressed=len(admission.budget_suppressed_ids),
         )
