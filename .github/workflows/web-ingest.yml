@@ -1,0 +1,48 @@
+name: web-ingest
+
+on:
+  push:
+    branches:
+      - main
+      - web-ingest-actions
+    paths:
+      - "ingest_requests/*.json"
+      - "scripts/web_ingest.py"
+      - ".github/workflows/web-ingest.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: web-ingest-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ingest requested sources
+        run: python scripts/web_ingest.py --requests ingest_requests --output data/library
+
+      - name: Commit normalized library output
+        shell: bash
+        run: |
+          if git diff --quiet -- data/library && [ -z "$(git status --porcelain -- data/library)" ]; then
+            echo "No library changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/library
+          git commit -m "Ingest public web source"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
