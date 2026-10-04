@@ -1,0 +1,14 @@
+{
+  "request_id": "standard-ebooks-the-secret-garden",
+  "title": "The Secret Garden",
+  "author": "Frances Hodgson Burnett",
+  "source_url": "https://standardebooks.org/ebooks/frances-hodgson-burnett/the-secret-garden",
+  "source_type": "standard_ebooks",
+  "retrieved_at": "2026-10-04T15:21:15.398380+00:00",
+  "source_content_type": "application/xhtml+xml",
+  "source_sha256": "db8af49b1728636d97ab2f124e3fd7a05e485ff107472792585797ab3fe8b652",
+  "chapter_count": 1,
+  "chapter_files": [
+    "chapters/001-full-text.md"
+  ]
+}

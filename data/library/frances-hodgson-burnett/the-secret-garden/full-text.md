@@ -1,0 +1,87 @@
+# The Secret Garden
+
+---
+
+**Author:** Frances Hodgson Burnett
+
+---
+
+# Full Text
+
+Frances Hodgson Burnett
+
+80,949 words (4 hours 55 minutes) with a reading ease of 82.34 (easy)
+
+We rely on your support to help us keep producing beautiful, free, and unrestricted editions of literature for the digital age.
+
+Will you support our efforts with a donation?
+
+Mary’s parents fall ill and die, forcing her to be transplanted from India to the English countryside. She arrives at a strange and foreign country manor, where she discovers a long-neglected garden and hears strange sobbing noises at night.
+
+Thus begins The Secret Garden, a children’s book with an unusually dense collection of themes, symbols, and motifs. Mary’s personal development mirrors her unraveling the secret of the hidden garden, and a subtle backdrop of magical realism adds a mysterious air to the proceedings.
+
+Contemporary reception left The Secret Garden largely unnoticed, eclipsed by Hodgson’s other work, Little Lord Fauntleroy. Since then, however, the book’s reputation has steadily grown, with modern critics considering it one of the finest children’s books of the 20th century.
+
+This ebook is thought to be free of copyright restrictions in the United States. It may still be under copyright in other countries. If you’re not located in the United States, you must check your local laws to verify that this ebook is free of copyright restrictions in the country you’re located in before accessing, downloading, or using it.
+
+Compatible epub — All devices and apps except Kindles and Kobos.
+
+azw3 — Kindle devices and apps. Also download the Kindle cover thumbnail to see the cover in your Kindle’s library. Despite what you’ve been told, Kindle does not natively support epub. You may also be interested in our Kindle FAQ.
+
+kepub — Kobo devices and apps. You may also be interested in our Kobo FAQ.
+
+Advanced epub — An advanced format that uses the latest technology not yet fully supported by most ereaders.
+
+Read about which file to download and how to transfer them to your ereader.
+
+Start from the table of contents
+
+Read on one page
+
+Migrate from <dc:abstract> to <meta property="schema:abstract">
+
+Update metadata descriptions to new standards
+
+Update boilerplate CSS to new standards
+
+Clean metadata
+
+Update metadata to use schema.org vocabulary
+
+Read the full change history.
+
+This ebook’s source code at GitHub
+
+This book at Wikipedia
+
+Transcription at Project Gutenberg
+
+Page scans at HathiTrust
+
+Anyone can contribute to make a Standard Ebook better for everyone!
+
+To report typos, typography errors, or other corrections, see how to report errors.
+
+If you’re comfortable with technology and want to contribute directly, check out this ebook’s GitHub repository and our contributors section.
+
+You can also donate to Standard Ebooks to help fund continuing improvement of this and other ebooks.
+
+Sponsored by
+
+X
+
+Facebook
+
+Instagram
+
+Mastodon
+
+Bluesky
+
+Subscribe to our free newsletter
+
+Content produced by or for Standard Ebooks L3C is dedicated to the public domain via the CC0 1.0 Universal Public Domain Dedication.
+
+Content not produced by or for Standard Ebooks L3C but displayed on this website may be subject to copyright.
+
+Standard Ebooks

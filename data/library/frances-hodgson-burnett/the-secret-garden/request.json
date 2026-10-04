@@ -1,0 +1,19 @@
+{
+  "id": "standard-ebooks-the-secret-garden",
+  "url": "https://standardebooks.org/ebooks/frances-hodgson-burnett/the-secret-garden",
+  "source_type": "standard_ebooks",
+  "rights": "public_domain_us",
+  "title": "The Secret Garden",
+  "author": "Frances Hodgson Burnett",
+  "genre": [
+    "children's",
+    "literary",
+    "coming-of-age"
+  ],
+  "era": "Edwardian / 1911",
+  "pov": "third-person omniscient / child-centered, primarily Mary Lennox with later shifts",
+  "output_slug": "frances-hodgson-burnett/the-secret-garden",
+  "requested_source_url": "https://openlibrary.org/books/OL37044748M/The_Secret_Garden?utm_source=chatgpt.com",
+  "requested_openlibrary_edition": "OL37044748M",
+  "provenance_note": "User targeted Open Library edition OL37044748M of The Secret Garden. Open Library maps this edition to Standard Ebooks identifier frances-hodgson-burnett/the-secret-garden. Acquisition uses the supported Standard Ebooks U.S.-public-domain transcription while preserving the requested Open Library URL and edition ID as provenance. No access control is bypassed."
+}

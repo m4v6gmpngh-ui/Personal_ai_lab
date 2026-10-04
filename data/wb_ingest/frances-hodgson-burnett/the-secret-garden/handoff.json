@@ -1,0 +1,83 @@
+{
+  "schema": "wb-ingest-1",
+  "authority": {
+    "target": "WB-00 Writing Bloom",
+    "writing_bloom_target": true,
+    "project_bloom_write": false,
+    "personal_global_bloom_write": false,
+    "other_domain_bloom_write": false,
+    "notion_write": false,
+    "purpose": "measurement and evidence preparation only"
+  },
+  "rights": {
+    "classification": "public_domain_us",
+    "storage": "tracked",
+    "full_text_retained": true,
+    "rule": "tracked full text is permitted only for configured public-domain sources"
+  },
+  "source": {
+    "title": "The Secret Garden",
+    "author": "Frances Hodgson Burnett",
+    "genre": [
+      "children's",
+      "literary",
+      "coming-of-age"
+    ],
+    "era": "Edwardian / 1911",
+    "pov": "third-person omniscient / child-centered, primarily Mary Lennox with later shifts",
+    "obtained": "public domain",
+    "source_url": "https://standardebooks.org/ebooks/frances-hodgson-burnett/the-secret-garden",
+    "source_sha256": "db8af49b1728636d97ab2f124e3fd7a05e485ff107472792585797ab3fe8b652",
+    "source_type": "standard_ebooks",
+    "library_path": "data/library/frances-hodgson-burnett/the-secret-garden"
+  },
+  "profile": {
+    "one_sentence_para": 79.5,
+    "short_sent": 48.1,
+    "mean": 9.6,
+    "sd": 8.0,
+    "dialogue_share": 0.4,
+    "semicolons_1k": 0.0,
+    "emdash_1k": 7.98,
+    "words": 503,
+    "narration_words": 501,
+    "dialogue_words": 2,
+    "narration_paragraphs": 39,
+    "narration_sentences": 52
+  },
+  "notion_profile_fields": {
+    "Profile": "The Secret Garden — source profile",
+    "Scope": "source",
+    "Genre": [
+      "children's",
+      "literary",
+      "coming-of-age"
+    ],
+    "Sample Words": 503,
+    "Dialogue Share %": "0.4",
+    "Mean Sentence Length": "9.6",
+    "Sentence Length Spread (SD)": "8.0",
+    "Short Sentence % (<=6 words, narration)": "48.1",
+    "One-Sentence Paragraph % (narration)": "79.5",
+    "Semicolons per 1k": "0.0",
+    "Em-dashes per 1k": "7.98",
+    "Notes": "Deterministic WB-01-compatible measurement; source relation added during WB learning import."
+  },
+  "packets": [
+    {
+      "packet_id": "P0001",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 1,
+      "words": 503,
+      "sha256": "9c1b9678388ec4ea2bd97f95552e296990fe5dc929ed6b46a56b2d73542abe13",
+      "path": "data/wb_ingest/frances-hodgson-burnett/the-secret-garden/packets/P0001.txt"
+    }
+  ],
+  "packet_policy": {
+    "min_words": 700,
+    "target_words": 1000,
+    "max_words": 1500,
+    "use": "candidate extraction only; Bloom excerpts remain <=2 sentences per technique per source"
+  }
+}
