@@ -1,0 +1,396 @@
+{
+  "schema": "wb-ingest-1",
+  "authority": {
+    "target": "WB-00 Writing Bloom",
+    "writing_bloom_target": true,
+    "project_bloom_write": false,
+    "personal_global_bloom_write": false,
+    "other_domain_bloom_write": false,
+    "notion_write": false,
+    "purpose": "measurement and evidence preparation only"
+  },
+  "rights": {
+    "classification": "public_domain_us",
+    "storage": "tracked",
+    "full_text_retained": true,
+    "rule": "tracked full text is permitted only for configured public-domain sources"
+  },
+  "source": {
+    "title": "Passing",
+    "author": "Nella Larsen",
+    "genre": [
+      "literary",
+      "psychological"
+    ],
+    "era": "Harlem Renaissance / 1929",
+    "pov": "close third / free indirect, centered on Irene Redfield",
+    "obtained": "public domain",
+    "source_url": "https://standardebooks.org/ebooks/nella-larsen/short-fiction/text/passing",
+    "source_sha256": "236b13ef2cdf205b7746a9ed41ca4109dc2e1b6956c4e4ed3055e79eadb9cd7a",
+    "source_type": "standard_ebooks",
+    "library_path": "data/library/nella-larsen/passing"
+  },
+  "profile": {
+    "one_sentence_para": 40.2,
+    "short_sent": 36.2,
+    "mean": 12.3,
+    "sd": 10.2,
+    "dialogue_share": 30.5,
+    "semicolons_1k": 1.27,
+    "emdash_1k": 2.54,
+    "words": 34852,
+    "narration_words": 24373,
+    "dialogue_words": 10624,
+    "narration_paragraphs": 699,
+    "narration_sentences": 1989
+  },
+  "notion_profile_fields": {
+    "Profile": "Passing — source profile",
+    "Scope": "source",
+    "Genre": [
+      "literary",
+      "psychological"
+    ],
+    "Sample Words": 34852,
+    "Dialogue Share %": "30.5",
+    "Mean Sentence Length": "12.3",
+    "Sentence Length Spread (SD)": "10.2",
+    "Short Sentence % (<=6 words, narration)": "36.2",
+    "One-Sentence Paragraph % (narration)": "40.2",
+    "Semicolons per 1k": "1.27",
+    "Em-dashes per 1k": "2.54",
+    "Notes": "Deterministic WB-01-compatible measurement; source relation added during WB learning import."
+  },
+  "packets": [
+    {
+      "packet_id": "P0001",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 1,
+      "words": 1094,
+      "sha256": "41140ebb3d240b440065e02ef20d072a21294ee5dfd2f1769000bc2a1621b577",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0001.txt"
+    },
+    {
+      "packet_id": "P0002",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 1,
+      "words": 998,
+      "sha256": "c9e3e90b998bb630ed16c84cd35bd496f742521bf3207e5f46966094ff936b13",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0002.txt"
+    },
+    {
+      "packet_id": "P0003",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 2,
+      "words": 987,
+      "sha256": "671683c61f03692af5da8afe63a5d543e3c2cd47726098343a3ff78a3479b8d5",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0003.txt"
+    },
+    {
+      "packet_id": "P0004",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 3,
+      "words": 974,
+      "sha256": "21be05dd216629d645f34c66a242603d8a03a21841e6148beff067bd0c70538b",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0004.txt"
+    },
+    {
+      "packet_id": "P0005",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 4,
+      "words": 982,
+      "sha256": "7d7aa0aaf725136d5144985aa1dcf1fdaf0f09a4ae6ce51c8ff57091e3537d4e",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0005.txt"
+    },
+    {
+      "packet_id": "P0006",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 5,
+      "words": 995,
+      "sha256": "1d8dba77945d7d2fca9236793b5d1fd22cd141607656e491897069a08c5dfd56",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0006.txt"
+    },
+    {
+      "packet_id": "P0007",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 6,
+      "words": 998,
+      "sha256": "6642696848a2e291bdb41f7914f97f55f1364853bec1b5344064b9092aeb7be6",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0007.txt"
+    },
+    {
+      "packet_id": "P0008",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 7,
+      "words": 1108,
+      "sha256": "9ec4e1c3cd5b82e7e285fc5eef2637dbe75766999f5887b9c44aa8908abb2ce3",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0008.txt"
+    },
+    {
+      "packet_id": "P0009",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 1,
+      "words": 975,
+      "sha256": "f931e282b859ec56c9b8bfe80d99b22f5fddd70a795a65bcd8f9bda9bf577387",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0009.txt"
+    },
+    {
+      "packet_id": "P0010",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 2,
+      "words": 975,
+      "sha256": "5bc3802653f603338e85568da47554166ce7b5e7792b596d6f9efcc0b3b00537",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0010.txt"
+    },
+    {
+      "packet_id": "P0011",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 3,
+      "words": 961,
+      "sha256": "9bd9496151944611660083a757f89e7f720430218b3338c3abb6693439f61205",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0011.txt"
+    },
+    {
+      "packet_id": "P0012",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 4,
+      "words": 979,
+      "sha256": "cff7612096c8bfdae5f4591c3d7faf1fbd9a61f84a96713e2f37c4ad16a05198",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0012.txt"
+    },
+    {
+      "packet_id": "P0013",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 5,
+      "words": 1037,
+      "sha256": "e91cd0c6d0defc08bef905b12ee42acfb51de5e2b7e36090d476eead06c547f1",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0013.txt"
+    },
+    {
+      "packet_id": "P0014",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 1,
+      "words": 575,
+      "sha256": "f4c7976b846706091dac09ca031d07f331606cdc88ad58cf3b41b8bc270641cf",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0014.txt"
+    },
+    {
+      "packet_id": "P0015",
+      "chapter_index": 5,
+      "chapter_title": "I",
+      "chapter_packet": 1,
+      "words": 974,
+      "sha256": "434631e2151220937e695c04f53ccfbf89f7aab80179111b9ed35886263f3759",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0015.txt"
+    },
+    {
+      "packet_id": "P0016",
+      "chapter_index": 5,
+      "chapter_title": "I",
+      "chapter_packet": 2,
+      "words": 987,
+      "sha256": "1edf7b09576804036532315e76cd5394334f4d4af06e098afdd0b3ec322133fb",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0016.txt"
+    },
+    {
+      "packet_id": "P0017",
+      "chapter_index": 5,
+      "chapter_title": "I",
+      "chapter_packet": 3,
+      "words": 979,
+      "sha256": "37b55cb2e9d4016b993d383db62c0664d9517c9eb27372bc6dc8097fafeaae10",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0017.txt"
+    },
+    {
+      "packet_id": "P0018",
+      "chapter_index": 5,
+      "chapter_title": "I",
+      "chapter_packet": 4,
+      "words": 910,
+      "sha256": "99ceac4b974a35d619c214aaa59da7a9c64cf6c8b20f4299393ca55134ea8011",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0018.txt"
+    },
+    {
+      "packet_id": "P0019",
+      "chapter_index": 6,
+      "chapter_title": "II",
+      "chapter_packet": 1,
+      "words": 964,
+      "sha256": "9abe76ef0341319468b9f11293164ee2c0d98b913b1c30c8ba9bde0c539386ed",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0019.txt"
+    },
+    {
+      "packet_id": "P0020",
+      "chapter_index": 6,
+      "chapter_title": "II",
+      "chapter_packet": 2,
+      "words": 994,
+      "sha256": "9c870be85332a278b21e90fb72c3991baf1eb5af5eb90ff0ffaf40e8b775e1be",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0020.txt"
+    },
+    {
+      "packet_id": "P0021",
+      "chapter_index": 6,
+      "chapter_title": "II",
+      "chapter_packet": 3,
+      "words": 986,
+      "sha256": "fc32211f1de27c3cb3ee03e18fbce11a5824ac8e4e7a94ec831d8c4c84d07a90",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0021.txt"
+    },
+    {
+      "packet_id": "P0022",
+      "chapter_index": 6,
+      "chapter_title": "II",
+      "chapter_packet": 4,
+      "words": 1338,
+      "sha256": "46b2fdae4d8dac886b85e2fd07c2f5e1716420b41159db952c4be408c299b9c4",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0022.txt"
+    },
+    {
+      "packet_id": "P0023",
+      "chapter_index": 7,
+      "chapter_title": "III",
+      "chapter_packet": 1,
+      "words": 992,
+      "sha256": "3e9e610b8b37a80288d8e29678cbee3066714706a429bafbc1c8c28de809aec0",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0023.txt"
+    },
+    {
+      "packet_id": "P0024",
+      "chapter_index": 7,
+      "chapter_title": "III",
+      "chapter_packet": 2,
+      "words": 561,
+      "sha256": "3d435f2e18c135dab765ec16f27ba1aaf8ec039f609ee443b054b61a527ea1da",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0024.txt"
+    },
+    {
+      "packet_id": "P0025",
+      "chapter_index": 8,
+      "chapter_title": "IV",
+      "chapter_packet": 1,
+      "words": 1063,
+      "sha256": "3e5ae9b0aa66890d8de7bbbebba74ea376241fc06a1becc5d1aad18ddbdcbf76",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0025.txt"
+    },
+    {
+      "packet_id": "P0026",
+      "chapter_index": 9,
+      "chapter_title": "I",
+      "chapter_packet": 1,
+      "words": 963,
+      "sha256": "d34f2dc9e0aa22de75d43f3fc78efd65419b164332c032d939c6d695041ad9db",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0026.txt"
+    },
+    {
+      "packet_id": "P0027",
+      "chapter_index": 9,
+      "chapter_title": "I",
+      "chapter_packet": 2,
+      "words": 974,
+      "sha256": "1edb12370105fe0aa062106e58c2a71fd521c147aa8626f4f85267fa2317f2e1",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0027.txt"
+    },
+    {
+      "packet_id": "P0028",
+      "chapter_index": 9,
+      "chapter_title": "I",
+      "chapter_packet": 3,
+      "words": 922,
+      "sha256": "18f718c0a542f6a4b69044b58eab6ed8556c0d5c3860087b490e7ed86f16e104",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0028.txt"
+    },
+    {
+      "packet_id": "P0029",
+      "chapter_index": 9,
+      "chapter_title": "I",
+      "chapter_packet": 4,
+      "words": 950,
+      "sha256": "b672e47ec67ba7e95c04cf026d0473fd17b696a5ced2a56d8a32f2b0fc87227a",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0029.txt"
+    },
+    {
+      "packet_id": "P0030",
+      "chapter_index": 10,
+      "chapter_title": "II",
+      "chapter_packet": 1,
+      "words": 1062,
+      "sha256": "3f059f31eec73774dcf6ded0976a2605ddb787baf00d2e0bfbec5ba8c24ad3b9",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0030.txt"
+    },
+    {
+      "packet_id": "P0031",
+      "chapter_index": 11,
+      "chapter_title": "III",
+      "chapter_packet": 1,
+      "words": 1021,
+      "sha256": "ade0e10d34cfb8f51cec168ad31548fdd234ab58a976477d9fe8c664d8e044bc",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0031.txt"
+    },
+    {
+      "packet_id": "P0032",
+      "chapter_index": 12,
+      "chapter_title": "IV",
+      "chapter_packet": 1,
+      "words": 992,
+      "sha256": "ce599e6ce9348a2995a8031521aa506140c6d67e3bdc20a43bdad9a086b480e9",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0032.txt"
+    },
+    {
+      "packet_id": "P0033",
+      "chapter_index": 12,
+      "chapter_title": "IV",
+      "chapter_packet": 2,
+      "words": 952,
+      "sha256": "78465cca270c50573477578e8dd2b8bb45e8c207477af0239d0b8793a58ea626",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0033.txt"
+    },
+    {
+      "packet_id": "P0034",
+      "chapter_index": 12,
+      "chapter_title": "IV",
+      "chapter_packet": 3,
+      "words": 984,
+      "sha256": "3bf42b2282ece168a19c046ba67bc212b55aea0057ff5a7ca5e0c3bad26f3568",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0034.txt"
+    },
+    {
+      "packet_id": "P0035",
+      "chapter_index": 12,
+      "chapter_title": "IV",
+      "chapter_packet": 4,
+      "words": 942,
+      "sha256": "ac8efec766384e462ad117df61dd86e42da66ea5ea655b4435a5a3d55f9e4234",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0035.txt"
+    },
+    {
+      "packet_id": "P0036",
+      "chapter_index": 12,
+      "chapter_title": "IV",
+      "chapter_packet": 5,
+      "words": 704,
+      "sha256": "43b2b5c7132b657e061ea74abf1f8534a312caca491d84b7290fde496dc91925",
+      "path": "data/wb_ingest/nella-larsen/passing/packets/P0036.txt"
+    }
+  ],
+  "packet_policy": {
+    "min_words": 700,
+    "target_words": 1000,
+    "max_words": 1500,
+    "use": "candidate extraction only; Bloom excerpts remain <=2 sentences per technique per source"
+  }
+}
