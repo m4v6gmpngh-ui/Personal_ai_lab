@@ -5,5 +5,6 @@ venv/
 .env
 .pytest_cache/
 .DS_Store
+.local_wb/
 data/*.json
 !data/.gitkeep
