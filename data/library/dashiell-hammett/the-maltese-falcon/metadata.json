@@ -1,0 +1,33 @@
+{
+  "request_id": "standard-ebooks-maltese-falcon",
+  "title": "The Maltese Falcon",
+  "author": "Dashiell Hammett",
+  "source_url": "https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon/text/single-page",
+  "source_type": "standard_ebooks",
+  "retrieved_at": "2026-10-04T02:38:52.674738+00:00",
+  "source_content_type": "application/xhtml+xml",
+  "source_sha256": "d236e246e0c0d2e3e757d96d0e3ea2b3a9cf6773dd5a870af6776bc5ee425b20",
+  "chapter_count": 20,
+  "chapter_files": [
+    "chapters/001-i.md",
+    "chapters/002-ii.md",
+    "chapters/003-iii.md",
+    "chapters/004-iv.md",
+    "chapters/005-v.md",
+    "chapters/006-vi.md",
+    "chapters/007-vii.md",
+    "chapters/008-viii.md",
+    "chapters/009-ix.md",
+    "chapters/010-x.md",
+    "chapters/011-xi.md",
+    "chapters/012-xii.md",
+    "chapters/013-xiii.md",
+    "chapters/014-xiv.md",
+    "chapters/015-xv.md",
+    "chapters/016-xvi.md",
+    "chapters/017-xvii.md",
+    "chapters/018-xviii.md",
+    "chapters/019-xix.md",
+    "chapters/020-xx.md"
+  ]
+}

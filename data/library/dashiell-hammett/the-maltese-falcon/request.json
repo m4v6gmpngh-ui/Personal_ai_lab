@@ -1,0 +1,18 @@
+{
+  "id": "standard-ebooks-maltese-falcon",
+  "url": "https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon/text/single-page",
+  "source_type": "standard_ebooks",
+  "rights": "public_domain_us",
+  "title": "The Maltese Falcon",
+  "author": "Dashiell Hammett",
+  "genre": [
+    "mystery",
+    "thriller"
+  ],
+  "era": "early 20th century",
+  "pov": "other",
+  "output_slug": "dashiell-hammett/the-maltese-falcon",
+  "requested_source_url": "https://openlibrary.org/verify_human?next=/books/OL6739438M/The_Maltese_falcon.?utm_source=chatgpt.com",
+  "requested_openlibrary_edition": "OL6739438M",
+  "provenance_note": "User targeted the 1930 A.A. Knopf Open Library edition. Acquisition uses the supported Standard Ebooks public-domain U.S. transcription of the same work because WB-03 forbids bypassing Open Library human-verification/anti-bot controls."
+}

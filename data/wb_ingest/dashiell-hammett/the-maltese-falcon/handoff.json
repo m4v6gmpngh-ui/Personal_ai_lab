@@ -1,0 +1,657 @@
+{
+  "schema": "wb-ingest-1",
+  "authority": {
+    "target": "WB-00 Writing Bloom",
+    "writing_bloom_target": true,
+    "project_bloom_write": false,
+    "personal_global_bloom_write": false,
+    "other_domain_bloom_write": false,
+    "notion_write": false,
+    "purpose": "measurement and evidence preparation only"
+  },
+  "rights": {
+    "classification": "public_domain_us",
+    "storage": "tracked",
+    "full_text_retained": true,
+    "rule": "tracked full text is permitted only for configured public-domain sources"
+  },
+  "source": {
+    "title": "The Maltese Falcon",
+    "author": "Dashiell Hammett",
+    "genre": [
+      "mystery",
+      "thriller"
+    ],
+    "era": "early 20th century",
+    "pov": "other",
+    "obtained": "public domain",
+    "source_url": "https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon/text/single-page",
+    "source_sha256": "d236e246e0c0d2e3e757d96d0e3ea2b3a9cf6773dd5a870af6776bc5ee425b20",
+    "source_type": "standard_ebooks",
+    "library_path": "data/library/dashiell-hammett/the-maltese-falcon"
+  },
+  "profile": {
+    "one_sentence_para": 54.3,
+    "short_sent": 39.7,
+    "mean": 9.9,
+    "sd": 7.6,
+    "dialogue_share": 48.9,
+    "semicolons_1k": 0.74,
+    "emdash_1k": 3.62,
+    "words": 66917,
+    "narration_words": 35040,
+    "dialogue_words": 32694,
+    "narration_paragraphs": 1774,
+    "narration_sentences": 3523
+  },
+  "notion_profile_fields": {
+    "Profile": "The Maltese Falcon — source profile",
+    "Scope": "source",
+    "Genre": [
+      "mystery",
+      "thriller"
+    ],
+    "Sample Words": 66917,
+    "Dialogue Share %": "48.9",
+    "Mean Sentence Length": "9.9",
+    "Sentence Length Spread (SD)": "7.6",
+    "Short Sentence % (<=6 words, narration)": "39.7",
+    "One-Sentence Paragraph % (narration)": "54.3",
+    "Semicolons per 1k": "0.74",
+    "Em-dashes per 1k": "3.62",
+    "Notes": "Deterministic WB-01-compatible measurement; source relation added during WB learning import."
+  },
+  "packets": [
+    {
+      "packet_id": "P0001",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 1,
+      "words": 974,
+      "sha256": "0ead208fb43cb1331c7cb49913e353ba06ab07aedb494a122d21e6b099e500a4",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0001.txt"
+    },
+    {
+      "packet_id": "P0002",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 2,
+      "words": 1401,
+      "sha256": "ed61999e5c401123649561e07ad53598540ab44b381ec93f7d5e2caada01bc71",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0002.txt"
+    },
+    {
+      "packet_id": "P0003",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 1,
+      "words": 991,
+      "sha256": "5910e745e3a2cbc045e1e4af7ae2ed99a0f7d5c1c6dab8b6fb41105030811a13",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0003.txt"
+    },
+    {
+      "packet_id": "P0004",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 2,
+      "words": 991,
+      "sha256": "879c60006eb8823b3394ffc962f19903009c95aa7f611a92ac541b3fda83937a",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0004.txt"
+    },
+    {
+      "packet_id": "P0005",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 3,
+      "words": 976,
+      "sha256": "98a008926db6c5c0362eaa3820d555d015c5de183f37960f27e1529fcf160741",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0005.txt"
+    },
+    {
+      "packet_id": "P0006",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 4,
+      "words": 897,
+      "sha256": "1131d4c5b0815999d7a3826fe7bb3f96e13dbc9ff1b68a17df58a543b0c7c754",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0006.txt"
+    },
+    {
+      "packet_id": "P0007",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 1,
+      "words": 981,
+      "sha256": "786b98cb876115752386ce42813c89454c1b0290347abc52f48132da117007dd",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0007.txt"
+    },
+    {
+      "packet_id": "P0008",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 2,
+      "words": 1309,
+      "sha256": "df170e959989d69cebf07a9f8eaa24f0672da2da0743fb5a7a1b476ff1ee6b29",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0008.txt"
+    },
+    {
+      "packet_id": "P0009",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 1,
+      "words": 903,
+      "sha256": "594d74c2b1aa38dcc2216dc94ae97836ecd39599cb2f55628da54e4450b9bd4c",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0009.txt"
+    },
+    {
+      "packet_id": "P0010",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 2,
+      "words": 984,
+      "sha256": "19474f401f173175031f393873d8b3552159d292af39718b524164164ba68eb3",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0010.txt"
+    },
+    {
+      "packet_id": "P0011",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 3,
+      "words": 947,
+      "sha256": "2a4b194b543c4ad844db381106d29cebc70df31b904418cba739f113f4662317",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0011.txt"
+    },
+    {
+      "packet_id": "P0012",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 4,
+      "words": 1189,
+      "sha256": "4e78dc484e87097ba8c9c0455dfdc3a1419ee2e0db379bb91ff9443c7132f227",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0012.txt"
+    },
+    {
+      "packet_id": "P0013",
+      "chapter_index": 5,
+      "chapter_title": "V",
+      "chapter_packet": 1,
+      "words": 955,
+      "sha256": "d40037b03ad8a8b8d353a619a9598d1a703894e00891188d29973c78268f10f3",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0013.txt"
+    },
+    {
+      "packet_id": "P0014",
+      "chapter_index": 5,
+      "chapter_title": "V",
+      "chapter_packet": 2,
+      "words": 1076,
+      "sha256": "27a372381874891c167e3e8b95616268c580d08953b0169bed133039126fd8ac",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0014.txt"
+    },
+    {
+      "packet_id": "P0015",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 1,
+      "words": 946,
+      "sha256": "3a18e81a3d83ebe3aa4ca2b03a66aa4e12c8c98897933729b6c7e5485d92c0f6",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0015.txt"
+    },
+    {
+      "packet_id": "P0016",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 2,
+      "words": 997,
+      "sha256": "66c0efae8933c9d8cd7b4d7b13bb924956f145215aa3e7f8a26ea15e9fb6f8d8",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0016.txt"
+    },
+    {
+      "packet_id": "P0017",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 3,
+      "words": 749,
+      "sha256": "e274b9e00cc253b2a383cbfcf1564bb94ba52c7c98c69e7dfd436d189ae7f685",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0017.txt"
+    },
+    {
+      "packet_id": "P0018",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 1,
+      "words": 931,
+      "sha256": "0793ca86ef5fb09e37d0ebe9f3d1c23bb0c7198720dea54dc3d95739dc144252",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0018.txt"
+    },
+    {
+      "packet_id": "P0019",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 2,
+      "words": 996,
+      "sha256": "22cf6f064aa4585f40d61aed704a0b95dd6ebe70d5d240c6a58dc88185336f24",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0019.txt"
+    },
+    {
+      "packet_id": "P0020",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 3,
+      "words": 989,
+      "sha256": "d204f4fe2e710e9af5b350f7262324a7766010d00cda54fe6bd7e6cbcb24f428",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0020.txt"
+    },
+    {
+      "packet_id": "P0021",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 4,
+      "words": 882,
+      "sha256": "347f317482907b211698f9a518cfdc31a634593d07106cb965a8814934d7a509",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0021.txt"
+    },
+    {
+      "packet_id": "P0022",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 1,
+      "words": 973,
+      "sha256": "742842d1e4fafa004eba63fca9a502b21abe2653786ece373e34e53aafd7c41a",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0022.txt"
+    },
+    {
+      "packet_id": "P0023",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 2,
+      "words": 996,
+      "sha256": "2727197adcc67683f826cd0e62c158474e64de226e4c3a80e40c288247524cb8",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0023.txt"
+    },
+    {
+      "packet_id": "P0024",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 3,
+      "words": 629,
+      "sha256": "25438f18dfd3db07a94b02bb7b27d96745b0d005fba1c8feb1a7fbbc6f2b679a",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0024.txt"
+    },
+    {
+      "packet_id": "P0025",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 1,
+      "words": 972,
+      "sha256": "cae4def83e11c8bdc706767c17d6597dd930f49fd4ede7b42d6375378e3b967c",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0025.txt"
+    },
+    {
+      "packet_id": "P0026",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 2,
+      "words": 1340,
+      "sha256": "fabc9c01fcca518924e471aa3d0030b7886c12f9a969d11f97f0a1e66e3cea4b",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0026.txt"
+    },
+    {
+      "packet_id": "P0027",
+      "chapter_index": 10,
+      "chapter_title": "X",
+      "chapter_packet": 1,
+      "words": 973,
+      "sha256": "2422d680ad2149ee81c10ed78395036d1b03e032745b0744f8b297c9c7489043",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0027.txt"
+    },
+    {
+      "packet_id": "P0028",
+      "chapter_index": 10,
+      "chapter_title": "X",
+      "chapter_packet": 2,
+      "words": 992,
+      "sha256": "5d93bab0bac61caf7624d213a96a72b04b977e966603e8b391315ddf4698d40b",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0028.txt"
+    },
+    {
+      "packet_id": "P0029",
+      "chapter_index": 10,
+      "chapter_title": "X",
+      "chapter_packet": 3,
+      "words": 1332,
+      "sha256": "47961b38bca843f02a6b2dee06717e4eec2e7e1f83aa348df9765ddbb571216e",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0029.txt"
+    },
+    {
+      "packet_id": "P0030",
+      "chapter_index": 11,
+      "chapter_title": "XI",
+      "chapter_packet": 1,
+      "words": 988,
+      "sha256": "4739e5b2f54f27af77f7791abf775a67ab253137784482edda47065b70daf388",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0030.txt"
+    },
+    {
+      "packet_id": "P0031",
+      "chapter_index": 11,
+      "chapter_title": "XI",
+      "chapter_packet": 2,
+      "words": 999,
+      "sha256": "6d89192caec89375025a573333be42fef01edf3bbe0f64125a6ffff7e5bfd1ff",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0031.txt"
+    },
+    {
+      "packet_id": "P0032",
+      "chapter_index": 11,
+      "chapter_title": "XI",
+      "chapter_packet": 3,
+      "words": 1419,
+      "sha256": "f9490ce19c44e2856a1a0dd37063860916ea6b62b2f14dfa299d32e736cd23d6",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0032.txt"
+    },
+    {
+      "packet_id": "P0033",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 1,
+      "words": 972,
+      "sha256": "7d66b1eb28b5fc114173ff399cfcaaf478a3e95d6935e232857d98d1a7cdaf37",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0033.txt"
+    },
+    {
+      "packet_id": "P0034",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 2,
+      "words": 995,
+      "sha256": "6fe156d1a7bb8ccfdaf8561a60f9f7ffdcb8b3ce4c9d02026f12e9b0f685d3c9",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0034.txt"
+    },
+    {
+      "packet_id": "P0035",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 3,
+      "words": 893,
+      "sha256": "eac3bb906dc854097396eda03de939bc849d4ccecd8d953d3b5a5fa893c27706",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0035.txt"
+    },
+    {
+      "packet_id": "P0036",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 1,
+      "words": 886,
+      "sha256": "79f188d7b473c6cab2a3168a77109ba61bb284b03aae8a26d548d167ab91d57c",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0036.txt"
+    },
+    {
+      "packet_id": "P0037",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 2,
+      "words": 909,
+      "sha256": "b8598df501fb4aee310f584ff4c5df0489363f104b2b82852b4271b1fdf61d1d",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0037.txt"
+    },
+    {
+      "packet_id": "P0038",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 3,
+      "words": 1205,
+      "sha256": "41866669b8a3990b7df9db3376f74159a959730aef700323a4e3af1070d01177",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0038.txt"
+    },
+    {
+      "packet_id": "P0039",
+      "chapter_index": 14,
+      "chapter_title": "XIV",
+      "chapter_packet": 1,
+      "words": 937,
+      "sha256": "6348dbf1fee93621184e20b5fc3fffc4c5d4dba4357befecfe7d0b0dbcf86b48",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0039.txt"
+    },
+    {
+      "packet_id": "P0040",
+      "chapter_index": 14,
+      "chapter_title": "XIV",
+      "chapter_packet": 2,
+      "words": 970,
+      "sha256": "59e3a093ab1e72827e9c1e41ff0d30dcf9e7865059c92c78eff7f5ce6e88e460",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0040.txt"
+    },
+    {
+      "packet_id": "P0041",
+      "chapter_index": 14,
+      "chapter_title": "XIV",
+      "chapter_packet": 3,
+      "words": 714,
+      "sha256": "ee78b27c94d28fa9abc8d368dbb64888b3826e2eb79bfcdd77781f1fb400c8ca",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0041.txt"
+    },
+    {
+      "packet_id": "P0042",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 1,
+      "words": 997,
+      "sha256": "0fad0b7f7be9fbbaa0e4fece6e29d19a07709aae7fad4f23bacc3e68a260124e",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0042.txt"
+    },
+    {
+      "packet_id": "P0043",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 2,
+      "words": 972,
+      "sha256": "ab9a21a2aa2894b9a55caec3712e13051c996965be04b79178ae1cb3b74e1546",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0043.txt"
+    },
+    {
+      "packet_id": "P0044",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 3,
+      "words": 1238,
+      "sha256": "335d9455ab746bf040f71e884fa7181624289a24d616c7598096f412d2a7324c",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0044.txt"
+    },
+    {
+      "packet_id": "P0045",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 1,
+      "words": 959,
+      "sha256": "c661ab83d4eda302b5df714fe724428c7161bd1c89cd10d85080ff6ef1309616",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0045.txt"
+    },
+    {
+      "packet_id": "P0046",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 2,
+      "words": 990,
+      "sha256": "46282f4ba90d9bc8da97a60441b9ef129db82e77e0796a09d0f5eb0ef3b2bed5",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0046.txt"
+    },
+    {
+      "packet_id": "P0047",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 3,
+      "words": 1416,
+      "sha256": "41f290a63e17b2e2f8b93814ed3d3d97241dcbd7a6330cf1dd5c63ae5f961685",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0047.txt"
+    },
+    {
+      "packet_id": "P0048",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 1,
+      "words": 989,
+      "sha256": "2c624102dff82db1e41166aeeb3d81bca166946d603678b99d1e111bac2d45f0",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0048.txt"
+    },
+    {
+      "packet_id": "P0049",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 2,
+      "words": 991,
+      "sha256": "5736f9b804a21b2cfc155d8a08ed75de904e50014d6c43d98b8c298d6a0887eb",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0049.txt"
+    },
+    {
+      "packet_id": "P0050",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 3,
+      "words": 1424,
+      "sha256": "fd906f13af8ea3c2456408817b9b428bd9f0b1f7052a1a539a2df83006e19f88",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0050.txt"
+    },
+    {
+      "packet_id": "P0051",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 1,
+      "words": 939,
+      "sha256": "d197c3d13f18afd150b140a4f6083e2b8f59dc3bc3f71920177c258749a1e6c5",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0051.txt"
+    },
+    {
+      "packet_id": "P0052",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 2,
+      "words": 980,
+      "sha256": "17d275a945211b74448db29b25c867a714c765f15290f7ea97b78b7e8fb21e6e",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0052.txt"
+    },
+    {
+      "packet_id": "P0053",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 3,
+      "words": 947,
+      "sha256": "20e69eb0f546d0577f75353cc673584875d36b760d6cde540da11ae7ffa89c1b",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0053.txt"
+    },
+    {
+      "packet_id": "P0054",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 4,
+      "words": 984,
+      "sha256": "e9da96227aada0bb9b4527d315138db53a91b52123895f269715ec99de089945",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0054.txt"
+    },
+    {
+      "packet_id": "P0055",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 5,
+      "words": 1346,
+      "sha256": "00030801649422653badeb7137893d283cf5039b5c7da7452ea66a08aa35f860",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0055.txt"
+    },
+    {
+      "packet_id": "P0056",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 1,
+      "words": 987,
+      "sha256": "d567465172c8eb29cc7e1713c54984ad8c66505e2380f82c46e97b20c1c95d46",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0056.txt"
+    },
+    {
+      "packet_id": "P0057",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 2,
+      "words": 960,
+      "sha256": "bbca519c6281165dd55bac4e0ba30071ec9e1ed86b3931e3ea66a299be438a44",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0057.txt"
+    },
+    {
+      "packet_id": "P0058",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 3,
+      "words": 966,
+      "sha256": "50d1f34fec30983e052b9d4b9b3f77d70529396c33c2197e6bd88b322709da2b",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0058.txt"
+    },
+    {
+      "packet_id": "P0059",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 4,
+      "words": 984,
+      "sha256": "96f569e2cf3d652a36cafa46e362aab42953fd8d0eaebcfc9c75026598f24492",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0059.txt"
+    },
+    {
+      "packet_id": "P0060",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 5,
+      "words": 998,
+      "sha256": "9367f5e34bf405205621fb1e439fd79aa68b5531a2fb9ed480524c1c2e38c595",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0060.txt"
+    },
+    {
+      "packet_id": "P0061",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 6,
+      "words": 1384,
+      "sha256": "8681314aed161b38509ada9f0e16c3c30bc8aa0c339417337764db23cd887055",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0061.txt"
+    },
+    {
+      "packet_id": "P0062",
+      "chapter_index": 20,
+      "chapter_title": "XX",
+      "chapter_packet": 1,
+      "words": 995,
+      "sha256": "9dbd63154cbe56ecc7d5d1c48140ad2ef9d50f261b5c61a38bb8f7d9347bebc4",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0062.txt"
+    },
+    {
+      "packet_id": "P0063",
+      "chapter_index": 20,
+      "chapter_title": "XX",
+      "chapter_packet": 2,
+      "words": 996,
+      "sha256": "e46cf89f6da2435155e9b6d89af9cea7968a82353dd6d1c53969886ffbaba064",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0063.txt"
+    },
+    {
+      "packet_id": "P0064",
+      "chapter_index": 20,
+      "chapter_title": "XX",
+      "chapter_packet": 3,
+      "words": 997,
+      "sha256": "a7e615d7259cd6c9f4b374f3a243289c0bfff264802ef8d1d6c0430cb3400dd7",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0064.txt"
+    },
+    {
+      "packet_id": "P0065",
+      "chapter_index": 20,
+      "chapter_title": "XX",
+      "chapter_packet": 4,
+      "words": 1320,
+      "sha256": "2b3c44f1618ffee37f38567af15333798825aad452ef586f118bb3b038c2fc95",
+      "path": "data/wb_ingest/dashiell-hammett/the-maltese-falcon/packets/P0065.txt"
+    }
+  ],
+  "packet_policy": {
+    "min_words": 700,
+    "target_words": 1000,
+    "max_words": 1500,
+    "use": "candidate extraction only; Bloom excerpts remain <=2 sentences per technique per source"
+  }
+}
