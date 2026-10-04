@@ -1,0 +1,970 @@
+{
+  "schema": "wb-ingest-1",
+  "authority": {
+    "target": "WB-00 Writing Bloom",
+    "writing_bloom_target": true,
+    "project_bloom_write": false,
+    "personal_global_bloom_write": false,
+    "other_domain_bloom_write": false,
+    "notion_write": false,
+    "purpose": "measurement and evidence preparation only"
+  },
+  "rights": {
+    "classification": "public_domain_us",
+    "storage": "tracked",
+    "full_text_retained": true,
+    "rule": "tracked full text is permitted only for configured public-domain sources"
+  },
+  "source": {
+    "title": "The Sound and the Fury",
+    "author": "William Faulkner",
+    "genre": [
+      "literary"
+    ],
+    "era": "American modernism / 1929",
+    "pov": "multiple: first-person stream of consciousness (Benjy, Quentin, Jason) and third-person/omniscient (Dilsey section)",
+    "obtained": "public domain",
+    "source_url": "https://standardebooks.org/ebooks/william-faulkner/the-sound-and-the-fury/text/single-page",
+    "source_sha256": "6cf11ca52aa9a7ab5001f9cba208a074f16fd009b395a07c06adcd4bd7655907",
+    "source_type": "standard_ebooks",
+    "library_path": "data/library/william-faulkner/the-sound-and-the-fury"
+  },
+  "profile": {
+    "one_sentence_para": 63.6,
+    "short_sent": 56.9,
+    "mean": 9.8,
+    "sd": 18.3,
+    "dialogue_share": 33.7,
+    "semicolons_1k": 1.05,
+    "emdash_1k": 0.26,
+    "words": 96593,
+    "narration_words": 64487,
+    "dialogue_words": 32587,
+    "narration_paragraphs": 2903,
+    "narration_sentences": 6547
+  },
+  "notion_profile_fields": {
+    "Profile": "The Sound and the Fury — source profile",
+    "Scope": "source",
+    "Genre": [
+      "literary"
+    ],
+    "Sample Words": 96593,
+    "Dialogue Share %": "33.7",
+    "Mean Sentence Length": "9.8",
+    "Sentence Length Spread (SD)": "18.3",
+    "Short Sentence % (<=6 words, narration)": "56.9",
+    "One-Sentence Paragraph % (narration)": "63.6",
+    "Semicolons per 1k": "1.05",
+    "Em-dashes per 1k": "0.26",
+    "Notes": "Deterministic WB-01-compatible measurement; source relation added during WB learning import."
+  },
+  "packets": [
+    {
+      "packet_id": "P0001",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 1,
+      "words": 987,
+      "sha256": "4e36c113b4920943a958b1d3047db9c09a48529cd264356e3acf6595229b7605",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0001.txt"
+    },
+    {
+      "packet_id": "P0002",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 2,
+      "words": 940,
+      "sha256": "772d9e56142d8161593e1be2ca37211bf9c996ff54eac5ad5ff6ab6cccc8f318",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0002.txt"
+    },
+    {
+      "packet_id": "P0003",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 3,
+      "words": 992,
+      "sha256": "93cceaf1eebb628dcc5e939bf24ece2afe6a8b745d9d429ba11e1180eb99209e",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0003.txt"
+    },
+    {
+      "packet_id": "P0004",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 4,
+      "words": 996,
+      "sha256": "e95e2a348c804236f81d5eeefefc629b6b32327fb0469e33d78f5cf65fe27286",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0004.txt"
+    },
+    {
+      "packet_id": "P0005",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 5,
+      "words": 983,
+      "sha256": "f24b118b109c7db27a2ab56b94309129c02a959014a866ccada0f99e02f9c9f7",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0005.txt"
+    },
+    {
+      "packet_id": "P0006",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 6,
+      "words": 996,
+      "sha256": "550ad31a81299991575bb028acb4771e8d48ee339e5ff63dfe9f291c69b08714",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0006.txt"
+    },
+    {
+      "packet_id": "P0007",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 7,
+      "words": 948,
+      "sha256": "0cda30b60881f9b824a11f9e750c19685004dd1c381de2121a0db4011b490050",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0007.txt"
+    },
+    {
+      "packet_id": "P0008",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 8,
+      "words": 1000,
+      "sha256": "69b676c393f5ec14715d7183974665b03f83c2dee982d45896e894e91d54df41",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0008.txt"
+    },
+    {
+      "packet_id": "P0009",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 9,
+      "words": 985,
+      "sha256": "e341fe6decd844557f130b04ab43d58b14d85eb17073f65a2be7e78818359851",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0009.txt"
+    },
+    {
+      "packet_id": "P0010",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 10,
+      "words": 998,
+      "sha256": "c79c9e5afe8ab42b985ec815eadbc5b9913f975442b475e6c0e30a136fe84060",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0010.txt"
+    },
+    {
+      "packet_id": "P0011",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 11,
+      "words": 995,
+      "sha256": "23d2873820b1d2df27acc0110f66230cf38c80c64359f2ca9e944d0d9fec3ce6",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0011.txt"
+    },
+    {
+      "packet_id": "P0012",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 12,
+      "words": 1000,
+      "sha256": "097bfd6ffe4d77f027363031ea9bf9351e5cf69743ecfc68a9161f93b115a5ec",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0012.txt"
+    },
+    {
+      "packet_id": "P0013",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 13,
+      "words": 976,
+      "sha256": "34ad0d0ee907227bf8dc8cabf73d084c078e61be672f13c374b0732e9432f2b7",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0013.txt"
+    },
+    {
+      "packet_id": "P0014",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 14,
+      "words": 997,
+      "sha256": "b2e4875760a37e56350da08d40b944379b13809f61ee869354a853aae0435850",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0014.txt"
+    },
+    {
+      "packet_id": "P0015",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 15,
+      "words": 995,
+      "sha256": "542c557eb3b128930c2b84d49da7124d169c0c22aa5b6f105b5dcf1252b3ab90",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0015.txt"
+    },
+    {
+      "packet_id": "P0016",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 16,
+      "words": 949,
+      "sha256": "6d0efc14ee5f3ad4a3b8bd6fd81aa86b8b955f1e422142f7c16e3b254cd85f84",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0016.txt"
+    },
+    {
+      "packet_id": "P0017",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 17,
+      "words": 980,
+      "sha256": "71891f0c85137f28ab94ff5b0fd67a6eafddd448def6e2c745715c20375c8375",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0017.txt"
+    },
+    {
+      "packet_id": "P0018",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 18,
+      "words": 989,
+      "sha256": "9e8761d7416811655d8fa911902d7c0c070607648fa6478687105b7819bdb596",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0018.txt"
+    },
+    {
+      "packet_id": "P0019",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 19,
+      "words": 901,
+      "sha256": "ccbe171d9048c0661c06f8cae33457d2a83abe1d0c971bfa91d57af85029c15f",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0019.txt"
+    },
+    {
+      "packet_id": "P0020",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 20,
+      "words": 937,
+      "sha256": "14bbca524de02fa0c018e190a1ecc36df96e8dc0dd98926ae66d2542655f2cb0",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0020.txt"
+    },
+    {
+      "packet_id": "P0021",
+      "chapter_index": 1,
+      "chapter_title": "April Seventh, 1928",
+      "chapter_packet": 21,
+      "words": 857,
+      "sha256": "09978f68d0e775edc06a482056afc975bb414cd1fbd81086690d762540f09910",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0021.txt"
+    },
+    {
+      "packet_id": "P0022",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 1,
+      "words": 884,
+      "sha256": "8c2fcd5ecef9cf2bdc98a906be3b79340f6a539fd27c644618eec653055877a1",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0022.txt"
+    },
+    {
+      "packet_id": "P0023",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 2,
+      "words": 896,
+      "sha256": "d4f158a2a7d9f37f4c1f6e00a0907598dde890fa402c1b3562f9046ef246a31f",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0023.txt"
+    },
+    {
+      "packet_id": "P0024",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 3,
+      "words": 971,
+      "sha256": "7e1f4b544f0f40c3706c82288f54fb1d87781dcf339fb16be15d4192436dab2e",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0024.txt"
+    },
+    {
+      "packet_id": "P0025",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 4,
+      "words": 933,
+      "sha256": "769ae70a074540dbc14815b5a31ebcd622925e9374a2067b8d842e47da346974",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0025.txt"
+    },
+    {
+      "packet_id": "P0026",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 5,
+      "words": 816,
+      "sha256": "38e86605fd3796598d74678868f2bd52d8b7cedbd641c61b605591d483d9c450",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0026.txt"
+    },
+    {
+      "packet_id": "P0027",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 6,
+      "words": 945,
+      "sha256": "2db510cd1966f8e92003a1439cc70ed5b7c110ac538984b4bdae739df0f2a7c7",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0027.txt"
+    },
+    {
+      "packet_id": "P0028",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 7,
+      "words": 960,
+      "sha256": "4bc72cb1774fc7914194547dc03e78bc7e5c00328319b9d764ce2add2f97283c",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0028.txt"
+    },
+    {
+      "packet_id": "P0029",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 8,
+      "words": 954,
+      "sha256": "aa4208e6ddf23e0892e9264af898c8e2ac0b32b2e886fce7243154aa01718ec1",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0029.txt"
+    },
+    {
+      "packet_id": "P0030",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 9,
+      "words": 969,
+      "sha256": "44697d6408c6ad6a5486f5a238b993a92ae1a378246e9737e2a67520618d7ed9",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0030.txt"
+    },
+    {
+      "packet_id": "P0031",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 10,
+      "words": 935,
+      "sha256": "034b7c63c2a5feb6b797cba43ef022d84edbde07b8bd3500efe1183bcde981d7",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0031.txt"
+    },
+    {
+      "packet_id": "P0032",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 11,
+      "words": 920,
+      "sha256": "d74622028afbd858dd3d7e274c5498991971532e7f80487fe30a473130bddfe2",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0032.txt"
+    },
+    {
+      "packet_id": "P0033",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 12,
+      "words": 936,
+      "sha256": "76043d207199f5b5499b24c2e43069a4713bb861143b2cc6a804a0865f434bdd",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0033.txt"
+    },
+    {
+      "packet_id": "P0034",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 13,
+      "words": 794,
+      "sha256": "683c8c318ce02151e01f421dd4f46ca2f6d6a0398a44fe2c949ee0a9621beab7",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0034.txt"
+    },
+    {
+      "packet_id": "P0035",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 14,
+      "words": 875,
+      "sha256": "548369eaa68361e20963ab61086726bca36e2e8e956f1cbd85c4e8228bdf461c",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0035.txt"
+    },
+    {
+      "packet_id": "P0036",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 15,
+      "words": 999,
+      "sha256": "ccf42cce39c67f18ae554d13759d0687e1ca8b6cd485a7ea6f2bd47fb346dec4",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0036.txt"
+    },
+    {
+      "packet_id": "P0037",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 16,
+      "words": 933,
+      "sha256": "0b4f7f16664bc52fff7f58982cf9cad230b58a826c2a205aca2d95b1fc5912f8",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0037.txt"
+    },
+    {
+      "packet_id": "P0038",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 17,
+      "words": 951,
+      "sha256": "fa1baeb7d58b58c852b33fe2219e4ba423697cb75c2d497c8fd1e9512f54ded2",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0038.txt"
+    },
+    {
+      "packet_id": "P0039",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 18,
+      "words": 965,
+      "sha256": "c3495dc4d75a856ea83fe9ac455a627590df70e3bd3668f9efe28f200467a465",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0039.txt"
+    },
+    {
+      "packet_id": "P0040",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 19,
+      "words": 959,
+      "sha256": "5e5670fc1e0006619310b91cfe4ed4b4944a0cc25795f3b1231e7cf03896a612",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0040.txt"
+    },
+    {
+      "packet_id": "P0041",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 20,
+      "words": 997,
+      "sha256": "123b61b6cab8cecc62e29287de9d049f225aa4c705588bbadbdb3df3c8bf285c",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0041.txt"
+    },
+    {
+      "packet_id": "P0042",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 21,
+      "words": 981,
+      "sha256": "6d7b877d2af3b1b0a10d10b591caff33ce1e3f7f8e407eef4b64753b6538014a",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0042.txt"
+    },
+    {
+      "packet_id": "P0043",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 22,
+      "words": 943,
+      "sha256": "655c9244169f41a67c59797fd60ba5e0bef81175e72246b6112362f995b269fa",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0043.txt"
+    },
+    {
+      "packet_id": "P0044",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 23,
+      "words": 996,
+      "sha256": "9acdc0ec1426cde6c20176b20cb66f960972b744e7215733c474a77f9ca44eb3",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0044.txt"
+    },
+    {
+      "packet_id": "P0045",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 24,
+      "words": 986,
+      "sha256": "d40b35ac2320609cb17c67206fd91722b205cfa215e38f7b4750ba10eee4002a",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0045.txt"
+    },
+    {
+      "packet_id": "P0046",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 25,
+      "words": 996,
+      "sha256": "76a2e32fc5223a650f1846baba4645eca51e1655289d2d6cdcd7204b8142b8ee",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0046.txt"
+    },
+    {
+      "packet_id": "P0047",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 26,
+      "words": 983,
+      "sha256": "1f8e8f57b2af1073dfe55af6799d94d5e2111ee0995ffff2031a0589d5e336ae",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0047.txt"
+    },
+    {
+      "packet_id": "P0048",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 27,
+      "words": 952,
+      "sha256": "cff0afcb4d9bfa0e40998706bea54c22abec1856faf0a5fa45be785a11413fe1",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0048.txt"
+    },
+    {
+      "packet_id": "P0049",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 28,
+      "words": 998,
+      "sha256": "854cedfe9df5e85c84a9dd1e701bbcc1c986977ebb5b56678199e19f150b5365",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0049.txt"
+    },
+    {
+      "packet_id": "P0050",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 29,
+      "words": 988,
+      "sha256": "375082ebc7fcc2e52cbef609fc034a0337202f5e8b0eca56b665fb676fd9dc2a",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0050.txt"
+    },
+    {
+      "packet_id": "P0051",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 30,
+      "words": 844,
+      "sha256": "1e3f9c8c6abf9957dedcaf81468bf0e98240b778265bd2de91e5835f850b5d4c",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0051.txt"
+    },
+    {
+      "packet_id": "P0052",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 31,
+      "words": 892,
+      "sha256": "317a8d0af1f13fdbdfb81d9327e90545ef938b89ce28b65571bd13abc46b0f68",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0052.txt"
+    },
+    {
+      "packet_id": "P0053",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 32,
+      "words": 1259,
+      "sha256": "6e6cef51191c1e3ac7ded56294437a5814b8020d42db9d0728910e983ea94270",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0053.txt"
+    },
+    {
+      "packet_id": "P0054",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 33,
+      "words": 1256,
+      "sha256": "bcc82d9f7a6c2c7bb74f9867563a632396a52b79caac2b114f3b198ccef16512",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0054.txt"
+    },
+    {
+      "packet_id": "P0055",
+      "chapter_index": 2,
+      "chapter_title": "June Second, 1910",
+      "chapter_packet": 34,
+      "words": 251,
+      "sha256": "52eafcabeee296e50afd1a0e51b441e062720b6290d28cb3f8e70ea9da86c007",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0055.txt"
+    },
+    {
+      "packet_id": "P0056",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 1,
+      "words": 975,
+      "sha256": "b8bc5f3a6402375bcafebd0bce998c935342de9e3483da571c1520f5f7a5b038",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0056.txt"
+    },
+    {
+      "packet_id": "P0057",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 2,
+      "words": 981,
+      "sha256": "d7f2a214d986ac1b66a90a350d0d096466c3d4eac3f30528f9dd1af70f314613",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0057.txt"
+    },
+    {
+      "packet_id": "P0058",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 3,
+      "words": 996,
+      "sha256": "aefdf5982859350b14c29865b4dd2e10da2e2e3a255c402b6fb8837eeac317b0",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0058.txt"
+    },
+    {
+      "packet_id": "P0059",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 4,
+      "words": 941,
+      "sha256": "fd51a3558e87f492313017e2e45fb924265da1568cb6dea482d26ce64a7540e3",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0059.txt"
+    },
+    {
+      "packet_id": "P0060",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 5,
+      "words": 963,
+      "sha256": "fe341c3b9f2c07c270391f2fd11ae99d89434facf9f0453a17bd43db5bc0bb66",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0060.txt"
+    },
+    {
+      "packet_id": "P0061",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 6,
+      "words": 998,
+      "sha256": "5800a1e73395436850a5569e4ae1062298b99dee26c050105db502d2294b607f",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0061.txt"
+    },
+    {
+      "packet_id": "P0062",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 7,
+      "words": 988,
+      "sha256": "be3764db62f7027ffa084e769d21e3091b9df278600bc695c1a94d043d19b7aa",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0062.txt"
+    },
+    {
+      "packet_id": "P0063",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 8,
+      "words": 977,
+      "sha256": "a1513bce260b31a7331850c63ef7333fb7fd51aa618cb5131ed76156ca8df54b",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0063.txt"
+    },
+    {
+      "packet_id": "P0064",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 9,
+      "words": 881,
+      "sha256": "aec6bc3fead5c5fcb7e9925501d35a775f59480ef457a3854efd35d0af42add4",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0064.txt"
+    },
+    {
+      "packet_id": "P0065",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 10,
+      "words": 986,
+      "sha256": "301c138a379a6a5b23827ec4d50ecf5f7140059fec9ab258ff2e6f1db78a677b",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0065.txt"
+    },
+    {
+      "packet_id": "P0066",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 11,
+      "words": 990,
+      "sha256": "c62f56d59432ace4d39dc4cd23374f7d0b7aad89a67ce683bbd45e314f91cbaf",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0066.txt"
+    },
+    {
+      "packet_id": "P0067",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 12,
+      "words": 991,
+      "sha256": "a66b6b5084d096369f8061b617181ba4797235278cc9ac20704381e7b1fc5bac",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0067.txt"
+    },
+    {
+      "packet_id": "P0068",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 13,
+      "words": 990,
+      "sha256": "5f0993aab57244816720f19b8a6e211fcb0fb58189d3ed7ecdefeac77e6336f2",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0068.txt"
+    },
+    {
+      "packet_id": "P0069",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 14,
+      "words": 817,
+      "sha256": "e333b346e8dc5899e4e1f6cba68195f8934e19f782e867a8b823214cdb2bb9d9",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0069.txt"
+    },
+    {
+      "packet_id": "P0070",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 15,
+      "words": 985,
+      "sha256": "63bef18352f2c3c0da8fc70e4d4f3182a6d8f3c8c50adc3ea1c7dfd1625b46a9",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0070.txt"
+    },
+    {
+      "packet_id": "P0071",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 16,
+      "words": 994,
+      "sha256": "41848db8e83e39b1e1fc2a704f9f70f5684afe3dbaa5765b426b5173f9a75571",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0071.txt"
+    },
+    {
+      "packet_id": "P0072",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 17,
+      "words": 997,
+      "sha256": "d319e9013bbe469e4466f877bee0b3b209366f7668ae61b47fe6aa992288bd00",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0072.txt"
+    },
+    {
+      "packet_id": "P0073",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 18,
+      "words": 1067,
+      "sha256": "0fdd58d459e7008fb694d33e4e1383953faf430e1b1173c78f3481da08313bd7",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0073.txt"
+    },
+    {
+      "packet_id": "P0074",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 19,
+      "words": 996,
+      "sha256": "bb6299174cf63a7fd3c7472335fb3e5cba5ad460695b33800a148c058ea35eae",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0074.txt"
+    },
+    {
+      "packet_id": "P0075",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 20,
+      "words": 956,
+      "sha256": "7703e027da7ab450f76dab239323f5149a811a89fa4b896d19a25a36ea18e82e",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0075.txt"
+    },
+    {
+      "packet_id": "P0076",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 21,
+      "words": 945,
+      "sha256": "36eb76140604c1511ad6b09f88c21033b90b7080a0bd6b6ee77c5633343ae010",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0076.txt"
+    },
+    {
+      "packet_id": "P0077",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 22,
+      "words": 934,
+      "sha256": "df937fa199bbf070529f5d878216c401edc017c7570dbc837d29d3098657c8b9",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0077.txt"
+    },
+    {
+      "packet_id": "P0078",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 23,
+      "words": 999,
+      "sha256": "857fdf77a2102155e9b5d652134787b250d1e5f13a3f20ffc3baab1ac326cbc1",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0078.txt"
+    },
+    {
+      "packet_id": "P0079",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 24,
+      "words": 987,
+      "sha256": "2216eb0addc91510066a883b7d8c04a01946f0f3b012e2af84b1186f2d067485",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0079.txt"
+    },
+    {
+      "packet_id": "P0080",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 25,
+      "words": 993,
+      "sha256": "be5eafccb99469867c75316be2f5ab9a4800e8f34941d38de3e177070988782e",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0080.txt"
+    },
+    {
+      "packet_id": "P0081",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 26,
+      "words": 998,
+      "sha256": "ff717e7526396cc03ff37725b315e69cbbffcbe656a75c497690470ea4c2dccb",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0081.txt"
+    },
+    {
+      "packet_id": "P0082",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 27,
+      "words": 968,
+      "sha256": "2b749abe3b5b567ac960676994fae74a9eb421d2f181ba345005e2fcfb731058",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0082.txt"
+    },
+    {
+      "packet_id": "P0083",
+      "chapter_index": 3,
+      "chapter_title": "April Sixth, 1928",
+      "chapter_packet": 28,
+      "words": 1018,
+      "sha256": "7d11c868805474499274e3fecc6fcd2b54efe181ad2fcbc2a3517fb353e5d753",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0083.txt"
+    },
+    {
+      "packet_id": "P0084",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 1,
+      "words": 994,
+      "sha256": "22c61d4af5c2d3cc096fa7ea35743cb045bd2dd0f3fcfada67034859b2782628",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0084.txt"
+    },
+    {
+      "packet_id": "P0085",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 2,
+      "words": 997,
+      "sha256": "70b2762bba4409adfb92e6113c242683595242b76d128051cf554b6ad9969798",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0085.txt"
+    },
+    {
+      "packet_id": "P0086",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 3,
+      "words": 987,
+      "sha256": "276b469ee3b08a9fcce447474344ad83813e5bfe86e35cf59c0bf21f9f1e9e7e",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0086.txt"
+    },
+    {
+      "packet_id": "P0087",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 4,
+      "words": 983,
+      "sha256": "b49a3ab99edfdf7bd318dec62af53e4bfff6add7b2522e3d15b1cae34e51c0ff",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0087.txt"
+    },
+    {
+      "packet_id": "P0088",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 5,
+      "words": 986,
+      "sha256": "3c385502c0927c806aae885bc3fe1b635d85a8f8dbd03090412f76cbd72aa3bc",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0088.txt"
+    },
+    {
+      "packet_id": "P0089",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 6,
+      "words": 990,
+      "sha256": "a9e73acf68157820509718781440faaa784cdd9d63b1cb0be85dfe356526e824",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0089.txt"
+    },
+    {
+      "packet_id": "P0090",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 7,
+      "words": 856,
+      "sha256": "b0f410fe701913ccf234907774a0562cfd29979e2db66c0e2769e0e38d6890c1",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0090.txt"
+    },
+    {
+      "packet_id": "P0091",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 8,
+      "words": 973,
+      "sha256": "a92754533406a3989a9c3dafd76e500cc25bbdc8574c193fe9cb93e62dcd2e96",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0091.txt"
+    },
+    {
+      "packet_id": "P0092",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 9,
+      "words": 996,
+      "sha256": "15abd54f0e404a5b9b70dea964b047631fa158753599a522bc60c5393c31c112",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0092.txt"
+    },
+    {
+      "packet_id": "P0093",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 10,
+      "words": 988,
+      "sha256": "17a0f2ac862fdf25feff06c2f3e68c944fcc7654206322abc5bc2377aa89a67d",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0093.txt"
+    },
+    {
+      "packet_id": "P0094",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 11,
+      "words": 997,
+      "sha256": "695d52a9b7f48f1c2522e0084cb6717044e469e94af2b13eeecebec315521002",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0094.txt"
+    },
+    {
+      "packet_id": "P0095",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 12,
+      "words": 986,
+      "sha256": "8939c744cd62956ccd2ba11deecda3200b9bc1987e14c8aa5f35777bfdee8cc3",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0095.txt"
+    },
+    {
+      "packet_id": "P0096",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 13,
+      "words": 830,
+      "sha256": "4331f3cb2f3d17bd84dc3811736c54262a0e8661c0597e4c36af4687f87bb317",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0096.txt"
+    },
+    {
+      "packet_id": "P0097",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 14,
+      "words": 989,
+      "sha256": "ade73354af3a9678f46db729b1781ab783fd23937fae3ce49769ae74d9c40d60",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0097.txt"
+    },
+    {
+      "packet_id": "P0098",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 15,
+      "words": 995,
+      "sha256": "1628c210378dca9dea66d736fe3cf072bd9f6ce254e14cc71f291238e3b62d42",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0098.txt"
+    },
+    {
+      "packet_id": "P0099",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 16,
+      "words": 997,
+      "sha256": "14f67d62342ce1ed649114fc3bee72de4a04e22c79cf6b973b8a2b5836f5c532",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0099.txt"
+    },
+    {
+      "packet_id": "P0100",
+      "chapter_index": 4,
+      "chapter_title": "April Eighth, 1928",
+      "chapter_packet": 17,
+      "words": 1420,
+      "sha256": "25ad5f7481e6328a62f89cae53c77b65237579783057260ec6ed08e7aacff56d",
+      "path": "data/wb_ingest/william-faulkner/the-sound-and-the-fury/packets/P0100.txt"
+    }
+  ],
+  "packet_policy": {
+    "min_words": 700,
+    "target_words": 1000,
+    "max_words": 1500,
+    "use": "candidate extraction only; Bloom excerpts remain <=2 sentences per technique per source"
+  }
+}

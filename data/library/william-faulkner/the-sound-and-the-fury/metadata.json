@@ -1,0 +1,17 @@
+{
+  "request_id": "standard-ebooks-the-sound-and-the-fury",
+  "title": "The Sound and the Fury",
+  "author": "William Faulkner",
+  "source_url": "https://standardebooks.org/ebooks/william-faulkner/the-sound-and-the-fury/text/single-page",
+  "source_type": "standard_ebooks",
+  "retrieved_at": "2026-10-04T16:31:40.927826+00:00",
+  "source_content_type": "application/xhtml+xml",
+  "source_sha256": "6cf11ca52aa9a7ab5001f9cba208a074f16fd009b395a07c06adcd4bd7655907",
+  "chapter_count": 4,
+  "chapter_files": [
+    "chapters/001-april-seventh-1928.md",
+    "chapters/002-june-second-1910.md",
+    "chapters/003-april-sixth-1928.md",
+    "chapters/004-april-eighth-1928.md"
+  ]
+}

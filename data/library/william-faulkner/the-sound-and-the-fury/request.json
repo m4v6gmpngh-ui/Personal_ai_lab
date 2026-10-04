@@ -1,0 +1,17 @@
+{
+  "id": "standard-ebooks-the-sound-and-the-fury",
+  "url": "https://standardebooks.org/ebooks/william-faulkner/the-sound-and-the-fury/text/single-page",
+  "source_type": "standard_ebooks",
+  "rights": "public_domain_us",
+  "title": "The Sound and the Fury",
+  "author": "William Faulkner",
+  "genre": [
+    "literary"
+  ],
+  "era": "American modernism / 1929",
+  "pov": "multiple: first-person stream of consciousness (Benjy, Quentin, Jason) and third-person/omniscient (Dilsey section)",
+  "output_slug": "william-faulkner/the-sound-and-the-fury",
+  "requested_source_url": "https://openlibrary.org/books/OL59048134M/The_sound_and_the_fury?utm_source=chatgpt.com",
+  "requested_openlibrary_edition": "OL59048134M",
+  "provenance_note": "User targeted Open Library edition OL59048134M, published 1929. Acquisition uses the supported Standard Ebooks U.S.-public-domain transcription of The Sound and the Fury while preserving the requested Open Library URL and edition ID as provenance. Standard Ebooks included the 1929 novel in its Public Domain Day 2025 releases. No access control is bypassed."
+}
