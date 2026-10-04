@@ -1,0 +1,19 @@
+{
+  "id": "standard-ebooks-the-machine-stops",
+  "url": "https://standardebooks.org/ebooks/e-m-forster/short-fiction/text/the-machine-stops",
+  "source_type": "standard_ebooks",
+  "rights": "public_domain_us",
+  "title": "The Machine Stops",
+  "author": "E. M. Forster",
+  "genre": [
+    "science fiction",
+    "literary",
+    "philosophical"
+  ],
+  "era": "Edwardian / 1909",
+  "pov": "third-person with focal shifts, primarily Vashti and Kuno",
+  "output_slug": "e-m-forster/the-machine-stops",
+  "requested_source_url": "https://openlibrary.org/books/OL27934172M/The_Machine_Stops?utm_source=chatgpt.com",
+  "requested_openlibrary_edition": "OL27934172M",
+  "provenance_note": "User targeted Open Library edition OL27934172M of The Machine Stops, first published in 1909 in the Oxford and Cambridge Review. Acquisition uses the supported Standard Ebooks U.S.-public-domain transcription of the story from E. M. Forster's Short Fiction collection, preserving the requested Open Library URL and edition ID as provenance. Only The Machine Stops is targeted, not the rest of the collection. No access control is bypassed."
+}

@@ -1,0 +1,200 @@
+{
+  "schema": "wb-ingest-1",
+  "authority": {
+    "target": "WB-00 Writing Bloom",
+    "writing_bloom_target": true,
+    "project_bloom_write": false,
+    "personal_global_bloom_write": false,
+    "other_domain_bloom_write": false,
+    "notion_write": false,
+    "purpose": "measurement and evidence preparation only"
+  },
+  "rights": {
+    "classification": "public_domain_us",
+    "storage": "tracked",
+    "full_text_retained": true,
+    "rule": "tracked full text is permitted only for configured public-domain sources"
+  },
+  "source": {
+    "title": "The Machine Stops",
+    "author": "E. M. Forster",
+    "genre": [
+      "science fiction",
+      "literary",
+      "philosophical"
+    ],
+    "era": "Edwardian / 1909",
+    "pov": "third-person with focal shifts, primarily Vashti and Kuno",
+    "obtained": "public domain",
+    "source_url": "https://standardebooks.org/ebooks/e-m-forster/short-fiction/text/the-machine-stops",
+    "source_sha256": "10d8c07fc60dc2c0f0e149a47c6b33a2d4f621262bf0d9e75175109aca2ed343",
+    "source_type": "standard_ebooks",
+    "library_path": "data/library/e-m-forster/the-machine-stops"
+  },
+  "profile": {
+    "one_sentence_para": 50.6,
+    "short_sent": 29.2,
+    "mean": 12.9,
+    "sd": 9.3,
+    "dialogue_share": 44.4,
+    "semicolons_1k": 2.82,
+    "emdash_1k": 8.71,
+    "words": 12247,
+    "narration_words": 8499,
+    "dialogue_words": 5439,
+    "narration_paragraphs": 176,
+    "narration_sentences": 661
+  },
+  "notion_profile_fields": {
+    "Profile": "The Machine Stops — source profile",
+    "Scope": "source",
+    "Genre": [
+      "science fiction",
+      "literary",
+      "philosophical"
+    ],
+    "Sample Words": 12247,
+    "Dialogue Share %": "44.4",
+    "Mean Sentence Length": "12.9",
+    "Sentence Length Spread (SD)": "9.3",
+    "Short Sentence % (<=6 words, narration)": "29.2",
+    "One-Sentence Paragraph % (narration)": "50.6",
+    "Semicolons per 1k": "2.82",
+    "Em-dashes per 1k": "8.71",
+    "Notes": "Deterministic WB-01-compatible measurement; source relation added during WB learning import."
+  },
+  "packets": [
+    {
+      "packet_id": "P0001",
+      "chapter_index": 1,
+      "chapter_title": "Part I",
+      "chapter_packet": 1,
+      "words": 974,
+      "sha256": "31dfb8b501c2528c7bba380fe9ba176833881afd4a2051ffd4672a0d0795e90b",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0001.txt"
+    },
+    {
+      "packet_id": "P0002",
+      "chapter_index": 1,
+      "chapter_title": "Part I",
+      "chapter_packet": 2,
+      "words": 942,
+      "sha256": "0d7f9effbf5d22c793291a04221f5e3fcb9f08013cda02fb41ee41eb5cd5c089",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0002.txt"
+    },
+    {
+      "packet_id": "P0003",
+      "chapter_index": 1,
+      "chapter_title": "Part I",
+      "chapter_packet": 3,
+      "words": 873,
+      "sha256": "6981843cf0f908b5d313775345fbfeed1ba98d99fe8e46d44c6b98c34803473e",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0003.txt"
+    },
+    {
+      "packet_id": "P0004",
+      "chapter_index": 1,
+      "chapter_title": "Part I",
+      "chapter_packet": 4,
+      "words": 992,
+      "sha256": "c98ed792513b610a39ba18376c4b3b5877f878b6661ee00ec33c94de66d18ae4",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0004.txt"
+    },
+    {
+      "packet_id": "P0005",
+      "chapter_index": 1,
+      "chapter_title": "Part I",
+      "chapter_packet": 5,
+      "words": 664,
+      "sha256": "255e90f9958ae775d21e9cd29ffd2f991afa1373ff233c7a47558099b2a31355",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0005.txt"
+    },
+    {
+      "packet_id": "P0006",
+      "chapter_index": 2,
+      "chapter_title": "Part II",
+      "chapter_packet": 1,
+      "words": 820,
+      "sha256": "76461f3e371c15d2825fb853996c4f0281445c4b54ce93baed3dfe89818131bb",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0006.txt"
+    },
+    {
+      "packet_id": "P0007",
+      "chapter_index": 2,
+      "chapter_title": "Part II",
+      "chapter_packet": 2,
+      "words": 933,
+      "sha256": "c0efe78deb3a5c1d10d0326026ec95347eae1b15942d17f6ab64633808e11d98",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0007.txt"
+    },
+    {
+      "packet_id": "P0008",
+      "chapter_index": 2,
+      "chapter_title": "Part II",
+      "chapter_packet": 3,
+      "words": 860,
+      "sha256": "0aea4bef3282bacedbfc238b5711f23df352cee363d98643be59199c1fb250f4",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0008.txt"
+    },
+    {
+      "packet_id": "P0009",
+      "chapter_index": 2,
+      "chapter_title": "Part II",
+      "chapter_packet": 4,
+      "words": 915,
+      "sha256": "4fd4db79307288dabd85ec282a7ac81ed3977b20658103b3123d1f6816513dba",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0009.txt"
+    },
+    {
+      "packet_id": "P0010",
+      "chapter_index": 2,
+      "chapter_title": "Part II",
+      "chapter_packet": 5,
+      "words": 613,
+      "sha256": "d6e2a17cf4d73b83025890d9fa6f83c3edced2adac0f689c72a351c82724fe4a",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0010.txt"
+    },
+    {
+      "packet_id": "P0011",
+      "chapter_index": 3,
+      "chapter_title": "Part III",
+      "chapter_packet": 1,
+      "words": 906,
+      "sha256": "5e8fd15b7aeac51fbb406dcff52575b0a893beeb6e1716c30d721eb327e45ad3",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0011.txt"
+    },
+    {
+      "packet_id": "P0012",
+      "chapter_index": 3,
+      "chapter_title": "Part III",
+      "chapter_packet": 2,
+      "words": 885,
+      "sha256": "a2ab52a5b385eae5edd6cd700a1b29a905e86b3956fed37ffc91b91259818c44",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0012.txt"
+    },
+    {
+      "packet_id": "P0013",
+      "chapter_index": 3,
+      "chapter_title": "Part III",
+      "chapter_packet": 3,
+      "words": 998,
+      "sha256": "4dfb1f3adafa27a1bcd996b51f45c16e7cb80ec72a6fd063d3777000af0a928d",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0013.txt"
+    },
+    {
+      "packet_id": "P0014",
+      "chapter_index": 3,
+      "chapter_title": "Part III",
+      "chapter_packet": 4,
+      "words": 872,
+      "sha256": "8347cc59cefd312c8d03c3163a450aab301833c14806757ae48282e906deda50",
+      "path": "data/wb_ingest/e-m-forster/the-machine-stops/packets/P0014.txt"
+    }
+  ],
+  "packet_policy": {
+    "min_words": 700,
+    "target_words": 1000,
+    "max_words": 1500,
+    "use": "candidate extraction only; Bloom excerpts remain <=2 sentences per technique per source"
+  }
+}

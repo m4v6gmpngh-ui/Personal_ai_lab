@@ -1,0 +1,16 @@
+{
+  "request_id": "standard-ebooks-the-machine-stops",
+  "title": "The Machine Stops",
+  "author": "E. M. Forster",
+  "source_url": "https://standardebooks.org/ebooks/e-m-forster/short-fiction/text/the-machine-stops",
+  "source_type": "standard_ebooks",
+  "retrieved_at": "2026-10-04T16:17:38.882955+00:00",
+  "source_content_type": "application/xhtml+xml",
+  "source_sha256": "10d8c07fc60dc2c0f0e149a47c6b33a2d4f621262bf0d9e75175109aca2ed343",
+  "chapter_count": 3,
+  "chapter_files": [
+    "chapters/001-part-i.md",
+    "chapters/002-part-ii.md",
+    "chapters/003-part-iii.md"
+  ]
+}
