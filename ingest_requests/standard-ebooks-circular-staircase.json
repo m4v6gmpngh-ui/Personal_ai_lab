@@ -2,7 +2,11 @@
   "id": "standard-ebooks-circular-staircase",
   "url": "https://standardebooks.org/ebooks/mary-roberts-rinehart/the-circular-staircase/text/single-page",
   "source_type": "standard_ebooks",
+  "rights": "public_domain_us",
   "title": "The Circular Staircase",
   "author": "Mary Roberts Rinehart",
+  "genre": ["mystery"],
+  "era": "early 20th century",
+  "pov": "first person",
   "output_slug": "mary-roberts-rinehart/the-circular-staircase"
 }
