@@ -1,0 +1,511 @@
+{
+  "schema": "wb-ingest-1",
+  "authority": {
+    "target": "WB-00 Writing Bloom",
+    "writing_bloom_target": true,
+    "project_bloom_write": false,
+    "personal_global_bloom_write": false,
+    "other_domain_bloom_write": false,
+    "notion_write": false,
+    "purpose": "measurement and evidence preparation only"
+  },
+  "rights": {
+    "classification": "public_domain_us",
+    "storage": "tracked",
+    "full_text_retained": true,
+    "rule": "tracked full text is permitted only for configured public-domain sources"
+  },
+  "source": {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": [
+      "literary"
+    ],
+    "era": "Jazz Age / American modernism / 1925",
+    "pov": "first person retrospective, Nick Carraway",
+    "obtained": "public domain",
+    "source_url": "https://standardebooks.org/ebooks/f-scott-fitzgerald/the-great-gatsby/text/single-page",
+    "source_sha256": "c30f3b427bdd8696e47cb10de1317a327b9976fa7ce7bcb7b5c77b7d38bdbc84",
+    "source_type": "standard_ebooks",
+    "library_path": "data/library/f-scott-fitzgerald/the-great-gatsby"
+  },
+  "profile": {
+    "one_sentence_para": 57.6,
+    "short_sent": 32.6,
+    "mean": 13.9,
+    "sd": 10.8,
+    "dialogue_share": 27.0,
+    "semicolons_1k": 1.77,
+    "emdash_1k": 7.27,
+    "words": 48346,
+    "narration_words": 35648,
+    "dialogue_words": 13044,
+    "narration_paragraphs": 1199,
+    "narration_sentences": 2567
+  },
+  "notion_profile_fields": {
+    "Profile": "The Great Gatsby — source profile",
+    "Scope": "source",
+    "Genre": [
+      "literary"
+    ],
+    "Sample Words": 48346,
+    "Dialogue Share %": "27.0",
+    "Mean Sentence Length": "13.9",
+    "Sentence Length Spread (SD)": "10.8",
+    "Short Sentence % (<=6 words, narration)": "32.6",
+    "One-Sentence Paragraph % (narration)": "57.6",
+    "Semicolons per 1k": "1.77",
+    "Em-dashes per 1k": "7.27",
+    "Notes": "Deterministic WB-01-compatible measurement; source relation added during WB learning import."
+  },
+  "packets": [
+    {
+      "packet_id": "P0001",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 1,
+      "words": 965,
+      "sha256": "13c113e1a6d214843ef7ab4a1be915c9e38aa879797bb6b2ba062bd46d4b7cc5",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0001.txt"
+    },
+    {
+      "packet_id": "P0002",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 2,
+      "words": 962,
+      "sha256": "5fbaeabdf14779afb106efd446840273c45fc60f499b32df96654c93468c5f28",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0002.txt"
+    },
+    {
+      "packet_id": "P0003",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 3,
+      "words": 957,
+      "sha256": "5b630b7750bc5dc8f208384d675f86003dd34d8babc5eee96d7747af498039f7",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0003.txt"
+    },
+    {
+      "packet_id": "P0004",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 4,
+      "words": 993,
+      "sha256": "d89fdba71b40a316d1d2ef6a45f640f7516ea6749499987bde63006759fe660e",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0004.txt"
+    },
+    {
+      "packet_id": "P0005",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 5,
+      "words": 960,
+      "sha256": "2e6ec1a0799fec0b0cde6c0ffbc7cbcdfab6c44457e52680bc2aec0bca6a949e",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0005.txt"
+    },
+    {
+      "packet_id": "P0006",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 6,
+      "words": 1104,
+      "sha256": "7227a42e245bc59dd19e0f08fdfeb0579e7b15c70439fc8acdf7f856c79e8e50",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0006.txt"
+    },
+    {
+      "packet_id": "P0007",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 1,
+      "words": 997,
+      "sha256": "bd73cf0eaa87eaa738cba219b104be3e65772f5dec9fdd7002b833df559f4126",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0007.txt"
+    },
+    {
+      "packet_id": "P0008",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 2,
+      "words": 955,
+      "sha256": "589115536b34e52aab8f9b2bab06c071537021674338258a1233336653868323",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0008.txt"
+    },
+    {
+      "packet_id": "P0009",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 3,
+      "words": 983,
+      "sha256": "279d206d3e104a9ac2cc272fc67f37106914dc8d4f0ff184b86afca91649edbf",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0009.txt"
+    },
+    {
+      "packet_id": "P0010",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 4,
+      "words": 1357,
+      "sha256": "c1993f7151d35ed75906b8df38793a16b1abc93cdb1c0ba0d15c0633d0e8b302",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0010.txt"
+    },
+    {
+      "packet_id": "P0011",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 1,
+      "words": 978,
+      "sha256": "d149bccaef3a213bf96722a5da12ef79f2c251293a6d4e3badc5f8b4220d9923",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0011.txt"
+    },
+    {
+      "packet_id": "P0012",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 2,
+      "words": 971,
+      "sha256": "a3a6e32ae2008f416af5a8b8a09b60d9f65b1e87bddf02d20ba40cdd4aaa9776",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0012.txt"
+    },
+    {
+      "packet_id": "P0013",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 3,
+      "words": 951,
+      "sha256": "d49881dc6543272f3815e14bff18a21a68cb25cdf56567959c1df27cf6bb9d34",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0013.txt"
+    },
+    {
+      "packet_id": "P0014",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 4,
+      "words": 978,
+      "sha256": "39604ad1d4cf4d83a529a29981d863ca2d937ef56bf57d25394da232b237f06e",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0014.txt"
+    },
+    {
+      "packet_id": "P0015",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 5,
+      "words": 911,
+      "sha256": "227d9643339fe8dab10dbe9b8c7ec26e0a74c90a53f49d860ea735af143bf580",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0015.txt"
+    },
+    {
+      "packet_id": "P0016",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 6,
+      "words": 977,
+      "sha256": "9b673fb1869663e758cd596395823686a2eda2d19d380b5488cbf2722f559385",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0016.txt"
+    },
+    {
+      "packet_id": "P0017",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 1,
+      "words": 954,
+      "sha256": "99fdb3a38e1ab873587205b14d142ae57f41e3a53be6dad6e3cc8cc435e13237",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0017.txt"
+    },
+    {
+      "packet_id": "P0018",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 2,
+      "words": 950,
+      "sha256": "cdfb253c73bdafe928ac48124770c0a4454482b0f405239a5eb80adb022cd077",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0018.txt"
+    },
+    {
+      "packet_id": "P0019",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 3,
+      "words": 996,
+      "sha256": "f63161c00cb61a9d05f879ddd1d71c10ddd77d5e89a31c0384168ec5df7b0f4c",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0019.txt"
+    },
+    {
+      "packet_id": "P0020",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 4,
+      "words": 979,
+      "sha256": "463b62ea22eeab02ddf96d05e63a6aab5b8cee0a53f2c0138a7a8e6e3d9b3b2e",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0020.txt"
+    },
+    {
+      "packet_id": "P0021",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 5,
+      "words": 985,
+      "sha256": "b44de8349c1d474b6ee001b483a9575cfbf431340cdba8c470de15a9b5a1a4b3",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0021.txt"
+    },
+    {
+      "packet_id": "P0022",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 6,
+      "words": 611,
+      "sha256": "7fcff12fe4a144f2533601224463f607c6278344bf788fb2bf7825e8d06f6740",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0022.txt"
+    },
+    {
+      "packet_id": "P0023",
+      "chapter_index": 5,
+      "chapter_title": "V",
+      "chapter_packet": 1,
+      "words": 1000,
+      "sha256": "4e3835e67e273975b6b38cfdfbd2d9fe38649db9b61c15237274807df71a565e",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0023.txt"
+    },
+    {
+      "packet_id": "P0024",
+      "chapter_index": 5,
+      "chapter_title": "V",
+      "chapter_packet": 2,
+      "words": 885,
+      "sha256": "7946a53e27468a58ea19c5b72c912bb2871c7595d6ab4a17a881297145e66644",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0024.txt"
+    },
+    {
+      "packet_id": "P0025",
+      "chapter_index": 5,
+      "chapter_title": "V",
+      "chapter_packet": 3,
+      "words": 915,
+      "sha256": "5fdb125c9d8db04e16da97eb7507605e09617d378d3fe3f6895ffbdc5fd689f8",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0025.txt"
+    },
+    {
+      "packet_id": "P0026",
+      "chapter_index": 5,
+      "chapter_title": "V",
+      "chapter_packet": 4,
+      "words": 1451,
+      "sha256": "4098483ab7d2ad6e38ef2f7a487d55e6952d0f0288420a3e84575bc8382b6b61",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0026.txt"
+    },
+    {
+      "packet_id": "P0027",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 1,
+      "words": 922,
+      "sha256": "e04991c09a052076bdcd9d1103850166d94b400f1ca2c397514787027d14a4e2",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0027.txt"
+    },
+    {
+      "packet_id": "P0028",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 2,
+      "words": 992,
+      "sha256": "ba3d24b4e7b6ee079b7d815c7819215079289d68ba071b4cdd279939fcd510ca",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0028.txt"
+    },
+    {
+      "packet_id": "P0029",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 3,
+      "words": 934,
+      "sha256": "08b503ffb40cd71fe05dffea7b8bb7845ff75fd2f032ceb1b82d52a9cac122be",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0029.txt"
+    },
+    {
+      "packet_id": "P0030",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 4,
+      "words": 1208,
+      "sha256": "2fc09d93a9197a438c0f0958ee217eb68397edc396948e5814e5a622d491051c",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0030.txt"
+    },
+    {
+      "packet_id": "P0031",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 1,
+      "words": 1000,
+      "sha256": "f2d77948550e0f2c7195612f8040da71dce6603bef9e38fb84bde66588bf65c2",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0031.txt"
+    },
+    {
+      "packet_id": "P0032",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 2,
+      "words": 996,
+      "sha256": "a11054b6376e3b2fdeccd62e11901c1b69cbd95344dbc9c9ba29e7eec38761e2",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0032.txt"
+    },
+    {
+      "packet_id": "P0033",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 3,
+      "words": 1000,
+      "sha256": "89403c371523349e17dfa8a015ceddf5447be8bf7dcc61870578cab0961ec026",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0033.txt"
+    },
+    {
+      "packet_id": "P0034",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 4,
+      "words": 998,
+      "sha256": "d5cf3869ce393b2191a1fdc312de6963a3675d49018ad81a0742787f925e1897",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0034.txt"
+    },
+    {
+      "packet_id": "P0035",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 5,
+      "words": 990,
+      "sha256": "dbb14d3f4b1dd4c37e9adf387c1f6b5820cb8d52b51b886b705e8d1f218e10e7",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0035.txt"
+    },
+    {
+      "packet_id": "P0036",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 6,
+      "words": 972,
+      "sha256": "87d6de75124a762a40c72d623607da7dbaef456a69a575a5de5d6953e4e7a139",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0036.txt"
+    },
+    {
+      "packet_id": "P0037",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 7,
+      "words": 871,
+      "sha256": "adbf1efe1ea6d8d2450db23de071ee93b1f9d7e4fd6fa81fc3837a4d3cc58602",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0037.txt"
+    },
+    {
+      "packet_id": "P0038",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 8,
+      "words": 999,
+      "sha256": "ad312416593c045450266486bb2c9108206f35e1c28584c4b7fd45a3d55b4fa1",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0038.txt"
+    },
+    {
+      "packet_id": "P0039",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 9,
+      "words": 973,
+      "sha256": "55f475a0fe6b6e6ea5d275ac610a803ce0c908d48bf54b708386589d131e0945",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0039.txt"
+    },
+    {
+      "packet_id": "P0040",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 1,
+      "words": 905,
+      "sha256": "47ccebc1ab7373127fd9a6e5a33ca352f00d9e192701782c524965d1f1106cba",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0040.txt"
+    },
+    {
+      "packet_id": "P0041",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 2,
+      "words": 943,
+      "sha256": "b41a640c77928c8cc9e86c450055c868b85242a78d945d7aed09528d791405a2",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0041.txt"
+    },
+    {
+      "packet_id": "P0042",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 3,
+      "words": 963,
+      "sha256": "39e13914fde396aaf94f08f11baf0c17a9351f6b4e4ad421d16c155eac917ab1",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0042.txt"
+    },
+    {
+      "packet_id": "P0043",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 4,
+      "words": 999,
+      "sha256": "7d3c33ee42496a43a18ef0b9f786476e9d24eacd9221afcbbff22f9ce64d7918",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0043.txt"
+    },
+    {
+      "packet_id": "P0044",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 5,
+      "words": 752,
+      "sha256": "b05c795ef7023153f7072b635b5770c1bbafe0490cb84fca5d4970e16b7ccc1b",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0044.txt"
+    },
+    {
+      "packet_id": "P0045",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 1,
+      "words": 976,
+      "sha256": "090e866a1b93a76c3e5118be28db1ac0a7bab90e3dda32fed7493fe9967d79a7",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0045.txt"
+    },
+    {
+      "packet_id": "P0046",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 2,
+      "words": 999,
+      "sha256": "c739645822312b12a1a33642bb06a08c86f9b2a451c1f22be57b60c9928e45b4",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0046.txt"
+    },
+    {
+      "packet_id": "P0047",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 3,
+      "words": 994,
+      "sha256": "8db96f8a23c7032bb03f74e45d65987c0c7ac1b333ade8edd0788fbcb8f6c0fa",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0047.txt"
+    },
+    {
+      "packet_id": "P0048",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 4,
+      "words": 988,
+      "sha256": "cbc95a357606e8a24ef0e6c304771ae6af69c2b3e91f294d00f96e9a79230771",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0048.txt"
+    },
+    {
+      "packet_id": "P0049",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 5,
+      "words": 1247,
+      "sha256": "21c472a71f90f989b5c8d09fd26f70b085e544be57507291dfc0294bbcd1af49",
+      "path": "data/wb_ingest/f-scott-fitzgerald/the-great-gatsby/packets/P0049.txt"
+    }
+  ],
+  "packet_policy": {
+    "min_words": 700,
+    "target_words": 1000,
+    "max_words": 1500,
+    "use": "candidate extraction only; Bloom excerpts remain <=2 sentences per technique per source"
+  }
+}

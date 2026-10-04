@@ -1,0 +1,22 @@
+{
+  "request_id": "standard-ebooks-the-great-gatsby",
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "source_url": "https://standardebooks.org/ebooks/f-scott-fitzgerald/the-great-gatsby/text/single-page",
+  "source_type": "standard_ebooks",
+  "retrieved_at": "2026-10-04T16:52:07.586609+00:00",
+  "source_content_type": "application/xhtml+xml",
+  "source_sha256": "c30f3b427bdd8696e47cb10de1317a327b9976fa7ce7bcb7b5c77b7d38bdbc84",
+  "chapter_count": 9,
+  "chapter_files": [
+    "chapters/001-i.md",
+    "chapters/002-ii.md",
+    "chapters/003-iii.md",
+    "chapters/004-iv.md",
+    "chapters/005-v.md",
+    "chapters/006-vi.md",
+    "chapters/007-vii.md",
+    "chapters/008-viii.md",
+    "chapters/009-ix.md"
+  ]
+}
