@@ -7,7 +7,7 @@ Deterministic acquisition-side work only:
 - bounded learning packets
 - provenance/hashes and Notion-ready handoff data
 
-Never writes to Notion and never writes to a project Bloom.
+Never writes to Notion and never writes to a project Bloom, personal/global Bloom, or any other domain Bloom.
 """
 from __future__ import annotations
 
@@ -210,7 +210,10 @@ def build_public_handoff(book_dir: Path, out_root: Path) -> Path:
         "schema": "wb-ingest-1",
         "authority": {
             "target": "WB-00 Writing Bloom",
+            "writing_bloom_target": True,
             "project_bloom_write": False,
+            "personal_global_bloom_write": False,
+            "other_domain_bloom_write": False,
             "notion_write": False,
             "purpose": "measurement and evidence preparation only",
         },
@@ -266,8 +269,10 @@ def prepare_local_file(input_path: Path, *, title: str, author: str, rights: str
                             "sha256": sha256_text(packet_text), "path": str(path.as_posix())})
     handoff = {
         "schema": "wb-ingest-1",
-        "authority": {"target": "WB-00 Writing Bloom", "project_bloom_write": False,
-                      "notion_write": False, "purpose": "local/private measurement and candidate preparation only"},
+        "authority": {"target": "WB-00 Writing Bloom", "writing_bloom_target": True,
+                      "project_bloom_write": False, "personal_global_bloom_write": False,
+                      "other_domain_bloom_write": False, "notion_write": False,
+                      "purpose": "local/private measurement and candidate preparation only"},
         "rights": {"classification": rights, "storage": "local_private",
                    "full_text_retained_in_git": False,
                    "rule": "owned/licensed/excerpt material must stay outside tracked public corpus"},
