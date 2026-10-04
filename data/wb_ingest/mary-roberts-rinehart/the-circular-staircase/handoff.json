@@ -2,7 +2,10 @@
   "schema": "wb-ingest-1",
   "authority": {
     "target": "WB-00 Writing Bloom",
+    "writing_bloom_target": true,
     "project_bloom_write": false,
+    "personal_global_bloom_write": false,
+    "other_domain_bloom_write": false,
     "notion_write": false,
     "purpose": "measurement and evidence preparation only"
   },
