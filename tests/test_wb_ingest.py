@@ -5,6 +5,7 @@ from scripts.wb_ingest import (
     packetize_paragraphs,
     profile,
     word_count,
+    build_public_handoff,
 )
 
 
@@ -42,6 +43,33 @@ class WBIngestTests(unittest.TestCase):
         for count in counts[:-1]:
             self.assertLessEqual(count, 1500)
             self.assertGreaterEqual(count, 700)
+
+    def test_handoff_authority_is_single_target(self):
+        import json
+        import tempfile
+        from pathlib import Path
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            book = root / "library" / "author" / "book"
+            chapters = book / "chapters"
+            chapters.mkdir(parents=True)
+            (book / "metadata.json").write_text(json.dumps({
+                "title": "Book",
+                "author": "Author",
+                "source_type": "standard_ebooks",
+                "rights": "public_domain_us",
+                "output_slug": "author/book"
+            }), encoding="utf-8")
+            (chapters / "001-one.md").write_text("# One\n\n" + ("word " * 800), encoding="utf-8")
+            out = build_public_handoff(book, root / "wb")
+            handoff = json.loads((out / "handoff.json").read_text(encoding="utf-8"))
+            authority = handoff["authority"]
+            self.assertTrue(authority["writing_bloom_target"])
+            self.assertFalse(authority["project_bloom_write"])
+            self.assertFalse(authority["personal_global_bloom_write"])
+            self.assertFalse(authority["other_domain_bloom_write"])
+            self.assertFalse(authority["notion_write"])
 
 
 if __name__ == "__main__":

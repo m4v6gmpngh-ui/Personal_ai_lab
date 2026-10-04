@@ -2,7 +2,7 @@
 
 This is the acquisition and measurement layer for **WB-00 — Writing Bloom**.
 
-It is intentionally separate from every project Bloom.
+It is intentionally single-target: WB-00 only. It is separate from every project Bloom, personal/global Bloom, and every other domain Bloom.
 
 ## Authority boundary
 
@@ -15,12 +15,13 @@ GitHub may:
 
 GitHub may **not**:
 - write or update a project Bloom;
+- write, mirror, summarize, seed, reinforce, or auto-transfer source-derived information into a personal/global Bloom or another domain Bloom;
 - promote a Writing Bloom technique;
 - change Author Count, Status, or Success Weight;
 - decide that a project lesson is promoted;
 - treat one author's voice as a general writing rule.
 
-Notion WB-00 remains the authoritative learned-skill memory.
+Notion WB-00 remains the only authoritative learned-skill memory for this ingestion pathway. Other Blooms may consume reviewed WB-00 knowledge later through their own routing rules, but ingestion itself never fans out.
 
 ## Rights and storage policy
 
