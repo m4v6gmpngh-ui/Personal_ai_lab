@@ -1,0 +1,709 @@
+{
+  "schema": "wb-ingest-1",
+  "authority": {
+    "target": "WB-00 Writing Bloom",
+    "writing_bloom_target": true,
+    "project_bloom_write": false,
+    "personal_global_bloom_write": false,
+    "other_domain_bloom_write": false,
+    "notion_write": false,
+    "purpose": "measurement and evidence preparation only"
+  },
+  "rights": {
+    "classification": "public_domain_us",
+    "storage": "tracked",
+    "full_text_retained": true,
+    "rule": "tracked full text is permitted only for configured public-domain sources"
+  },
+  "source": {
+    "title": "Mrs. Dalloway",
+    "author": "Virginia Woolf",
+    "genre": [
+      "literary"
+    ],
+    "era": "interwar modernism / 1925",
+    "pov": "multiple",
+    "obtained": "public domain",
+    "source_url": "https://standardebooks.org/ebooks/virginia-woolf/mrs-dalloway/text/single-page",
+    "source_sha256": "44661c3475c27740aca61a3c21e7811843feeac6f0b1c7e63f840a2812c47252",
+    "source_type": "standard_ebooks",
+    "library_path": "data/library/virginia-woolf/mrs-dalloway"
+  },
+  "profile": {
+    "one_sentence_para": 21.8,
+    "short_sent": 46.4,
+    "mean": 11.1,
+    "sd": 12.1,
+    "dialogue_share": 3.4,
+    "semicolons_1k": 23.53,
+    "emdash_1k": 8.53,
+    "words": 64513,
+    "narration_words": 62341,
+    "dialogue_words": 2172,
+    "narration_paragraphs": 765,
+    "narration_sentences": 5614
+  },
+  "notion_profile_fields": {
+    "Profile": "Mrs. Dalloway — source profile",
+    "Scope": "source",
+    "Genre": [
+      "literary"
+    ],
+    "Sample Words": 64513,
+    "Dialogue Share %": "3.4",
+    "Mean Sentence Length": "11.1",
+    "Sentence Length Spread (SD)": "12.1",
+    "Short Sentence % (<=6 words, narration)": "46.4",
+    "One-Sentence Paragraph % (narration)": "21.8",
+    "Semicolons per 1k": "23.53",
+    "Em-dashes per 1k": "8.53",
+    "Notes": "Deterministic WB-01-compatible measurement; source relation added during WB learning import."
+  },
+  "packets": [
+    {
+      "packet_id": "P0001",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 1,
+      "words": 729,
+      "sha256": "69b891780c75fbe1991701474f6690e748dc0da9be508e96296d9050c2cf5896",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0001.txt"
+    },
+    {
+      "packet_id": "P0002",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 2,
+      "words": 811,
+      "sha256": "4460bb959ab13e78abfb4719c6f9b2273ab159208411e27906fab82aef12c908",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0002.txt"
+    },
+    {
+      "packet_id": "P0003",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 3,
+      "words": 935,
+      "sha256": "8b88fdc9d100e6c19b268bfd6819bbb03ac235ce7557923e8447b5d40d85253f",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0003.txt"
+    },
+    {
+      "packet_id": "P0004",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 4,
+      "words": 993,
+      "sha256": "e69399f5c8336129024a763186beb9653cbbb99001602231e86efa0df3ccf379",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0004.txt"
+    },
+    {
+      "packet_id": "P0005",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 5,
+      "words": 944,
+      "sha256": "cc5a5e905fcefc232c54249a71e29f9b7d684fa49663f4a419f8680d738ae415",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0005.txt"
+    },
+    {
+      "packet_id": "P0006",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 6,
+      "words": 847,
+      "sha256": "79afc16ad4b42dae335b44aaa1a0dd5f94150c0ead2e1f9ded47ed8ac799c33a",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0006.txt"
+    },
+    {
+      "packet_id": "P0007",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 7,
+      "words": 948,
+      "sha256": "2c878d3da9389e391e05afc969f4c7864b3c05fbf55e84414ed65e465c469502",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0007.txt"
+    },
+    {
+      "packet_id": "P0008",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 8,
+      "words": 861,
+      "sha256": "c6d0a23bfede1c5cdc3f35fbab3575675617c29fd4388fcad8781223e2a23c0e",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0008.txt"
+    },
+    {
+      "packet_id": "P0009",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 9,
+      "words": 747,
+      "sha256": "9f0b8f337a120fe54d713a87da5a1fa6845d59e96159ea5b374006467b2c32bf",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0009.txt"
+    },
+    {
+      "packet_id": "P0010",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 10,
+      "words": 964,
+      "sha256": "f27dd89fb94bce60e46eec07345fa8db11881e65c875c9da9e942de91f6f14d6",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0010.txt"
+    },
+    {
+      "packet_id": "P0011",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 11,
+      "words": 1224,
+      "sha256": "7c5a9763b773bee1e3b749e0e71e762140538bea3d67e029ed9b4d26e0575708",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0011.txt"
+    },
+    {
+      "packet_id": "P0012",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 12,
+      "words": 971,
+      "sha256": "e6141eef2a22f05b1cccb4f3acf4f110e4979d0ab7598750161749912b1923ca",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0012.txt"
+    },
+    {
+      "packet_id": "P0013",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 13,
+      "words": 944,
+      "sha256": "a5f8342a046e9542c22349227d68e225483e9f247a361f407977b4bea37f60ce",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0013.txt"
+    },
+    {
+      "packet_id": "P0014",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 14,
+      "words": 950,
+      "sha256": "aa9ae89730598ccf8550f187eb90cfb77fd5ef037880b0b04ba513894c4b4413",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0014.txt"
+    },
+    {
+      "packet_id": "P0015",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 15,
+      "words": 972,
+      "sha256": "e4517d269e71b1aca58ebfe3f958a2c1cff72cfa8b9274b7930a182a19171786",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0015.txt"
+    },
+    {
+      "packet_id": "P0016",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 16,
+      "words": 921,
+      "sha256": "2ab29d72b1000e1b5a51aad39e9ffe593c901c40c4d09f842b32fd7678c810f6",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0016.txt"
+    },
+    {
+      "packet_id": "P0017",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 17,
+      "words": 963,
+      "sha256": "4ad1f20bec1ec7ad3fe3d714925ef8caa31a2d7bb40fe51d40dc2496dc12e411",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0017.txt"
+    },
+    {
+      "packet_id": "P0018",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 18,
+      "words": 980,
+      "sha256": "d6bf2b4e6ddda23c5ec5b6a5a3011ef9ca3467d06909187e660ffb50ad327aca",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0018.txt"
+    },
+    {
+      "packet_id": "P0019",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 19,
+      "words": 778,
+      "sha256": "da76fc20042f23ee1d5a376c98074bbd68d4797d974cdb5ca543025050e9ebf9",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0019.txt"
+    },
+    {
+      "packet_id": "P0020",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 20,
+      "words": 891,
+      "sha256": "104cd4ec70eee7c53766f634a376e68556c7589f90847198cc4076be51d67126",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0020.txt"
+    },
+    {
+      "packet_id": "P0021",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 21,
+      "words": 957,
+      "sha256": "98dcad684720ff426123567b2719079869ec40f4844c2cc6b03570de55c0790d",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0021.txt"
+    },
+    {
+      "packet_id": "P0022",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 22,
+      "words": 997,
+      "sha256": "fcfbd929b752d9c20fdfd899f63db5548d55b156199d9a8030f4ce14d03e022a",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0022.txt"
+    },
+    {
+      "packet_id": "P0023",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 23,
+      "words": 869,
+      "sha256": "032581812b5bd98ea7df921f02166f4ca68d5c9301c167edcef3fdbefa19afc8",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0023.txt"
+    },
+    {
+      "packet_id": "P0024",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 24,
+      "words": 841,
+      "sha256": "2e6d572d7a09a4f558013c586c52392379f372127ef44ec2b1f02493aa5f75a6",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0024.txt"
+    },
+    {
+      "packet_id": "P0025",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 25,
+      "words": 993,
+      "sha256": "526ca83c8de11062cb26e0d1858e4c3881f120a9da32fb7f90492feaa517cc67",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0025.txt"
+    },
+    {
+      "packet_id": "P0026",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 26,
+      "words": 910,
+      "sha256": "07122fc9a8dbbd643e1ef8c6d3013c85cdd0afd8cd8cd6f459f387987201866a",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0026.txt"
+    },
+    {
+      "packet_id": "P0027",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 27,
+      "words": 783,
+      "sha256": "3e511d4dbf34cded810419aa1e86942d65f0030b78cd65b1ed9e9a00061359e4",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0027.txt"
+    },
+    {
+      "packet_id": "P0028",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 28,
+      "words": 716,
+      "sha256": "bf5c8c7d5aa52b8fe9090827ad12e37748a3dfe1315d14e0192ef5444576318a",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0028.txt"
+    },
+    {
+      "packet_id": "P0029",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 29,
+      "words": 986,
+      "sha256": "b205f9639cc6fb76be31c23b1489a868f000ae26f2e03ff8ec5c59217e1a176d",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0029.txt"
+    },
+    {
+      "packet_id": "P0030",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 30,
+      "words": 902,
+      "sha256": "1c937c39243ca6803bb3cde3d69bb7a7a48ef1d6081422fcdcaa3900d9cb3ecd",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0030.txt"
+    },
+    {
+      "packet_id": "P0031",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 31,
+      "words": 997,
+      "sha256": "d8774e37bbdc279da47f297d4d1bbe982e2a5fc390926f2b3f5f71a1ea1d3429",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0031.txt"
+    },
+    {
+      "packet_id": "P0032",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 32,
+      "words": 834,
+      "sha256": "9f81f6242692be4f547928cf8ee81d71894ca61856166b435b073eedaeb84e49",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0032.txt"
+    },
+    {
+      "packet_id": "P0033",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 33,
+      "words": 969,
+      "sha256": "49b3eb392cc5b4ec8b2c0bf26a1196b51142f32868bbba4b8e4ab99aa62fd62a",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0033.txt"
+    },
+    {
+      "packet_id": "P0034",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 34,
+      "words": 853,
+      "sha256": "621232afe2750d018791d523984c5598567d23e2a555537955305bdc38d11b9d",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0034.txt"
+    },
+    {
+      "packet_id": "P0035",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 35,
+      "words": 999,
+      "sha256": "8f3a1b1740b9a1646c4528426967d9cf3f99b4523a16afafd79092948691a5ec",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0035.txt"
+    },
+    {
+      "packet_id": "P0036",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 36,
+      "words": 878,
+      "sha256": "f7e0e6e419cc8ec46c3c4f80c56bcb43d866735484f1c3f29c9b5546e79e2949",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0036.txt"
+    },
+    {
+      "packet_id": "P0037",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 37,
+      "words": 989,
+      "sha256": "e3750a7597743174b4d622469d395c08aacd43a6adad9d7f2f25fa120b30968c",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0037.txt"
+    },
+    {
+      "packet_id": "P0038",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 38,
+      "words": 906,
+      "sha256": "4a0c55e5b0cb59da07c6716f9d2788e79fbcec9500248d67ac608204d8b3d219",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0038.txt"
+    },
+    {
+      "packet_id": "P0039",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 39,
+      "words": 815,
+      "sha256": "a9fafa4c33b5a0575ed58ff04dd81cce2f524c8e47f40d655563cf4b7ee3874c",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0039.txt"
+    },
+    {
+      "packet_id": "P0040",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 40,
+      "words": 915,
+      "sha256": "f8f0d48f50a1f8fe57938c2042e8ab7c6f1a08cc875f07b1ef0330d4f3effd61",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0040.txt"
+    },
+    {
+      "packet_id": "P0041",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 41,
+      "words": 776,
+      "sha256": "cb2c86117a841411a39db768690bc2fffee853d57cfd5df6111921c3974a85e7",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0041.txt"
+    },
+    {
+      "packet_id": "P0042",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 42,
+      "words": 956,
+      "sha256": "bb7f5a94765f0e06b7b93feb4edaa564b81f5b5c6168b412337f12783f6f2e44",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0042.txt"
+    },
+    {
+      "packet_id": "P0043",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 43,
+      "words": 721,
+      "sha256": "9bd27a5355a6c1e01f1869754100bf402c02a337fae0781f977e5bb6e053de81",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0043.txt"
+    },
+    {
+      "packet_id": "P0044",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 44,
+      "words": 897,
+      "sha256": "ad9e28e69170062d79d71ade1627d03a2c59eff9420a8482c79cfe7f79fa8bc1",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0044.txt"
+    },
+    {
+      "packet_id": "P0045",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 45,
+      "words": 978,
+      "sha256": "a4ad62801852526f6cbf31821db0deca77e8866e3c206754d417c98c1eb7796f",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0045.txt"
+    },
+    {
+      "packet_id": "P0046",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 46,
+      "words": 927,
+      "sha256": "5e377df71b57a9555b481a9a76e7343e1f5e02a5e1faa10217de74c683faf17a",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0046.txt"
+    },
+    {
+      "packet_id": "P0047",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 47,
+      "words": 947,
+      "sha256": "c200ca55d373673686a55cfe38ec8ca7f8786f3f1ff1f386f90b4b7ad42e5d29",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0047.txt"
+    },
+    {
+      "packet_id": "P0048",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 48,
+      "words": 938,
+      "sha256": "e843f3888b6b0323d03396192a3b2ebab1d5f5d5563db4b67cbbde67a15f8dbe",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0048.txt"
+    },
+    {
+      "packet_id": "P0049",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 49,
+      "words": 924,
+      "sha256": "7c38330bb7c394a4aad3663bf8310771b9f2e91e9dd3812f26f6670427424ac1",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0049.txt"
+    },
+    {
+      "packet_id": "P0050",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 50,
+      "words": 966,
+      "sha256": "49188f4d7fc79405461881691a3fa0b2bc5e5a957d2dabfcb54d342ace902ef3",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0050.txt"
+    },
+    {
+      "packet_id": "P0051",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 51,
+      "words": 863,
+      "sha256": "b3ef5a479b4081e46a7be1b58493cbccc4ef0f3c98efc33a42f2416e4780338f",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0051.txt"
+    },
+    {
+      "packet_id": "P0052",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 52,
+      "words": 991,
+      "sha256": "2aa997d990e7b3c94bde17f3a45d6b380695305b80ed2e6fa1f35c6e6bee3cea",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0052.txt"
+    },
+    {
+      "packet_id": "P0053",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 53,
+      "words": 908,
+      "sha256": "bf394e3e27cdf68303d454ad6934f4007e440e85fd0bb9e97a248c5a581d164b",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0053.txt"
+    },
+    {
+      "packet_id": "P0054",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 54,
+      "words": 953,
+      "sha256": "4111c833bdf5ee7504b120d459887ed96904536169403b99e5acaa0c2288628c",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0054.txt"
+    },
+    {
+      "packet_id": "P0055",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 55,
+      "words": 941,
+      "sha256": "31ce4f5d8b323588801612524bacd493c3e9d97a22d76b13f191b5995b54438f",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0055.txt"
+    },
+    {
+      "packet_id": "P0056",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 56,
+      "words": 808,
+      "sha256": "3954685839b6bb95d5fad35e9cadbe7714e14229061bc87532a11fde0e3553fe",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0056.txt"
+    },
+    {
+      "packet_id": "P0057",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 57,
+      "words": 857,
+      "sha256": "08ec90cf1b74ba9c513afc8b10f4d571e8a1a2c3662be92bd7a442c3657fa806",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0057.txt"
+    },
+    {
+      "packet_id": "P0058",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 58,
+      "words": 943,
+      "sha256": "5d1bd96f706f287c56ef5fc110617070f437d8b72b671d6432b0cc72ec2d8a12",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0058.txt"
+    },
+    {
+      "packet_id": "P0059",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 59,
+      "words": 918,
+      "sha256": "42388935310da9bf090c97716447d44a8043c7790e4f34d959b49a48f850c53d",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0059.txt"
+    },
+    {
+      "packet_id": "P0060",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 60,
+      "words": 823,
+      "sha256": "8f6802a04eb4d9da346aebaa16e59e0c67c7cc2e37b7bb287e6c0d386248ce94",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0060.txt"
+    },
+    {
+      "packet_id": "P0061",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 61,
+      "words": 946,
+      "sha256": "8641a8b3520ac0df22a44b0d9657cda7dc3518aacea3c7252c9b04e78a5314a4",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0061.txt"
+    },
+    {
+      "packet_id": "P0062",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 62,
+      "words": 969,
+      "sha256": "143151c97dad433c73098737cc8a5205befdf9dc7df0465e8b83672823827fc3",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0062.txt"
+    },
+    {
+      "packet_id": "P0063",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 63,
+      "words": 774,
+      "sha256": "bb440de61ba215b20ebe5d13742aa2f22f7c8a22f0ac0aa4aba0432c4ad18512",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0063.txt"
+    },
+    {
+      "packet_id": "P0064",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 64,
+      "words": 902,
+      "sha256": "bda6c19ffe2f4d7d7e463fa634be4e5f9c36bdcc16e05c83645f59ad96e1a890",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0064.txt"
+    },
+    {
+      "packet_id": "P0065",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 65,
+      "words": 884,
+      "sha256": "b68fb1caa7c804822939c05e3ea45c68a6b91aaba02b36c73acfaa28c30144a6",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0065.txt"
+    },
+    {
+      "packet_id": "P0066",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 66,
+      "words": 998,
+      "sha256": "3045e59934a803f9f5c813c00daf25023401c074da4bded9c1d1d0a4991b552a",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0066.txt"
+    },
+    {
+      "packet_id": "P0067",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 67,
+      "words": 955,
+      "sha256": "cd19bbfd6a5034bd77408cd2b54a7bd2bff8af5fdc603d4e16cff1c98211718c",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0067.txt"
+    },
+    {
+      "packet_id": "P0068",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 68,
+      "words": 972,
+      "sha256": "bf2a01d4cda01b4e40768df1849afc3027296d2d47aecffddae61b9bbf346675",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0068.txt"
+    },
+    {
+      "packet_id": "P0069",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 69,
+      "words": 967,
+      "sha256": "b9b15544d9f930c8adf7708c500f06242941d1cd885a65faf1246039dc3bf3e8",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0069.txt"
+    },
+    {
+      "packet_id": "P0070",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 70,
+      "words": 866,
+      "sha256": "b2cfa571f39972498f0528cc60840ca87beb39c969749697da73a7d9abb3971d",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0070.txt"
+    },
+    {
+      "packet_id": "P0071",
+      "chapter_index": 1,
+      "chapter_title": "Full Text",
+      "chapter_packet": 71,
+      "words": 763,
+      "sha256": "74e925c5f0a2dcbc1f3ea9da80c1cd05db5a6e61cb139734f824539a0a551481",
+      "path": "data/wb_ingest/virginia-woolf/mrs-dalloway/packets/P0071.txt"
+    }
+  ],
+  "packet_policy": {
+    "min_words": 700,
+    "target_words": 1000,
+    "max_words": 1500,
+    "use": "candidate extraction only; Bloom excerpts remain <=2 sentences per technique per source"
+  }
+}

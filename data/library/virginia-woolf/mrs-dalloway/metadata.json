@@ -1,0 +1,14 @@
+{
+  "request_id": "standard-ebooks-mrs-dalloway",
+  "title": "Mrs. Dalloway",
+  "author": "Virginia Woolf",
+  "source_url": "https://standardebooks.org/ebooks/virginia-woolf/mrs-dalloway/text/single-page",
+  "source_type": "standard_ebooks",
+  "retrieved_at": "2026-10-04T04:41:52.218387+00:00",
+  "source_content_type": "application/xhtml+xml",
+  "source_sha256": "44661c3475c27740aca61a3c21e7811843feeac6f0b1c7e63f840a2812c47252",
+  "chapter_count": 1,
+  "chapter_files": [
+    "chapters/001-full-text.md"
+  ]
+}
