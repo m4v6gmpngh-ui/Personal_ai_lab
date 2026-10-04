@@ -1,0 +1,15 @@
+{
+  "id": "standard-ebooks-mrs-dalloway",
+  "url": "https://standardebooks.org/ebooks/virginia-woolf/mrs-dalloway/text/single-page",
+  "source_type": "standard_ebooks",
+  "rights": "public_domain_us",
+  "title": "Mrs. Dalloway",
+  "author": "Virginia Woolf",
+  "genre": ["literary"],
+  "era": "interwar modernism / 1925",
+  "pov": "multiple",
+  "output_slug": "virginia-woolf/mrs-dalloway",
+  "requested_source_url": "https://dn760107.eu.archive.org/0/items/mrsdalloway00wool/mrsdalloway00wool_djvu.txt",
+  "requested_internet_archive_item": "mrsdalloway00wool",
+  "provenance_note": "User supplied the Internet Archive djvu.txt URL for Mrs. Dalloway. WB web_ingest v1 is configured for Standard Ebooks, so acquisition uses the supported Standard Ebooks U.S.-public-domain transcription of the same 1925 work while retaining the requested Internet Archive URL as provenance. No access control is bypassed."
+}
