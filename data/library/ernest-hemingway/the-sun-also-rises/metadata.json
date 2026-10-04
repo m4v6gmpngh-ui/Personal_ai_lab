@@ -1,13 +1,13 @@
 {
-  "request_id": "standard-ebooks-maltese-falcon",
-  "title": "The Maltese Falcon",
-  "author": "Dashiell Hammett",
-  "source_url": "https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon/text/single-page",
+  "request_id": "standard-ebooks-sun-also-rises",
+  "title": "The Sun Also Rises",
+  "author": "Ernest Hemingway",
+  "source_url": "https://standardebooks.org/ebooks/ernest-hemingway/the-sun-also-rises/text/single-page",
   "source_type": "standard_ebooks",
-  "retrieved_at": "2026-10-04T03:45:33.942644+00:00",
+  "retrieved_at": "2026-10-04T03:45:34.275014+00:00",
   "source_content_type": "application/xhtml+xml",
-  "source_sha256": "d236e246e0c0d2e3e757d96d0e3ea2b3a9cf6773dd5a870af6776bc5ee425b20",
-  "chapter_count": 20,
+  "source_sha256": "e1c9838a00211dfcd2481d567aee06522fd48676d85699a53750714aa6f1d567",
+  "chapter_count": 19,
   "chapter_files": [
     "chapters/001-i.md",
     "chapters/002-ii.md",
@@ -27,7 +27,6 @@
     "chapters/016-xvi.md",
     "chapters/017-xvii.md",
     "chapters/018-xviii.md",
-    "chapters/019-xix.md",
-    "chapters/020-xx.md"
+    "chapters/019-xix.md"
   ]
 }

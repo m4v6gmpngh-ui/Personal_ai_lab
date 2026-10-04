@@ -1,0 +1,684 @@
+{
+  "schema": "wb-ingest-1",
+  "authority": {
+    "target": "WB-00 Writing Bloom",
+    "writing_bloom_target": true,
+    "project_bloom_write": false,
+    "personal_global_bloom_write": false,
+    "other_domain_bloom_write": false,
+    "notion_write": false,
+    "purpose": "measurement and evidence preparation only"
+  },
+  "rights": {
+    "classification": "public_domain_us",
+    "storage": "tracked",
+    "full_text_retained": true,
+    "rule": "tracked full text is permitted only for configured public-domain sources"
+  },
+  "source": {
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway",
+    "genre": [
+      "literary",
+      "modernist"
+    ],
+    "era": "early 20th century",
+    "pov": "first person",
+    "obtained": "public domain",
+    "source_url": "https://standardebooks.org/ebooks/ernest-hemingway/the-sun-also-rises/text/single-page",
+    "source_sha256": "e1c9838a00211dfcd2481d567aee06522fd48676d85699a53750714aa6f1d567",
+    "source_type": "standard_ebooks",
+    "library_path": "data/library/ernest-hemingway/the-sun-also-rises"
+  },
+  "profile": {
+    "one_sentence_para": 65.6,
+    "short_sent": 45.5,
+    "mean": 10.0,
+    "sd": 9.9,
+    "dialogue_share": 37.1,
+    "semicolons_1k": 0.33,
+    "emdash_1k": 0.47,
+    "words": 67625,
+    "narration_words": 42827,
+    "dialogue_words": 25114,
+    "narration_paragraphs": 1778,
+    "narration_sentences": 4265
+  },
+  "notion_profile_fields": {
+    "Profile": "The Sun Also Rises — source profile",
+    "Scope": "source",
+    "Genre": [
+      "literary",
+      "modernist"
+    ],
+    "Sample Words": 67625,
+    "Dialogue Share %": "37.1",
+    "Mean Sentence Length": "10.0",
+    "Sentence Length Spread (SD)": "9.9",
+    "Short Sentence % (<=6 words, narration)": "45.5",
+    "One-Sentence Paragraph % (narration)": "65.6",
+    "Semicolons per 1k": "0.33",
+    "Em-dashes per 1k": "0.47",
+    "Notes": "Deterministic WB-01-compatible measurement; source relation added during WB learning import."
+  },
+  "packets": [
+    {
+      "packet_id": "P0001",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 1,
+      "words": 1350,
+      "sha256": "e21853caa1bb24340d8d986600eaf15e3feff9454f426b2c95fef9beceaf3a0f",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0001.txt"
+    },
+    {
+      "packet_id": "P0002",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 1,
+      "words": 994,
+      "sha256": "e1d7a96243114a000a15495f15cebe3b5b4ee3d06cd57502ae3b0fb2c1e7d971",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0002.txt"
+    },
+    {
+      "packet_id": "P0003",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 2,
+      "words": 516,
+      "sha256": "1ec6d7bdc3538c7be3a06d994162ac7eb50462d6531e585d28783d556f494f60",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0003.txt"
+    },
+    {
+      "packet_id": "P0004",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 1,
+      "words": 991,
+      "sha256": "f8a1721c18d42d17bc1144636998011d0cf649782fa56f0d22d555ea91e39eb1",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0004.txt"
+    },
+    {
+      "packet_id": "P0005",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 2,
+      "words": 1000,
+      "sha256": "ea7664a44123fa475543dcbca617340c2f138c6a249f5a13666cc78774e7af8b",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0005.txt"
+    },
+    {
+      "packet_id": "P0006",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 3,
+      "words": 820,
+      "sha256": "cf6bb3dab0e3e83dbf46c8eccbb9a0e8554821c79c4f44032b34fe05b6344bb5",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0006.txt"
+    },
+    {
+      "packet_id": "P0007",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 1,
+      "words": 990,
+      "sha256": "1265cc7741dbdcd9b1a496c28b959b9a6a76f21f42e7d5f3ee638659a51b2c47",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0007.txt"
+    },
+    {
+      "packet_id": "P0008",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 2,
+      "words": 995,
+      "sha256": "bba1d7683138cf02d9bce5fa434e6e3a280741a7508316785627af18559b5d8d",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0008.txt"
+    },
+    {
+      "packet_id": "P0009",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 3,
+      "words": 930,
+      "sha256": "3ec1c93e3c1099e2ba19d7313e77a671a9747e550c56ee5235206341f3101487",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0009.txt"
+    },
+    {
+      "packet_id": "P0010",
+      "chapter_index": 5,
+      "chapter_title": "V",
+      "chapter_packet": 1,
+      "words": 1302,
+      "sha256": "42b0acf9aa62c3e093a67a75164c3f432eedabd8796b8f627c2a1f35bbff5a2c",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0010.txt"
+    },
+    {
+      "packet_id": "P0011",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 1,
+      "words": 991,
+      "sha256": "816d190e2b1e7e0aa7bd98a0ea693e82f0fd02e34b1068755ae92256ad282513",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0011.txt"
+    },
+    {
+      "packet_id": "P0012",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 2,
+      "words": 971,
+      "sha256": "ceedeb6ee0e74f7823622367f7a1771241056ca982b3e68d6bdf2606c43a40ad",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0012.txt"
+    },
+    {
+      "packet_id": "P0013",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 3,
+      "words": 1417,
+      "sha256": "ac6c6020d5ceb0f8d03b33dd43b5d3b11e97827a7138cfcddf08e8a6560deaac",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0013.txt"
+    },
+    {
+      "packet_id": "P0014",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 1,
+      "words": 987,
+      "sha256": "75d6af5330cedebcd26de6d18770ea19c9a1c3cbe26828ef9a15112bf9a369e2",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0014.txt"
+    },
+    {
+      "packet_id": "P0015",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 2,
+      "words": 994,
+      "sha256": "2077096cc30e2b1c966a0d3d7a33a5066c827219ac0038c049a1cf00d097b620",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0015.txt"
+    },
+    {
+      "packet_id": "P0016",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 3,
+      "words": 998,
+      "sha256": "0099f2ec7529777d6130be5924259ae1aa19dee642cbe1076b07173e586a0530",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0016.txt"
+    },
+    {
+      "packet_id": "P0017",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 4,
+      "words": 542,
+      "sha256": "3648ad6cfd04b8f33475aaceb7792ce401f6d4f30df317d9d236eb9db6b99959",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0017.txt"
+    },
+    {
+      "packet_id": "P0018",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 1,
+      "words": 983,
+      "sha256": "7138b29287ca879fd7cf460fef217a6d4caf2bf1705e0913a354700ef9d7806f",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0018.txt"
+    },
+    {
+      "packet_id": "P0019",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 2,
+      "words": 984,
+      "sha256": "710cc1072362bdfc3f063a67751103102e81689979799abc3878b9a20425bd02",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0019.txt"
+    },
+    {
+      "packet_id": "P0020",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 3,
+      "words": 1057,
+      "sha256": "c992622df4317eff6e96f083e9ef932eab5f1b8b76a49abf50f5f154cfdb5e0a",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0020.txt"
+    },
+    {
+      "packet_id": "P0021",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 1,
+      "words": 993,
+      "sha256": "ac08b93dccff69545453dbfa77a8da98e791e4c3b3f4df62c6caf4e8cc2e0dd6",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0021.txt"
+    },
+    {
+      "packet_id": "P0022",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 2,
+      "words": 1294,
+      "sha256": "d033a5e3b94d6eef9cb201d298481fdfa1d16e126bd07a2962f4d02ea2eedbea",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0022.txt"
+    },
+    {
+      "packet_id": "P0023",
+      "chapter_index": 10,
+      "chapter_title": "X",
+      "chapter_packet": 1,
+      "words": 986,
+      "sha256": "78ec5097648d7a009445492547c30bc76c5c1f1df1ac4ede2970de2dcae144f8",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0023.txt"
+    },
+    {
+      "packet_id": "P0024",
+      "chapter_index": 10,
+      "chapter_title": "X",
+      "chapter_packet": 2,
+      "words": 997,
+      "sha256": "532837104fe7be9035bca0712a8bcd8553717e9d43997ec206883065b2dddee6",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0024.txt"
+    },
+    {
+      "packet_id": "P0025",
+      "chapter_index": 10,
+      "chapter_title": "X",
+      "chapter_packet": 3,
+      "words": 994,
+      "sha256": "1cdff3b30c407a03e5f146102c50e822ab1edf5bea6861a5d11ce213a62d3a4c",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0025.txt"
+    },
+    {
+      "packet_id": "P0026",
+      "chapter_index": 10,
+      "chapter_title": "X",
+      "chapter_packet": 4,
+      "words": 1363,
+      "sha256": "49c68db3247c1b1eb72656aa89b1bc713a1c3142886b3fed7cf937a8cebe8117",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0026.txt"
+    },
+    {
+      "packet_id": "P0027",
+      "chapter_index": 11,
+      "chapter_title": "XI",
+      "chapter_packet": 1,
+      "words": 984,
+      "sha256": "8ff6a7fa5b6e87b11104709d11e2e77bb5e849a5d13b1e4dd648fb6d35180feb",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0027.txt"
+    },
+    {
+      "packet_id": "P0028",
+      "chapter_index": 11,
+      "chapter_title": "XI",
+      "chapter_packet": 2,
+      "words": 993,
+      "sha256": "5f32923c004f1d13ada8240101748aef07c31fb16583bbc69f744f20ab64b8ee",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0028.txt"
+    },
+    {
+      "packet_id": "P0029",
+      "chapter_index": 11,
+      "chapter_title": "XI",
+      "chapter_packet": 3,
+      "words": 580,
+      "sha256": "a66574ec0be31a9cc41412366d74c3e5753bfa0f8f2aab8a318823339410c1b6",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0029.txt"
+    },
+    {
+      "packet_id": "P0030",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 1,
+      "words": 998,
+      "sha256": "1186a68702bcde6fb18dc1b08a78d41ababdce7ed52829aa581eac345d89b622",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0030.txt"
+    },
+    {
+      "packet_id": "P0031",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 2,
+      "words": 991,
+      "sha256": "7af997e420d63522581a5c799bdfa7480282ae558c9fda1adee17a5ec8901a54",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0031.txt"
+    },
+    {
+      "packet_id": "P0032",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 3,
+      "words": 974,
+      "sha256": "faaa51cfb8aaf4f15acde56e4633edf925e1407f4a3a8200c773f0418894abf9",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0032.txt"
+    },
+    {
+      "packet_id": "P0033",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 4,
+      "words": 981,
+      "sha256": "174d273f1b70ad52271c02fd228803e03d103ef36f1a71dcba17b2fca652d643",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0033.txt"
+    },
+    {
+      "packet_id": "P0034",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 1,
+      "words": 966,
+      "sha256": "fff46dc71daf5a37b45d210edda759e3e41d3b92921eec9337ac2a29836e6cfd",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0034.txt"
+    },
+    {
+      "packet_id": "P0035",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 2,
+      "words": 980,
+      "sha256": "3d49aa8ea77ec1277a6a2cc186079e17681a624ddbda7234feafb287190dbdc7",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0035.txt"
+    },
+    {
+      "packet_id": "P0036",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 3,
+      "words": 948,
+      "sha256": "ef8b246eb5121b06813157e155cdb5076a5063808935210486b96350fc7d376a",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0036.txt"
+    },
+    {
+      "packet_id": "P0037",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 4,
+      "words": 994,
+      "sha256": "5ec7ae1967eb005b3e6bc0b6ed4064740d5c81fd858d1faa9a69bfb67181f62b",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0037.txt"
+    },
+    {
+      "packet_id": "P0038",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 5,
+      "words": 996,
+      "sha256": "444e7448428a56f6ebdc3035c3eb1190873aa5ce7b21fd0a9c58130548c6745d",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0038.txt"
+    },
+    {
+      "packet_id": "P0039",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 6,
+      "words": 979,
+      "sha256": "1b05f49d424514d4b90a9f7ab2fcf074836f56fb6e1d1b6bf7ab600051741267",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0039.txt"
+    },
+    {
+      "packet_id": "P0040",
+      "chapter_index": 14,
+      "chapter_title": "XIV",
+      "chapter_packet": 1,
+      "words": 1457,
+      "sha256": "b32f65d5f9ce142577d99d342823da78ea242234aca9b02b47b5380a578b092b",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0040.txt"
+    },
+    {
+      "packet_id": "P0041",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 1,
+      "words": 982,
+      "sha256": "82263e5c86f17dc7a97647869e5008b4f920333865514df5961238469269d167",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0041.txt"
+    },
+    {
+      "packet_id": "P0042",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 2,
+      "words": 1000,
+      "sha256": "bc0fd3b2cb44d91d0932e6f5076a29c7a715dcaa08d6091bc907b37cf9a4ed02",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0042.txt"
+    },
+    {
+      "packet_id": "P0043",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 3,
+      "words": 999,
+      "sha256": "5117e5a251fd4af46d9bccae0d2357bf8aff738b5ccdd3721ecd118f4c74ae09",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0043.txt"
+    },
+    {
+      "packet_id": "P0044",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 4,
+      "words": 850,
+      "sha256": "5b0ff5e3ec3d59a7c1ce789d342017d1383762741745a5940de3ba611bfd1736",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0044.txt"
+    },
+    {
+      "packet_id": "P0045",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 5,
+      "words": 1467,
+      "sha256": "8d21d3de0710ed50123589c9c3a510e61bad8c7fe22dda6ef50075cb67215b46",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0045.txt"
+    },
+    {
+      "packet_id": "P0046",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 1,
+      "words": 918,
+      "sha256": "264028f211c18cf563826fd817ffae83cbb5cebd54f1da5b8c73eaadcc67c369",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0046.txt"
+    },
+    {
+      "packet_id": "P0047",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 2,
+      "words": 944,
+      "sha256": "ba4eb2a5807b4c2960143e9b371e623560ef13c8cb9db1eb568e1d5d21c5d159",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0047.txt"
+    },
+    {
+      "packet_id": "P0048",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 3,
+      "words": 990,
+      "sha256": "031e9bfdd554542350705bd8fcd2565004c916efebdde7209ff40e12bcde47fc",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0048.txt"
+    },
+    {
+      "packet_id": "P0049",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 4,
+      "words": 980,
+      "sha256": "f1698399932b8269a01177264da784ca2c79c84aa1529437c81cf427e00420f4",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0049.txt"
+    },
+    {
+      "packet_id": "P0050",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 5,
+      "words": 891,
+      "sha256": "37e9bfe9595fd131c6ddc37b794b9e8788adc87d728b74430c163c2c69fc36b9",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0050.txt"
+    },
+    {
+      "packet_id": "P0051",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 1,
+      "words": 1000,
+      "sha256": "853edb1027713c2d1fbe922259329f784d394c03015f1c5e1e5cc2614d168080",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0051.txt"
+    },
+    {
+      "packet_id": "P0052",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 2,
+      "words": 989,
+      "sha256": "907d8695b7b9e78f09d4740adf198aa4c3b6269511a2902b3ded0deb357a70b4",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0052.txt"
+    },
+    {
+      "packet_id": "P0053",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 3,
+      "words": 981,
+      "sha256": "bd7ec9fdc3689a100c654817038219531c51bf5f88744e35965dc58894332836",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0053.txt"
+    },
+    {
+      "packet_id": "P0054",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 4,
+      "words": 989,
+      "sha256": "38e77076ef3244d178fc774f30751c59cc1f72e86464c2ffccf4b24f80568ebc",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0054.txt"
+    },
+    {
+      "packet_id": "P0055",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 5,
+      "words": 906,
+      "sha256": "c0b1ea4514ea643c2618183118a4d3a32c475ce65cd867614752003c2547ad69",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0055.txt"
+    },
+    {
+      "packet_id": "P0056",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 1,
+      "words": 999,
+      "sha256": "193e5be83638a47da9898eb026d7c5592b5d766b933ea9e30a10ae7445431a55",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0056.txt"
+    },
+    {
+      "packet_id": "P0057",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 2,
+      "words": 957,
+      "sha256": "f742be9b50ab0fdd19ad7df1d782deacbd21211d7eedfb1cf7cc9aad071d1974",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0057.txt"
+    },
+    {
+      "packet_id": "P0058",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 3,
+      "words": 999,
+      "sha256": "931c6c026a41a36019511c6c2103279de4f94bf923872a86f386e17a72e5b03c",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0058.txt"
+    },
+    {
+      "packet_id": "P0059",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 4,
+      "words": 991,
+      "sha256": "9212351bf885bca3aef2c393198939eec5fe27c3d42b50f06e115999c2961d41",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0059.txt"
+    },
+    {
+      "packet_id": "P0060",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 5,
+      "words": 814,
+      "sha256": "e3aad4afa580f70a3a3531b3194fda0a59c4575b601430bf476c37f2f0879e5c",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0060.txt"
+    },
+    {
+      "packet_id": "P0061",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 6,
+      "words": 1406,
+      "sha256": "01ba03c5042970dd180a9379f6f460a3eda6bae31affe23122c3c210f790cf4d",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0061.txt"
+    },
+    {
+      "packet_id": "P0062",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 1,
+      "words": 995,
+      "sha256": "22ecb30228525185ed4e78cd8460994fbbb916d787144e4e0261a6bc734fef9c",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0062.txt"
+    },
+    {
+      "packet_id": "P0063",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 2,
+      "words": 988,
+      "sha256": "937a8182450f7633a8408d9cf404fad95af9008d1bb7f3ec415a43540eea5061",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0063.txt"
+    },
+    {
+      "packet_id": "P0064",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 3,
+      "words": 851,
+      "sha256": "eccc40bbe020975c6f93bc048d5edf0a41146b993819a9bde2dfc50f511a394b",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0064.txt"
+    },
+    {
+      "packet_id": "P0065",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 4,
+      "words": 971,
+      "sha256": "a65b255d1cb53f0eaa547e7167567ef9694747911409a46c207386e47ab9f045",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0065.txt"
+    },
+    {
+      "packet_id": "P0066",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 5,
+      "words": 995,
+      "sha256": "9da70a48fa36e426a900f5498ad6df4ec4c4e507e55bb4ec0281ef7ef94dc7b3",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0066.txt"
+    },
+    {
+      "packet_id": "P0067",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 6,
+      "words": 997,
+      "sha256": "588dbe154fada9d0356eef0676b93654ba51419910e256ed620e31b72d441c42",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0067.txt"
+    },
+    {
+      "packet_id": "P0068",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 7,
+      "words": 516,
+      "sha256": "2a96fe34bb773ea6c85d2d34fb8289b7af688517ac1d6d3c746b21d6acc1921f",
+      "path": "data/wb_ingest/ernest-hemingway/the-sun-also-rises/packets/P0068.txt"
+    }
+  ],
+  "packet_policy": {
+    "min_words": 700,
+    "target_words": 1000,
+    "max_words": 1500,
+    "use": "candidate extraction only; Bloom excerpts remain <=2 sentences per technique per source"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "standard-ebooks-sun-also-rises",
+  "url": "https://standardebooks.org/ebooks/ernest-hemingway/the-sun-also-rises/text/single-page",
+  "source_type": "standard_ebooks",
+  "rights": "public_domain_us",
+  "title": "The Sun Also Rises",
+  "author": "Ernest Hemingway",
+  "genre": [
+    "literary",
+    "modernist"
+  ],
+  "era": "early 20th century",
+  "pov": "first person",
+  "output_slug": "ernest-hemingway/the-sun-also-rises",
+  "requested_source_url": "https://dn760100.eu.archive.org/0/items/sunalsorisesthe0000erne/sunalsorisesthe0000erne_djvu.txt",
+  "requested_internet_archive_item": "sunalsorisesthe0000erne",
+  "provenance_note": "User supplied an Internet Archive djvu.txt URL for The Sun Also Rises. WB web_ingest v1 is configured for Standard Ebooks, so acquisition uses the supported Standard Ebooks U.S.-public-domain transcription of the same 1926 work while retaining the requested Internet Archive URL as provenance. No access control is bypassed."
+}
