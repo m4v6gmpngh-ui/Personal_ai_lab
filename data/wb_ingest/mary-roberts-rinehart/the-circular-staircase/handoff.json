@@ -1,0 +1,715 @@
+{
+  "schema": "wb-ingest-1",
+  "authority": {
+    "target": "WB-00 Writing Bloom",
+    "project_bloom_write": false,
+    "notion_write": false,
+    "purpose": "measurement and evidence preparation only"
+  },
+  "rights": {
+    "classification": "public_domain_us",
+    "storage": "tracked",
+    "full_text_retained": true,
+    "rule": "tracked full text is permitted only for configured public-domain sources"
+  },
+  "source": {
+    "title": "The Circular Staircase",
+    "author": "Mary Roberts Rinehart",
+    "genre": [
+      "mystery"
+    ],
+    "era": "early 20th century",
+    "pov": "first person",
+    "obtained": "public domain",
+    "source_url": "https://standardebooks.org/ebooks/mary-roberts-rinehart/the-circular-staircase/text/single-page",
+    "source_sha256": "c37a04083159a5af91e8869d700e87946b820174f6a2f1ac956030844bde4a85",
+    "source_type": "standard_ebooks",
+    "library_path": "data/library/mary-roberts-rinehart/the-circular-staircase"
+  },
+  "profile": {
+    "one_sentence_para": 49.4,
+    "short_sent": 33.5,
+    "mean": 12.0,
+    "sd": 8.9,
+    "dialogue_share": 30.7,
+    "semicolons_1k": 2.49,
+    "emdash_1k": 5.1,
+    "words": 70083,
+    "narration_words": 49066,
+    "dialogue_words": 21508,
+    "narration_paragraphs": 1468,
+    "narration_sentences": 4092
+  },
+  "notion_profile_fields": {
+    "Profile": "The Circular Staircase — source profile",
+    "Scope": "source",
+    "Genre": [
+      "mystery"
+    ],
+    "Sample Words": 70083,
+    "Dialogue Share %": "30.7",
+    "Mean Sentence Length": "12.0",
+    "Sentence Length Spread (SD)": "8.9",
+    "Short Sentence % (<=6 words, narration)": "33.5",
+    "One-Sentence Paragraph % (narration)": "49.4",
+    "Semicolons per 1k": "2.49",
+    "Em-dashes per 1k": "5.1",
+    "Notes": "Deterministic WB-01-compatible measurement; source relation added during WB learning import."
+  },
+  "packets": [
+    {
+      "packet_id": "P0001",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 1,
+      "words": 965,
+      "sha256": "51b935fbb4b84eafb524c9d3ed55d53ae3111e632a45f9d0ced9283687076747",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0001.txt"
+    },
+    {
+      "packet_id": "P0002",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 2,
+      "words": 997,
+      "sha256": "aa1040000babc1b0fa69094e3fcb1b955c8b8d958e7a20bcae533587f80e1528",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0002.txt"
+    },
+    {
+      "packet_id": "P0003",
+      "chapter_index": 1,
+      "chapter_title": "I",
+      "chapter_packet": 3,
+      "words": 557,
+      "sha256": "351e920fe9ab4f755cde050be98ba6e239dcdc2461a7541a05b7bb914fd63fb6",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0003.txt"
+    },
+    {
+      "packet_id": "P0004",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 1,
+      "words": 993,
+      "sha256": "04c04cd58905369e5753be094ddea7a773d945822c2438022a63185848d96414",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0004.txt"
+    },
+    {
+      "packet_id": "P0005",
+      "chapter_index": 2,
+      "chapter_title": "II",
+      "chapter_packet": 2,
+      "words": 1340,
+      "sha256": "81476b1c6e7ea37debee0a1eb6e535c8396c9cb0639dcc1c3d91aabfba3d4697",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0005.txt"
+    },
+    {
+      "packet_id": "P0006",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 1,
+      "words": 942,
+      "sha256": "be962b68d7777f0c660bf1648ddc32993526e92ae88c8fc5150baa524259a5cf",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0006.txt"
+    },
+    {
+      "packet_id": "P0007",
+      "chapter_index": 3,
+      "chapter_title": "III",
+      "chapter_packet": 2,
+      "words": 609,
+      "sha256": "de4d5006ebea9b5a467fa45a97c39abd38fd19767512c73650d599b7dfaf4c91",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0007.txt"
+    },
+    {
+      "packet_id": "P0008",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 1,
+      "words": 988,
+      "sha256": "97fbb0d249fbf423e05537ef5eda56815ad3e49dbae62efa69c76f1dd175f182",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0008.txt"
+    },
+    {
+      "packet_id": "P0009",
+      "chapter_index": 4,
+      "chapter_title": "IV",
+      "chapter_packet": 2,
+      "words": 814,
+      "sha256": "5c127ccacc57ad204412e9160a55813132c4fdc622835c3b1109b68e9dcb339b",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0009.txt"
+    },
+    {
+      "packet_id": "P0010",
+      "chapter_index": 5,
+      "chapter_title": "V",
+      "chapter_packet": 1,
+      "words": 981,
+      "sha256": "318bcbd66179dd51eb3a7a99838e1fdbfbc461859391f415740d8a59bf70bef7",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0010.txt"
+    },
+    {
+      "packet_id": "P0011",
+      "chapter_index": 5,
+      "chapter_title": "V",
+      "chapter_packet": 2,
+      "words": 889,
+      "sha256": "789e9fb1882ade7feb0b441d13ee39ec9915102e019538be19945de492bc337d",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0011.txt"
+    },
+    {
+      "packet_id": "P0012",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 1,
+      "words": 999,
+      "sha256": "02370719fe3466d5e7b77f22fb9b6c2e73cec2c64c1577cb5ae23a1a5b785c3d",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0012.txt"
+    },
+    {
+      "packet_id": "P0013",
+      "chapter_index": 6,
+      "chapter_title": "VI",
+      "chapter_packet": 2,
+      "words": 936,
+      "sha256": "779eeef5ee232d473da1c76977ba61cb4a4826b33ee42ed27a5e71a858808af4",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0013.txt"
+    },
+    {
+      "packet_id": "P0014",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 1,
+      "words": 969,
+      "sha256": "3f30b691dcf1cada9123c6efc7f225ff7b449100998389effaee46a7489bc5c4",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0014.txt"
+    },
+    {
+      "packet_id": "P0015",
+      "chapter_index": 7,
+      "chapter_title": "VII",
+      "chapter_packet": 2,
+      "words": 1132,
+      "sha256": "0277f17b09c58547311fc9a94763d9f249b2cc7a1cfa2860d4b5fa01a0a6ca1b",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0015.txt"
+    },
+    {
+      "packet_id": "P0016",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 1,
+      "words": 862,
+      "sha256": "d7e209b07d4bf5ee0b2d7b1f7ad3071e6d16423b0927eab16ca5a0dc36d6d02e",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0016.txt"
+    },
+    {
+      "packet_id": "P0017",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 2,
+      "words": 996,
+      "sha256": "d37fecbb808f990b128192b54b42c52e815bf7cc4c1c7d170eb182b7b3767bee",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0017.txt"
+    },
+    {
+      "packet_id": "P0018",
+      "chapter_index": 8,
+      "chapter_title": "VIII",
+      "chapter_packet": 3,
+      "words": 1049,
+      "sha256": "773b188f7c31bc70ee2e569e7759ab33efa5fa23d20063a738d2f39a46f1d6b4",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0018.txt"
+    },
+    {
+      "packet_id": "P0019",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 1,
+      "words": 955,
+      "sha256": "c655e58f0c501606e330189d46bedae86fb349273a9459746e828fd9f743fde0",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0019.txt"
+    },
+    {
+      "packet_id": "P0020",
+      "chapter_index": 9,
+      "chapter_title": "IX",
+      "chapter_packet": 2,
+      "words": 1278,
+      "sha256": "a4dede720c00c0e13ba97eed4e1df65632801e39f6d1106b0953c90e34fd2894",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0020.txt"
+    },
+    {
+      "packet_id": "P0021",
+      "chapter_index": 10,
+      "chapter_title": "X",
+      "chapter_packet": 1,
+      "words": 881,
+      "sha256": "0b16816caec48f9e9ce4f4c8b08f21b94d84ae0f0b46010ffbaa92201d96f40a",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0021.txt"
+    },
+    {
+      "packet_id": "P0022",
+      "chapter_index": 10,
+      "chapter_title": "X",
+      "chapter_packet": 2,
+      "words": 1251,
+      "sha256": "f28b936006a7e48ddbb7543f34134d2e5cd3f055d6f93a4a29e1534ccf9bac4d",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0022.txt"
+    },
+    {
+      "packet_id": "P0023",
+      "chapter_index": 11,
+      "chapter_title": "XI",
+      "chapter_packet": 1,
+      "words": 1399,
+      "sha256": "3c8a24a217f6ce4a677e1567eaf8bebe369737573014efbc7b5f8a9b9f22ab19",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0023.txt"
+    },
+    {
+      "packet_id": "P0024",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 1,
+      "words": 986,
+      "sha256": "63cb673e6ef6a0d1946acedfe2525ecd95e8f1b5784ee6ba5a03c39138a7536b",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0024.txt"
+    },
+    {
+      "packet_id": "P0025",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 2,
+      "words": 880,
+      "sha256": "3a047c3bb00d4ee5a12216672121fd16ac2d689ab43ded430e915f22954be237",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0025.txt"
+    },
+    {
+      "packet_id": "P0026",
+      "chapter_index": 12,
+      "chapter_title": "XII",
+      "chapter_packet": 3,
+      "words": 636,
+      "sha256": "099c5f72ee46600dd0a12fa706ba9c46f8d8365ef5af0e01e89f6a52c274a32f",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0026.txt"
+    },
+    {
+      "packet_id": "P0027",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 1,
+      "words": 945,
+      "sha256": "573965fbe1dee75392c03687e276d0b08d9767c3a458ff32b9c764975b7e1888",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0027.txt"
+    },
+    {
+      "packet_id": "P0028",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 2,
+      "words": 967,
+      "sha256": "31965c2242a3a208c440c6706ba494d71b62ef10afacaa5ec8c9e96add6a1a60",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0028.txt"
+    },
+    {
+      "packet_id": "P0029",
+      "chapter_index": 13,
+      "chapter_title": "XIII",
+      "chapter_packet": 3,
+      "words": 1402,
+      "sha256": "6ffd38432afc125fc91482592c15850acd1aaed462c06be9adfdd27ea291517c",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0029.txt"
+    },
+    {
+      "packet_id": "P0030",
+      "chapter_index": 14,
+      "chapter_title": "XIV",
+      "chapter_packet": 1,
+      "words": 902,
+      "sha256": "9b9744e58f119bb13791fbeb6614cb1330c05af55cb405556955b6c511ba3980",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0030.txt"
+    },
+    {
+      "packet_id": "P0031",
+      "chapter_index": 14,
+      "chapter_title": "XIV",
+      "chapter_packet": 2,
+      "words": 693,
+      "sha256": "04ce75e71a36b4c5e536dd392305887804684e2b73c778b3d5763f4e0410e0f2",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0031.txt"
+    },
+    {
+      "packet_id": "P0032",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 1,
+      "words": 1000,
+      "sha256": "0ce7d0c00b746ea850973bb1c6598c80640b858ff89bef5cd5c7474e65593956",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0032.txt"
+    },
+    {
+      "packet_id": "P0033",
+      "chapter_index": 15,
+      "chapter_title": "XV",
+      "chapter_packet": 2,
+      "words": 646,
+      "sha256": "00b47dfc8cf3409720f73c97d15826aca0e29edc71ae1a066cd09b89d9543b3d",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0033.txt"
+    },
+    {
+      "packet_id": "P0034",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 1,
+      "words": 924,
+      "sha256": "ecaf1b05338531d08aa5ffacbfd918635061a348bdfce92f3afc7df12f890b5f",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0034.txt"
+    },
+    {
+      "packet_id": "P0035",
+      "chapter_index": 16,
+      "chapter_title": "XVI",
+      "chapter_packet": 2,
+      "words": 624,
+      "sha256": "592f28caee8c683dc3b54bacd013dc0b9312c15cb5313b06ced8c03f9e12971d",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0035.txt"
+    },
+    {
+      "packet_id": "P0036",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 1,
+      "words": 1000,
+      "sha256": "1321999d42bfe5d2516ff8380c5707b31049e2c1c8418ec5642b0c5c52345265",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0036.txt"
+    },
+    {
+      "packet_id": "P0037",
+      "chapter_index": 17,
+      "chapter_title": "XVII",
+      "chapter_packet": 2,
+      "words": 1181,
+      "sha256": "e6da78d8f218fd49212edd1debbaf85f7a07b397c2d2d22777a1fa74c8377e29",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0037.txt"
+    },
+    {
+      "packet_id": "P0038",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 1,
+      "words": 900,
+      "sha256": "32cffc83eb345535939bcc94c555fb747b8a9117d3ce0e1982751daff92e17ef",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0038.txt"
+    },
+    {
+      "packet_id": "P0039",
+      "chapter_index": 18,
+      "chapter_title": "XVIII",
+      "chapter_packet": 2,
+      "words": 914,
+      "sha256": "eb85da30ccedabe1f6d01c9a73c2b37cebe7c6a449cfc050e8fdc196a8413b46",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0039.txt"
+    },
+    {
+      "packet_id": "P0040",
+      "chapter_index": 19,
+      "chapter_title": "XIX",
+      "chapter_packet": 1,
+      "words": 1489,
+      "sha256": "bbd87f9270f9f3886f654ea843655a2553794761253de700320e753102b95f1a",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0040.txt"
+    },
+    {
+      "packet_id": "P0041",
+      "chapter_index": 20,
+      "chapter_title": "XX",
+      "chapter_packet": 1,
+      "words": 904,
+      "sha256": "19c448331d8511d4555d8f7a5524f8f82f6bc13ce612aff610f1afc4235f30a0",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0041.txt"
+    },
+    {
+      "packet_id": "P0042",
+      "chapter_index": 20,
+      "chapter_title": "XX",
+      "chapter_packet": 2,
+      "words": 858,
+      "sha256": "0f8677f31d1179be6017053f25470860d522ff472d1fb911ef905325a43d5c3f",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0042.txt"
+    },
+    {
+      "packet_id": "P0043",
+      "chapter_index": 21,
+      "chapter_title": "XXI",
+      "chapter_packet": 1,
+      "words": 961,
+      "sha256": "5a72ad3a863316894b50c40dbbfadc4baa6e3ba5ece1c8761c4a07a48d13e6f5",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0043.txt"
+    },
+    {
+      "packet_id": "P0044",
+      "chapter_index": 21,
+      "chapter_title": "XXI",
+      "chapter_packet": 2,
+      "words": 977,
+      "sha256": "7e7eeb392bf7a31d70a3cbb64e1abc51d91c81636d5f4dae674aa94e7e0657e5",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0044.txt"
+    },
+    {
+      "packet_id": "P0045",
+      "chapter_index": 21,
+      "chapter_title": "XXI",
+      "chapter_packet": 3,
+      "words": 1028,
+      "sha256": "1ce8a00c4e81b49d6cf8a05ae39f921276650c78c0e0b49593005291f34a02dd",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0045.txt"
+    },
+    {
+      "packet_id": "P0046",
+      "chapter_index": 22,
+      "chapter_title": "XXII",
+      "chapter_packet": 1,
+      "words": 1307,
+      "sha256": "80638b1144888fd8f3785d0089c6a3760c60206206bd03c8a86dc27958618213",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0046.txt"
+    },
+    {
+      "packet_id": "P0047",
+      "chapter_index": 23,
+      "chapter_title": "XXIII",
+      "chapter_packet": 1,
+      "words": 882,
+      "sha256": "1061c977d5635ca4788c9f5a32f1cfde7bbd8c2985d75dd9adca3ac8f4bc4f63",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0047.txt"
+    },
+    {
+      "packet_id": "P0048",
+      "chapter_index": 23,
+      "chapter_title": "XXIII",
+      "chapter_packet": 2,
+      "words": 1343,
+      "sha256": "6973e7f92b2b678bac2d59779025c16a2953ec7658b6c8c513232b7f2aff7b1c",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0048.txt"
+    },
+    {
+      "packet_id": "P0049",
+      "chapter_index": 24,
+      "chapter_title": "XXIV",
+      "chapter_packet": 1,
+      "words": 982,
+      "sha256": "a26132f6068246c34a2d883bdb82b29887d070bdb4de8693c1b1ea181732b410",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0049.txt"
+    },
+    {
+      "packet_id": "P0050",
+      "chapter_index": 24,
+      "chapter_title": "XXIV",
+      "chapter_packet": 2,
+      "words": 644,
+      "sha256": "d0bfd9eb4c77bd4f00ff01f76cf58bbffabb80242e59f511abafc6f3cdb0dda4",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0050.txt"
+    },
+    {
+      "packet_id": "P0051",
+      "chapter_index": 25,
+      "chapter_title": "XXV",
+      "chapter_packet": 1,
+      "words": 969,
+      "sha256": "a70e6dd1b87ed5999b213f9c601cd5105cb2a9564da8489e54c7e2d4f15fca5c",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0051.txt"
+    },
+    {
+      "packet_id": "P0052",
+      "chapter_index": 25,
+      "chapter_title": "XXV",
+      "chapter_packet": 2,
+      "words": 1461,
+      "sha256": "f72da63f1457ba740aebf1c4b02e681b895e1c65ca607caaeb3be41e697db852",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0052.txt"
+    },
+    {
+      "packet_id": "P0053",
+      "chapter_index": 26,
+      "chapter_title": "XXVI",
+      "chapter_packet": 1,
+      "words": 990,
+      "sha256": "bf5f61761fe75a756c9c4a79a616149a9a252962e80670827d196eab1f4c7046",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0053.txt"
+    },
+    {
+      "packet_id": "P0054",
+      "chapter_index": 26,
+      "chapter_title": "XXVI",
+      "chapter_packet": 2,
+      "words": 996,
+      "sha256": "725261216936771cc47fe6c5b18c5d126c68357f4466408fa19118355ea190ab",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0054.txt"
+    },
+    {
+      "packet_id": "P0055",
+      "chapter_index": 26,
+      "chapter_title": "XXVI",
+      "chapter_packet": 3,
+      "words": 523,
+      "sha256": "8b77a25aa554a92e717ca4d82a0b5a79ab092bd60cef2a32b2adf37d2c39f197",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0055.txt"
+    },
+    {
+      "packet_id": "P0056",
+      "chapter_index": 27,
+      "chapter_title": "XXVII",
+      "chapter_packet": 1,
+      "words": 948,
+      "sha256": "39e77bd31b88337a72cfda02ef69f1d0b55054de99b0b2d125b510d3c813bbf3",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0056.txt"
+    },
+    {
+      "packet_id": "P0057",
+      "chapter_index": 27,
+      "chapter_title": "XXVII",
+      "chapter_packet": 2,
+      "words": 599,
+      "sha256": "47b39f83c515543ecf94bd91bd77d01b641ba6f67664750898f1e50b9c4a0fdf",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0057.txt"
+    },
+    {
+      "packet_id": "P0058",
+      "chapter_index": 28,
+      "chapter_title": "XXVIII",
+      "chapter_packet": 1,
+      "words": 989,
+      "sha256": "16cad265686d79fed45d37fe6bf6125efbee705399102408b10aa6f8f32b0a4e",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0058.txt"
+    },
+    {
+      "packet_id": "P0059",
+      "chapter_index": 28,
+      "chapter_title": "XXVIII",
+      "chapter_packet": 2,
+      "words": 1267,
+      "sha256": "ca7d9f12735a3e41cba3c8f38e98e3ec03047f5f727b32eebb7f73cc6ba830d0",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0059.txt"
+    },
+    {
+      "packet_id": "P0060",
+      "chapter_index": 29,
+      "chapter_title": "XXIX",
+      "chapter_packet": 1,
+      "words": 958,
+      "sha256": "5d0c8b9ca9da586241bc2480345dd992761bcbb54f672cd4f1c406d85b3e1800",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0060.txt"
+    },
+    {
+      "packet_id": "P0061",
+      "chapter_index": 29,
+      "chapter_title": "XXIX",
+      "chapter_packet": 2,
+      "words": 1266,
+      "sha256": "93c67d1d75b80465ef4e6f646d8074f7ece1b88c24a0a51b5d0198530bbfc8f0",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0061.txt"
+    },
+    {
+      "packet_id": "P0062",
+      "chapter_index": 30,
+      "chapter_title": "XXX",
+      "chapter_packet": 1,
+      "words": 949,
+      "sha256": "03c1ca3763650e5bf97780c9ffd0dbefe49adec4ccede27678bdb2dc1e2c680e",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0062.txt"
+    },
+    {
+      "packet_id": "P0063",
+      "chapter_index": 30,
+      "chapter_title": "XXX",
+      "chapter_packet": 2,
+      "words": 622,
+      "sha256": "6509fc1ff2d841d3d8b088595f168376aeb886b187fc8d5cc088bc1442fb5519",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0063.txt"
+    },
+    {
+      "packet_id": "P0064",
+      "chapter_index": 31,
+      "chapter_title": "XXXI",
+      "chapter_packet": 1,
+      "words": 1475,
+      "sha256": "0049d56e28293951a06ae36dd8a7faab67b758e7bef1b88f3c1a5bc51e81051e",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0064.txt"
+    },
+    {
+      "packet_id": "P0065",
+      "chapter_index": 32,
+      "chapter_title": "XXXII",
+      "chapter_packet": 1,
+      "words": 865,
+      "sha256": "5be91b457166ba2bc184335080314a4732a572f9444bb44ff1a04111a3130bc1",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0065.txt"
+    },
+    {
+      "packet_id": "P0066",
+      "chapter_index": 32,
+      "chapter_title": "XXXII",
+      "chapter_packet": 2,
+      "words": 886,
+      "sha256": "2035ba50e9e830427700b4e9d222d8cb83f992f267061e9739307ccaafa61c09",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0066.txt"
+    },
+    {
+      "packet_id": "P0067",
+      "chapter_index": 33,
+      "chapter_title": "XXXIII",
+      "chapter_packet": 1,
+      "words": 966,
+      "sha256": "8b9e49dfe1ec30ef7acc190706acd9f8460d660cc9020f66bbe20f5044ab7fb3",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0067.txt"
+    },
+    {
+      "packet_id": "P0068",
+      "chapter_index": 33,
+      "chapter_title": "XXXIII",
+      "chapter_packet": 2,
+      "words": 864,
+      "sha256": "a44f2940f7a9ae413fce0f123fabf46b0741bccfcac5fc02677e3932fb361d08",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0068.txt"
+    },
+    {
+      "packet_id": "P0069",
+      "chapter_index": 33,
+      "chapter_title": "XXXIII",
+      "chapter_packet": 3,
+      "words": 950,
+      "sha256": "09ba03441900fd8ef0d2e7559e97d71667de298228068bf1e78c9702cf01f005",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0069.txt"
+    },
+    {
+      "packet_id": "P0070",
+      "chapter_index": 33,
+      "chapter_title": "XXXIII",
+      "chapter_packet": 4,
+      "words": 668,
+      "sha256": "4b44cb70d60c158a285fb93ad2f4f89c809f0b18614b62286fd14a22a959143d",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0070.txt"
+    },
+    {
+      "packet_id": "P0071",
+      "chapter_index": 34,
+      "chapter_title": "XXXIV",
+      "chapter_packet": 1,
+      "words": 919,
+      "sha256": "1cdab9bfc0a679e0db629aec3794fa891265f944f6c1e0d8dee1680e96a63fbe",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0071.txt"
+    },
+    {
+      "packet_id": "P0072",
+      "chapter_index": 34,
+      "chapter_title": "XXXIV",
+      "chapter_packet": 2,
+      "words": 1196,
+      "sha256": "11cf6605a2ccd8ffafac92eb040ee34b58ec2ed25893343169cdb74578bb1a0a",
+      "path": "data/wb_ingest/mary-roberts-rinehart/the-circular-staircase/packets/P0072.txt"
+    }
+  ],
+  "packet_policy": {
+    "min_words": 700,
+    "target_words": 1000,
+    "max_words": 1500,
+    "use": "candidate extraction only; Bloom excerpts remain <=2 sentences per technique per source"
+  }
+}
