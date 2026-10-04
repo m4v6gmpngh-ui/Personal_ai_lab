@@ -1,0 +1,15 @@
+{
+  "id": "standard-ebooks-the-great-gatsby",
+  "url": "https://standardebooks.org/ebooks/f-scott-fitzgerald/the-great-gatsby/text/single-page",
+  "source_type": "standard_ebooks",
+  "rights": "public_domain_us",
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "genre": ["literary"],
+  "era": "Jazz Age / American modernism / 1925",
+  "pov": "first person retrospective, Nick Carraway",
+  "output_slug": "f-scott-fitzgerald/the-great-gatsby",
+  "requested_source_url": "https://openlibrary.org/works/OL468431W/The_Great_Gatsby?edition=key%3A/books/OL47769457M",
+  "requested_openlibrary_edition": "OL47769457M",
+  "provenance_note": "User targeted Open Library work OL468431W, edition OL47769457M, identified by Open Library as the 1925 Standard Ebooks edition. Acquisition uses the supported Standard Ebooks U.S.-public-domain transcription of The Great Gatsby while preserving the requested Open Library work URL and edition ID as provenance. Standard Ebooks marks the ebook as believed free of U.S. copyright restrictions. No access control is bypassed."
+}
