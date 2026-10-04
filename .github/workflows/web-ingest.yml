@@ -5,9 +5,11 @@ on:
     branches:
       - main
       - web-ingest-actions
+      - wb-ingest-v1
     paths:
       - "ingest_requests/*.json"
       - "scripts/web_ingest.py"
+      - "scripts/wb_ingest.py"
       - ".github/workflows/web-ingest.yml"
   workflow_dispatch:
 
@@ -31,18 +33,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Ingest requested sources
+      - name: Ingest approved public sources
         run: python scripts/web_ingest.py --requests ingest_requests --output data/library
 
-      - name: Commit normalized library output
+      - name: Prepare Writing Bloom measurements and packets
+        run: python scripts/wb_ingest.py public-library --library-root data/library --output data/wb_ingest
+
+      - name: Commit normalized public corpus and WB handoff
         shell: bash
         run: |
-          if git diff --quiet -- data/library && [ -z "$(git status --porcelain -- data/library)" ]; then
-            echo "No library changes to commit."
+          if git diff --quiet -- data/library data/wb_ingest && [ -z "$(git status --porcelain -- data/library data/wb_ingest)" ]; then
+            echo "No ingestion changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/library
-          git commit -m "Ingest public web source"
+          git add data/library data/wb_ingest
+          git commit -m "Prepare public source for Writing Bloom"
           git push origin "HEAD:${GITHUB_REF_NAME}"
