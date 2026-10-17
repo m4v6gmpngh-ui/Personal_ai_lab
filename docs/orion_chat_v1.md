@@ -22,8 +22,9 @@ or consolidate Skill Blooms yet. The trace records those features as absent.
 ## Windows test (PowerShell)
 
 1. Install and run Ollama locally if it is not already running.
-2. In Ollama, install the optional local model `llama3.2:3b`
-   (a model download is required once; not automatic).
+2. The default chat model is `qwen3.5:4b`, already present on the development PC.
+   The separate `qwen3-embedding:0.6b` model is an embedding model, not used for chat.
+   To choose another installed chat model, set `$env:ORION_MODEL="other-model-name"`.
 3. Switch to the **experiment/orion-chat-v1** branch of Personal_ai_lab.
 4. From the repository root:
 
@@ -31,6 +32,8 @@ or consolidate Skill Blooms yet. The trace records those features as absent.
 $env:PYTHONPATH="src"
 py scripts\orion_chat.py
 ```
+
+No model download is triggered automatically. If Ollama isn't available, the console reports a failed turn without falling back to a billed cloud model.
 
 Enter a test message. For example:
 
