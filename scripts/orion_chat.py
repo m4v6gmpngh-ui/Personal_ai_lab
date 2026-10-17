@@ -4,6 +4,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from hashlib import sha256
 import json
+import os
 from pathlib import Path
 from time import perf_counter
 from uuid import uuid4
@@ -14,13 +15,16 @@ from personal_ai.llm.ollama_local import OllamaLocalAdapter
 
 def main() -> None:
     root = Path("data/orion_sandbox")
+    model = os.environ.get("ORION_MODEL", "qwen3.5:4b").strip()
+    if not model:
+        raise ValueError("ORION_MODEL must not be empty")
     session = LiveSession.from_disk(
         root / "memories.json",
-        OllamaLocalAdapter(),
+        OllamaLocalAdapter(model=model),
         state_path=root / "bloom_state.json",
         capture_mode="normal",
     )
-    print("Orion Chat v1 (local experiment). Commands: /trace, /quit")
+    print(f"Orion Chat v1 (local experiment, model={model}). Commands: /trace, /quit")
     print("No REA actions, autonomous skill execution, or skill consolidation.")
     last = None
     while True:
